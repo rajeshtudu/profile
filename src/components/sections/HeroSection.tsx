@@ -15,7 +15,7 @@ const HeroSection = () => (
             SEO built around<br />how people <em>search.</em>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-            I’m Rajesh Tudu, an SEO specialist using semantic research to connect audience intent, useful content and business goals across on-page, off-page, local, technical and e-commerce SEO.
+            I’m Rajesh Tudu, an SEO specialist using semantic research to connect search intent, site architecture and useful content—with on-page, off-page, local and technical SEO working together to support organic growth.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
             <a className="button-primary" href="#projects">Explore my work <ArrowUpRight size={16} /></a>
