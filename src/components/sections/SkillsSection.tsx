@@ -5,7 +5,7 @@ const groups = [
   { icon: Search, title: 'Organic search', items: ['Technical SEO','On-page SEO','E-commerce SEO','Keyword research','Content optimization','Schema markup'] },
   { icon: BarChart3, title: 'Measurement', items: ['Google Search Console','Google Analytics 4','SEMrush','Ahrefs','Screaming Frog','Looker Studio'] },
   { icon: Code2, title: 'Automation & code', items: ['Python','Streamlit','Web scraping','JavaScript','React','JSON-LD'] },
-  { icon: Wrench, title: 'Platforms', items: ['WordPress','Git','MySQL','Odoo','Google Sheets','Excel'] },
+  { icon: Wrench, title: 'Platforms', items: ['WordPress','Shopify','Git','MySQL','Odoo','Google Sheets','Excel'] },
 ];
 const SkillsSection = () => <section id="skills" className="section-padding bg-secondary/40">
   <div className="container-custom"><div className="max-w-2xl mb-14"><p className="section-kicker mb-5">02 — What I bring</p><h2 className="section-heading">A mix of <em>strategy</em><br/>and hands-on work.</h2><p className="text-muted-foreground mt-5 leading-7">From crawl diagnostics to clear reporting, I bring the tools and judgment to turn search data into a focused next step.</p></div>
