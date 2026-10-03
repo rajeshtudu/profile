@@ -5,21 +5,23 @@ const cases = [
   {
     number: '01',
     kind: 'B2B technology · anonymized',
-    title: 'A broader footprint for high-intent and research queries',
-    context: 'The site served a mix of service-led and informational searches. The work connected keyword research to page targets, then improved priority pages and supported relevant link acquisition.',
-    work: ['Mapped search terms to page opportunities', 'Optimized 50+ pages', 'Supported on-page improvements and link acquisition'],
+    title: 'Mapping mixed search intent to the right pages',
+    context: 'A B2B technology site served both service-led and informational searches. Archived project materials document keyword-to-page mapping, page optimization and link-acquisition support.',
+    work: ['Mapped search terms to page opportunities', 'Optimized 50+ pages, as recorded in project materials', 'Supported on-page improvements and link acquisition'],
     readings: [['June', '544'], ['July', '1,028'], ['August', '4,895']],
-    resultLabel: 'Reported organic traffic',
+    resultLabel: 'Traffic values in source report',
+    evidenceNote: 'The report labels these values as traffic. Reporting year and analytics platform are not stated.',
     icon: TrendingUp,
   },
   {
     number: '02',
     kind: 'Local healthcare · anonymized',
-    title: 'Connecting technical fixes with local search work',
-    context: 'A site audit and keyword research informed URL changes, schema and internal linking, alongside a Google Business Profile audit and sitemap repair.',
-    work: ['Completed a whole-site audit', 'Implemented schema and internal-linking improvements', 'Fixed a sitemap issue and reviewed the local profile'],
+    title: 'Site-wide improvements paired with local SEO',
+    context: 'An anonymized local healthcare project brought site structure, on-page work and local visibility together. The archived task list records technical fixes alongside local profile work.',
+    work: ['Completed a site audit and keyword-led URL changes', 'Documented schema and internal-linking improvements', 'Repaired a sitemap issue and reviewed the local profile'],
     readings: [['June', '1'], ['July', '81'], ['August', '218']],
-    resultLabel: 'Reported organic traffic',
+    resultLabel: 'Traffic values in source report',
+    evidenceNote: 'The report labels these values as traffic. Reporting year and analytics platform are not stated.',
     icon: Map,
   },
 ];
@@ -29,7 +31,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
     <div className="max-w-3xl mb-12">
       <p className="section-kicker mb-5">04 — Selected work</p>
       <h2 className="section-heading">Show the work.<br/><em>Keep the context.</em></h2>
-      <p className="text-muted-foreground leading-7 mt-5">Two anonymized SEO engagements with the work performed and the traffic values recorded in their project reports. A separate Shopify sample shows how I approach ecommerce architecture.</p>
+      <p className="text-muted-foreground leading-7 mt-5">Anonymized snapshots of the work documented in project files, with the recorded evidence kept in context. The Shopify example is a planning sample, not a client case study.</p>
     </div>
 
     <div className="grid lg:grid-cols-2 gap-5">
@@ -40,7 +42,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
           <p className="text-sm text-muted-foreground leading-6 mt-4">{item.context}</p>
           <div className="grid sm:grid-cols-[1.1fr_.9fr] gap-8 mt-8">
             <div><h4 className="font-mono text-[10px] uppercase tracking-widest text-primary mb-4">Work performed</h4><ul className="grid gap-3">{item.work.map(point => <li key={point} className="flex gap-2 text-sm leading-5"><FileCheck2 size={15} className="text-primary shrink-0 mt-0.5"/><span>{point}</span></li>)}</ul></div>
-            <div><h4 className="font-mono text-[10px] uppercase tracking-widest text-primary mb-4">{item.resultLabel}</h4><div className="grid grid-cols-3 gap-2">{item.readings.map(([month, value]) => <div key={month} className="border border-border px-3 py-3"><span className="block font-serif text-xl md:text-2xl">{value}</span><span className="block text-[10px] text-muted-foreground mt-1">{month}</span></div>)}</div></div>
+            <div><h4 className="font-mono text-[10px] uppercase tracking-widest text-primary mb-4">{item.resultLabel}</h4><div className="grid grid-cols-3 gap-2">{item.readings.map(([month, value]) => <div key={month} className="border border-border px-3 py-3"><span className="block font-serif text-xl md:text-2xl">{value}</span><span className="block text-[10px] text-muted-foreground mt-1">{month}</span></div>)}</div><p className="text-[11px] leading-5 text-muted-foreground mt-3">{item.evidenceNote}</p></div>
           </div>
         </div>
       </motion.article>)}
@@ -55,7 +57,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
     </motion.article>
 
     <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-      <p className="text-xs leading-5 text-muted-foreground max-w-2xl">Both source reports label these values as organic traffic, but omit the reporting year and analytics platform. Values are shown as recorded, without a growth percentage. Client and website names are withheld.</p>
+      <p className="text-xs leading-5 text-muted-foreground max-w-2xl">Client and website names are withheld. These archived reports don’t identify the reporting year or measurement platform, so the values are presented as recorded rather than as verified personal results or proof of causation.</p>
       <a href="#contact" className="project-link inline-flex items-center gap-2 text-sm font-semibold">Discuss an SEO challenge <ArrowUpRight size={15}/></a>
     </div>
   </div>

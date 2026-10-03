@@ -12,18 +12,18 @@ const HeroSection = () => (
             <span className="status-dot" /> SEO specialist · Semantic SEO researcher · Lalitpur, Nepal
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-            <span className="hidden sm:inline">SEO built around<br />how people <em>search.</em></span>
-            <span className="sm:hidden">Search intent.<br /><em>Right page.</em></span>
+            <span className="hidden sm:inline">Search intent, mapped<br />to the right <em>pages.</em></span>
+            <span className="sm:hidden">Search intent.<br /><em>Right pages.</em></span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-            I’m Rajesh Tudu, an SEO specialist and semantic SEO researcher. I turn search intent into clear page plans, then bring content, on-page, off-page, local and technical SEO together to help people find the right pages.
+            I’m Rajesh Tudu, an SEO specialist and semantic SEO researcher. I study what people mean when they search, map those needs to the right pages, and connect content, on-page, off-page, local, technical and Shopify SEO in one practical plan.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
             <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>
             <a className="button-secondary" href="#services">Explore services</a>
           </motion.div>
           <div className="grid grid-cols-3 gap-4 max-w-lg mt-10 pt-6 border-t border-border">
-            {[['20+', 'projects'], ['5+', 'niches'], ['2+', 'years in SEO']].map(([value, label]) => <div key={label}>
+            {[['20+', 'SEO projects'], ['5+', 'niches'], ['2+', 'years in SEO']].map(([value, label]) => <div key={label}>
               <strong className="font-serif text-2xl md:text-3xl">{value}</strong>
               <span className="block text-[10px] md:text-xs text-muted-foreground mt-1">{label}</span>
             </div>)}
