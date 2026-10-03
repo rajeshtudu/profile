@@ -11,10 +11,10 @@ const AboutSection = () => <section id="about" className="section-padding">
       </div>
     </div>
     <div className="pt-2">
-      <p className="about-story">I connect the details search engines care about with the useful experiences people come back for.</p>
+      <p className="about-story">Semantic SEO is the lens. A complete search strategy is the work.</p>
       <div className="mt-8 space-y-5 text-muted-foreground leading-7 max-w-2xl">
-        <p>My work spans technical audits, on-page improvements, keyword research and content optimization. I like finding the small, fixable things that add up to better discovery and a stronger site.</p>
-        <p>I also build lightweight Python tools to make repetitive SEO work easier. The goal is always practical: clear priorities, less busywork and progress you can measure.</p>
+        <p>I start by understanding the audience, topics, entities and intent behind a search. That research informs content planning, on-page improvements and internal links, while off-page, local and technical SEO help strengthen visibility across the wider search journey.</p>
+        <p>My experience includes e-commerce SEO, authority and backlink work, local search foundations, measurement and technical audits. I also build lightweight Python tools to make research and repetitive SEO work more efficient.</p>
       </div>
       <a href="#experience" className="project-link inline-flex items-center gap-2 mt-8 text-sm font-semibold">More about my path <ArrowUpRight size={16}/></a>
       <div className="grid grid-cols-3 gap-5 mt-14 pt-7 border-t border-border">

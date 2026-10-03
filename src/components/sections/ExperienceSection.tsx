@@ -2,10 +2,10 @@ import { ArrowUpRight, BriefcaseBusiness, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const roles = [
-  { date:'JAN 2026 — NOW', title:'Jr. SEO Specialist', org:'Enfity', place:'Lalitpur, Nepal', href:'https://enfity.com/', note:'On-page optimization, technical audits, e-commerce SEO and performance reporting.' },
-  { date:'DEC 2025 — JAN 2026', title:'Jr. SEO Specialist', org:'NEPA Works', place:'Kathmandu, Nepal', href:'https://www.nepa.works/', note:'Supported technical and on-page SEO programs across client websites.' },
-  { date:'JUL 2024 — JUN 2025', title:'SEO Executive', org:'RankMeTop', place:'Kathmandu, Nepal', href:'https://rankmetop.net/', note:'Helped grow organic traffic by 35% in six months and optimized 50+ pages.' },
-  { date:'JAN 2024 — JUN 2024', title:'SEO Intern', org:'RankMeTop', place:'Kathmandu, Nepal', href:'https://rankmetop.net/', note:'Keyword research, technical checks and support for SEO campaigns.' },
+  { date:'JAN 2026 — NOW', title:'Jr. SEO Specialist', org:'Enfity', place:'Lalitpur, Nepal', href:'https://enfity.com/', note:'Contribute across on-page, technical and e-commerce SEO, with research, optimization and performance reporting.' },
+  { date:'DEC 2025 — JAN 2026', title:'Jr. SEO Specialist', org:'NEPA Works', place:'Kathmandu, Nepal', href:'https://www.nepa.works/', note:'Supported client SEO through content and on-page improvements, research and technical site checks.' },
+  { date:'JUL 2024 — JUN 2025', title:'SEO Executive', org:'RankMeTop', place:'Kathmandu, Nepal', href:'https://rankmetop.net/', note:'Worked across keyword research, on-page improvements and link acquisition; helped grow organic traffic by 35% in six months and optimized 50+ pages.' },
+  { date:'JAN 2024 — JUN 2024', title:'SEO Intern', org:'RankMeTop', place:'Kathmandu, Nepal', href:'https://rankmetop.net/', note:'Supported keyword research, campaign execution and foundational technical and on-page SEO.' },
   { date:'DEC 2023 — JAN 2024', title:'Data Entry Specialist', org:'RankMeTop', place:'Kathmandu, Nepal', href:'https://rankmetop.net/', note:'Maintained and validated data and prepared Excel reports.' },
 ];
 const learning = ['AI Training','Data Science Training','Python & Django Training','Web Design Training'];
