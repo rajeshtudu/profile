@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,8 +19,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Rajesh Tudu. Made with{' '}
-            <Heart size={14} className="text-red-500 fill-red-500" /> using React
+            © {currentYear} Rajesh Tudu · SEO & organic growth
           </p>
 
           {/* Back to Top */}
