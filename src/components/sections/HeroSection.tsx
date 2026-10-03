@@ -37,7 +37,6 @@ const HeroSection = () => (
         <motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: .2, duration: .7 }} className="hero-portrait-wrap">
           <div className="portrait-frame"><img src={profileImage} alt="Rajesh Tudu" className="hero-portrait" /></div>
           <div className="portrait-note"><span className="note-mark">✳</span><span>Understand the search.<br/>Plan the right page.</span></div>
-          <span className="portrait-index">01 / 04</span>
         </motion.div>
       </div>
       <a href="#about" className="scroll-cue"><span>Scroll to explore</span><ArrowDown size={16}/></a>
