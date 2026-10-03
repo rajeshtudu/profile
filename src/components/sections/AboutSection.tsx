@@ -18,7 +18,7 @@ const AboutSection = () => <section id="about" className="section-padding">
       </div>
       <a href="#experience" className="project-link inline-flex items-center gap-2 mt-8 text-sm font-semibold">More about my path <ArrowUpRight size={16}/></a>
       <div className="grid grid-cols-3 gap-5 mt-14 pt-7 border-t border-border">
-        {[['35%','organic traffic growth'],['5+','niches explored'],['2+','years in SEO']].map(([n,label])=><div key={label}><strong className="block text-3xl md:text-4xl font-semibold tracking-tight">{n}</strong><span className="text-xs text-muted-foreground">{label}</span></div>)}
+        {[['20+','projects worked on'],['5+','niches explored'],['2+','years in SEO']].map(([n,label])=><div key={label}><strong className="block text-3xl md:text-4xl font-semibold tracking-tight">{n}</strong><span className="text-xs text-muted-foreground">{label}</span></div>)}
       </div>
     </div>
   </div>
