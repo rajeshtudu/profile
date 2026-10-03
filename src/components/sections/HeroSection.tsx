@@ -9,13 +9,13 @@ const HeroSection = () => (
       <div className="grid lg:grid-cols-[1.2fr_.8fr] gap-12 lg:gap-20 items-center">
         <div>
           <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }} className="eyebrow mb-7">
-            <span className="status-dot" /> SEO specialist · Semantic SEO · Kathmandu, Nepal
+            <span className="status-dot" /> SEO specialist · Semantic SEO researcher · Kathmandu, Nepal
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-            Search is a<br /> place to <em>grow.</em>
+            SEO built around<br />how people <em>search.</em>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-            I’m Rajesh Tudu, an SEO specialist using semantic research to connect search intent, useful content and strong site foundations—from on-page and local SEO to authority building and technical optimization.
+            I’m Rajesh Tudu, an SEO specialist using semantic research to connect audience intent, useful content and business goals across on-page, off-page, local, technical and e-commerce SEO.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
             <a className="button-primary" href="#projects">Explore my work <ArrowUpRight size={16} /></a>

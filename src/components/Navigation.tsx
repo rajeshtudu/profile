@@ -5,7 +5,8 @@ import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
   { name: 'About', href: '#about' }, { name: 'Expertise', href: '#skills' },
-  { name: 'Services', href: '#services' }, { name: 'Selected work', href: '#projects' }, { name: 'Experience', href: '#experience' },
+  { name: 'Services', href: '#services' }, { name: 'Case studies', href: '#case-studies' },
+  { name: 'Projects', href: '#projects' }, { name: 'Experience', href: '#experience' },
 ];
 
 const Navigation = () => {

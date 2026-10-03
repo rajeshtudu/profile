@@ -11,10 +11,10 @@ const AboutSection = () => <section id="about" className="section-padding">
       </div>
     </div>
     <div className="pt-2">
-      <p className="about-story">Semantic SEO is the lens. A complete search strategy is the work.</p>
+      <p className="about-story">I use semantic research to connect the whole search strategy—from the page itself to the signals around it.</p>
       <div className="mt-8 space-y-5 text-muted-foreground leading-7 max-w-2xl">
-        <p>I start by understanding the audience, topics, entities and intent behind a search. That research informs content planning, on-page improvements and internal links, while off-page, local and technical SEO help strengthen visibility across the wider search journey.</p>
-        <p>My experience includes e-commerce SEO, authority and backlink work, local search foundations, measurement and technical audits. I also build lightweight Python tools to make research and repetitive SEO work more efficient.</p>
+        <p>I start with the audience and the meaning behind their searches: the topics, entities, questions and intent that shape a useful site. That understanding guides content and on-page improvements, while off-page authority, local visibility and technical foundations work together to support discovery.</p>
+        <p>I’ve worked across e-commerce, local and service businesses, and other niches—supporting research, content, links, local signals, technical audits and measurement. I also build lightweight Python tools that make SEO research and recurring tasks more efficient.</p>
       </div>
       <a href="#experience" className="project-link inline-flex items-center gap-2 mt-8 text-sm font-semibold">More about my path <ArrowUpRight size={16}/></a>
       <div className="grid grid-cols-3 gap-5 mt-14 pt-7 border-t border-border">
