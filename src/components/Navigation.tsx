@@ -5,7 +5,7 @@ import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
   { name: 'About', href: '#about' }, { name: 'Expertise', href: '#skills' },
-  { name: 'Selected work', href: '#projects' }, { name: 'Experience', href: '#experience' },
+  { name: 'Services', href: '#services' }, { name: 'Selected work', href: '#projects' }, { name: 'Experience', href: '#experience' },
 ];
 
 const Navigation = () => {
@@ -13,7 +13,7 @@ const Navigation = () => {
   const go = (href: string) => { setOpen(false); document.getElementById(href.slice(1))?.scrollIntoView({ behavior: 'smooth' }); };
   return <header className="site-header">
     <nav className="container-custom nav-inner" aria-label="Main navigation">
-      <a href="#home" onClick={e => { e.preventDefault(); go('#home'); }} className="brand-mark"><span>RT</span><span className="brand-name">Rajesh Tudu <small>SEO & organic growth</small></span></a>
+      <a href="#home" onClick={e => { e.preventDefault(); go('#home'); }} className="brand-mark"><span>RT</span><span className="brand-name">Rajesh Tudu <small>SEO Specialist · Semantic SEO Researcher</small></span></a>
       <div className="nav-links">{navItems.map(item => <a key={item.href} href={item.href} onClick={e => { e.preventDefault(); go(item.href); }}>{item.name}</a>)}</div>
       <a className="nav-contact" href="#contact" onClick={e => { e.preventDefault(); go('#contact'); }}>Let’s talk <ArrowUpRight size={15}/></a>
       <div className="desktop-theme"><ThemeToggle /></div>
