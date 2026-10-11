@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Search, Network, Sparkles, LineChart } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const steps = [
   {
@@ -34,10 +35,10 @@ const steps = [
 
 const ApproachSection = () => <section id="approach" className="section-padding">
   <div className="container-custom">
-    <div className="grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-20 mb-12 items-end">
+    <ScrollReveal><div className="grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-20 mb-12 items-end">
       <div><p className="section-kicker mb-5">My approach</p><h2 className="section-heading">From search<br/>to <em>site structure.</em></h2></div>
       <p className="text-muted-foreground leading-7 max-w-xl">Semantic SEO is the research layer that helps connect the disciplines. It clarifies what people need, which pages should meet that need, and how those pages work together.</p>
-    </div>
+    </div></ScrollReveal>
     <div className="grid sm:grid-cols-2 lg:grid-cols-4 border-l border-t border-border">
       {steps.map((step, index) => <motion.article key={step.number} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * .06 }} className="border-r border-b border-border p-6 md:p-7 min-h-64 flex flex-col">
         <div className="flex items-center justify-between"><span className="font-mono text-[10px] tracking-widest text-primary">{step.number}</span><step.icon size={19} className="text-primary"/></div>

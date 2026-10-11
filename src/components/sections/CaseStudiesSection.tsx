@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, FileCheck2, TrendingUp, Map, ShoppingBag } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const cases = [
   {
@@ -28,11 +29,11 @@ const cases = [
 
 const CaseStudiesSection = () => <section id="case-studies" className="section-padding bg-secondary/40">
   <div className="container-custom">
-    <div className="max-w-3xl mb-12">
+    <ScrollReveal><div className="max-w-3xl mb-12">
       <p className="section-kicker mb-5">04 — Selected work</p>
       <h2 className="section-heading">Show the work.<br/><em>Keep the context.</em></h2>
       <p className="text-muted-foreground leading-7 mt-5">Anonymized project snapshots pair documented work with the source and period for each metric. The Shopify example is a planning sample, not a client case study.</p>
-    </div>
+    </div></ScrollReveal>
 
     <div className="grid lg:grid-cols-2 gap-5">
       {cases.map((item, index) => <motion.article key={item.number} initial={{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:index*.08}} className="paper-card overflow-hidden flex flex-col">

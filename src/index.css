@@ -23,6 +23,7 @@
 .dark { --paper: #211d19; --ink: #f3eee5; --orange: #ee795a; --line: rgba(244,233,220,.15); }
 .container-custom { max-width: 1320px; }
 .site-header { position: fixed; z-index: 50; inset: 0 0 auto; background: color-mix(in srgb, var(--paper) 91%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.scroll-progress { position: fixed; inset: 0 0 auto; z-index: 60; height: 2px; background: var(--orange); transform-origin: 0 50%; pointer-events: none; }
 .nav-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; }
 .desktop-theme { display:flex; align-items:center; }.desktop-theme button { background:transparent;border-color:var(--line); }
 .brand-mark { display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink); }

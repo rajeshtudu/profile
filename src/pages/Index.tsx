@@ -10,25 +10,30 @@ import ExperienceSection from '@/components/sections/ExperienceSection';
 import HireMeSection from '@/components/sections/HireMeSection';
 import ContactSection from '@/components/sections/ContactSection';
 import Footer from '@/components/Footer';
+import { MotionConfig } from 'framer-motion';
+import ScrollProgress from '@/components/ScrollProgress';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-      <Navigation />
+    <MotionConfig reducedMotion="user">
+      <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+        <ScrollProgress />
+        <Navigation />
         <main>
-            <HeroSection />
-            <AboutSection />
-            <ApproachSection />
-            <SkillsSection />
-            <ServicesSection />
-            <CaseStudiesSection />
-            <ExperienceSection />
-            <ProjectsSection />
-            <HireMeSection />
-            <ContactSection />
+          <HeroSection />
+          <AboutSection />
+          <ApproachSection />
+          <SkillsSection />
+          <ServicesSection />
+          <CaseStudiesSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <HireMeSection />
+          <ContactSection />
         </main>
-          <Footer />
-    </div>
+        <Footer />
+      </div>
+    </MotionConfig>
   );
 };
 
