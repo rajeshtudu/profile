@@ -31,7 +31,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
   <div className="container-custom">
     <ScrollReveal><div className="max-w-3xl mb-12">
       <p className="section-kicker mb-5">04 — Selected work</p>
-      <h2 className="section-heading">Show the work.<br/><em>Keep the context.</em></h2>
+      <h2 className="section-heading">SEO case studies and work samples</h2>
       <p className="text-muted-foreground leading-7 mt-5">Anonymized project snapshots pair documented work with the source and period for each metric. The Shopify example is a planning sample, not a client case study.</p>
     </div></ScrollReveal>
 
@@ -39,7 +39,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
       {cases.map((item, index) => <motion.article key={item.number} initial={{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:index*.08}} className="paper-card overflow-hidden flex flex-col">
         <div className="p-6 sm:p-7 lg:p-8 min-w-0">
           <div className="flex items-start justify-between gap-4 min-w-0"><p className="section-kicker min-w-0 break-words">{item.number} / {item.kind}</p><item.icon size={19} className="text-primary shrink-0"/></div>
-          <h3 className="font-serif text-2xl md:text-3xl leading-tight mt-6 max-w-xl">{item.title}</h3>
+          <h3 className="font-sans font-semibold text-2xl md:text-3xl leading-tight mt-6 max-w-xl">{item.title}</h3>
           <p className="text-sm text-muted-foreground leading-6 mt-4">{item.context}</p>
           <div className="grid xl:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] gap-8 mt-8 min-w-0">
             <div className="min-w-0"><h4 className="font-mono text-[10px] uppercase tracking-widest text-primary mb-4">Work documented</h4><ul className="grid gap-3">{item.work.map(point => <li key={point} className="flex gap-2 text-sm leading-5"><FileCheck2 size={15} className="text-primary shrink-0 mt-0.5"/><span className="min-w-0">{point}</span></li>)}</ul></div>
@@ -51,7 +51,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
 
     <motion.article initial={{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true}} className="paper-card mt-5 grid lg:grid-cols-[.65fr_1.35fr] overflow-hidden">
       <div className="bg-foreground text-background p-7 md:p-9 flex flex-col justify-between">
-        <div><p className="text-primary font-mono text-[10px] uppercase tracking-widest">Work sample · Shopify</p><h3 className="font-serif text-2xl md:text-3xl leading-tight mt-5">Make the catalog make sense.</h3></div>
+        <div><p className="text-primary font-mono text-[10px] uppercase tracking-widest">Work sample · Shopify</p><h3 className="font-sans font-semibold text-2xl md:text-3xl leading-tight mt-5">Make the catalog make sense.</h3></div>
         <ShoppingBag size={23} className="text-primary mt-8"/>
       </div>
       <div className="p-7 md:p-9"><p className="text-sm text-muted-foreground leading-6 max-w-2xl">For ecommerce sites, I map products to collections and search intent, then plan collection and product page content, internal links, and filter structure. The goal is a catalog that is easier for customers to navigate and easier for search engines to understand.</p><div className="flex flex-wrap gap-2 mt-6">{['Product-to-collection mapping','Collection page planning','Internal linking','Filter architecture'].map(item=><span key={item} className="px-3 py-2 border border-border text-xs text-muted-foreground">{item}</span>)}</div></div>

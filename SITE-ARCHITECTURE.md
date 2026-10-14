@@ -57,7 +57,11 @@ Do not add routes before the chosen publishing path is working for direct visits
 ## Global reference sites
 
 - [Aleyda Solís](https://www.aleydasolis.com/en/) — specialist positioning, service/contact path, credibility, testimonials, useful resources, and publishing.
+- [Umair Salahuddin's SEO portfolio](https://umairsdin.com/portfolio/) — clearly distinguishes implemented case studies from strategic work samples, so visitors can judge the evidence correctly.
+- [Anton Anton's SEO work](https://www.antonanton.fr/en/work/) — makes the case-study logic explicit with context, goals, work, and results; useful for keeping project summaries scannable.
 - [ONENINE studio case study by Siya Lai](https://siyalight.com/projects/onenine/) — distinct Work, Services, News, and About destinations, described as a focused site architecture.
+- [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) — asks for clear, concise page titles and useful content; it does not prescribe a font or visual style.
+- [Google Search Central: helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) — recommends descriptive, helpful main headings and trustworthy evidence of expertise.
 - [Google Search Central: sitelinks and site structure](https://developers.google.com/search/docs/appearance/sitelinks) — logical structure, links to important pages, and concise, relevant anchor text.
 - [Google Search Central: sitemap overview](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview) — sitemap support for discovery; sitemaps supplement internal links rather than replace them.
 

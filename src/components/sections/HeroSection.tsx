@@ -19,10 +19,11 @@ const HeroSection = () => {
               <span className="status-dot" /> Semantic SEO · Entity SEO · Lalitpur, Nepal
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              <span>SEO Specialist<br />in <em>Semantic &amp; Entity SEO.</em></span>
+              <span className="hidden sm:inline">SEO Specialist<br />in <em>Nepal.</em></span>
+              <span className="sm:hidden">SEO Specialist<br />in <em>Nepal.</em></span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              I’m Rajesh Tudu, an SEO Specialist at Enfity. I work across semantic SEO, entity SEO, on-page, off-page, local, technical, and Shopify optimization, connecting search intent to useful pages.
+              I research how people search, organize topics and entities, and improve the pages and site foundations that connect them—from on-page content and local visibility to technical and Shopify SEO.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>
@@ -30,7 +31,7 @@ const HeroSection = () => {
             </motion.div>
             <div className="grid grid-cols-3 gap-4 max-w-lg mt-10 pt-6 border-t border-border">
               {[['20+', 'SEO projects'], ['5+', 'niches'], ['2+', 'years in SEO']].map(([value, label]) => <div key={label}>
-                <strong className="font-serif text-2xl md:text-3xl">{value}</strong>
+              <strong className="font-sans font-semibold text-2xl md:text-3xl">{value}</strong>
                 <span className="block text-[10px] md:text-xs text-muted-foreground mt-1">{label}</span>
               </div>)}
             </div>

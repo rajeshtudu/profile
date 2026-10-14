@@ -48,7 +48,7 @@ const ApproachSection = () => {
   return <section id="approach" className="section-padding">
   <div className="container-custom">
     <ScrollReveal><div className="grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-20 mb-12 items-end">
-      <div><p className="section-kicker mb-5">My approach</p><h2 className="section-heading">From search<br/>to <em>site structure.</em></h2></div>
+      <div><p className="section-kicker mb-5">My approach</p><h2 className="section-heading">How I approach SEO</h2></div>
       <p className="text-muted-foreground leading-7 max-w-xl">A useful SEO plan accounts for how a topic is understood across queries, entities, pages, and supporting signals. This is the working model I use to connect research with implementation.</p>
     </div></ScrollReveal>
     <div className="grid sm:grid-cols-2 lg:grid-cols-4 border-l border-t border-border">

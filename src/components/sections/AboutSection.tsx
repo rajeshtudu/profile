@@ -3,7 +3,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 
 const AboutSection = () => <section id="about" className="section-padding">
   <div className="container-custom grid lg:grid-cols-[.75fr_1.25fr] gap-14 lg:gap-24 items-start">
-    <ScrollReveal><div><p className="section-kicker mb-5">01 — About Rajesh</p><h2 className="section-heading">Strategy starts<br/><em>with the search.</em></h2>
+    <ScrollReveal><div><p className="section-kicker mb-5">01 — About</p><h2 className="section-heading">About Rajesh Tudu</h2>
       <div className="mt-9 flex flex-col gap-4 text-sm text-muted-foreground">
         <span className="flex gap-3 items-center"><Briefcase size={16} className="text-primary"/> SEO Specialist at Enfity</span>
         <span className="flex gap-3 items-center"><MapPin size={16} className="text-primary"/> Lalitpur, Nepal</span>
