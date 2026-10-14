@@ -14,13 +14,16 @@ const CaseStudyPage = lazy(() => import("./pages/CaseStudyPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 
 const queryClient = new QueryClient();
+const projectPagesBase = window.location.pathname === '/profile' || window.location.pathname.startsWith('/profile/')
+  ? '/profile'
+  : undefined;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={projectPagesBase}>
         <Suspense fallback={<div className="min-h-screen grid place-items-center bg-background text-muted-foreground" role="status">Loading portfolio page…</div>}>
           <Routes>
             <Route path="/" element={<Index />} />

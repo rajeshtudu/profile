@@ -2,6 +2,8 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import PageFrame from '@/components/PageFrame';
 
+const publicBase = window.location.pathname === '/profile' || window.location.pathname.startsWith('/profile/') ? '/profile' : '';
+
 const studies = {
   'ecommerce-search-performance': {
     type: 'E-commerce SEO · anonymized · 2025',
@@ -32,7 +34,7 @@ const studies = {
     work: ['Reviewed reported Search Console clicks and impressions alongside organic sales totals.', 'Compared the recorded outcomes with the previous period referenced in the report.'],
     finding: 'The report records 42K Search Console clicks, 1.22M impressions, and £64.1K in organic sales for the shown period. It reports increases of 31.84%, 113.06%, and 45%, respectively, against its previous period.',
     caveat: 'These are report totals, not proof that one SEO change caused the movement. The previous comparison period’s exact dates and the individual contribution of SEO actions are not available in this visual.',
-    image: '/profile/case-studies/ecommerce-visibility-sales.png',
+    image: `${publicBase}/case-studies/ecommerce-visibility-sales.png`,
     workHeading: 'What the report documents',
   },
 } as const;

@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const outDir = path.resolve('dist');
-const site = 'https://rajeshtudu.github.io/profile';
+const site = 'https://rajeshtudu.com.np';
 const pages = [
   { route: 'about', title: 'About Rajesh Tudu | SEO practice and experience', description: 'Learn about Rajesh Tudu’s SEO work, experience, training, and developing practice across semantic and entity SEO, on-page, off-page, local, technical, and e-commerce SEO.' },
   { route: 'services', title: 'SEO Services | Rajesh Tudu', description: 'Explore SEO support across semantic research, on-page, off-page, local, technical, and e-commerce SEO, scoped around your website and goals.' },
@@ -34,6 +34,7 @@ for (const page of pages) {
     .replace(/<meta property="og:title" content="[^"]*"\s*\/>/, `<meta property="og:title" content="${escapeHtml(page.title)}" />`)
     .replace(/<meta property="og:description" content="[^"]*"\s*\/>/, `<meta property="og:description" content="${escapeHtml(page.description)}" />`)
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonical}" />`)
+    .replaceAll('./assets/', '../assets/')
     .replace(/<!-- ProfilePage Schema -->[\s\S]*?<\/script>/, '')
     .replace('</head>', `  <script type="application/ld+json">${pageSchema}</script>\n  </head>`);
   await writeFile(destination, html);

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, FileCheck2, TrendingUp, Map, ShoppingBag } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+
+const publicBase = window.location.pathname === '/profile' || window.location.pathname.startsWith('/profile/') ? '/profile' : '';
 import { Link } from 'react-router-dom';
 
 const cases = [
@@ -42,7 +44,7 @@ const cases = [
     readings: [['Clicks', '+31.84%'], ['Impressions', '+113.06%'], ['Organic sales', '+45%']],
     resultLabel: 'Google Search Console + sales report · Jun 2024–Jan 2025',
     evidenceNote: 'Reported totals: 42K clicks, 1.22M impressions, and £64.1K organic sales. The report states percentage change against its previous period. These totals do not establish the effect of an individual SEO action.',
-    image: '/profile/case-studies/ecommerce-visibility-sales.png',
+    image: `${publicBase}/case-studies/ecommerce-visibility-sales.png`,
     linkLabel: 'View the performance snapshot',
     icon: TrendingUp,
   },
