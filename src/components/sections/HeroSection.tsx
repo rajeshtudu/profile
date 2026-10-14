@@ -19,11 +19,10 @@ const HeroSection = () => {
               <span className="status-dot" /> Semantic SEO · Entity SEO · Lalitpur, Nepal
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              <span className="hidden sm:inline">SEO Specialist<br />in <em>Nepal.</em></span>
-              <span className="sm:hidden">SEO Specialist<br />in <em>Nepal.</em></span>
+              SEO Specialist
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              I research how people search, organize topics and entities, and improve the pages and site foundations that connect them—from on-page content and local visibility to technical and Shopify SEO.
+              I work across on-page, off-page, local, technical, and Shopify SEO, using semantic and entity research to connect search intent with the pages a business needs.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>

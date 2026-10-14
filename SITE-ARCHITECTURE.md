@@ -4,6 +4,8 @@
 
 Build a clear, internationally legible professional profile for Rajesh Tudu as an SEO Specialist at Enfity, with semantic SEO and entity SEO as the connecting strategy across on-page, off-page, local, technical, and e-commerce work. The homepage should help a visitor answer three questions quickly: what Rajesh does, what evidence supports that, and how to start a conversation.
 
+For the hero, keep the H1 to the clear role (“SEO Specialist”), use the eyebrow for Semantic SEO, Entity SEO, and location, and use one short supporting sentence to explain the full range and how the research connects to useful pages. Avoid repeating the job title in that sentence or making “in Semantic & Entity SEO” sound like the only disciplines covered.
+
 Use global references for patterns, not templates to copy. Aleyda Solís's site connects a clear specialist identity to consulting, proof, resources, and contact. The ONENINE studio project by Siya Lai demonstrates the value of separate Work, Services, News, and About destinations. Google's guidance supports a logical structure, relevant internal links, and concise anchor text. These patterns fit this portfolio better than adding many near-identical service pages.
 
 ## Recommended sitemap
