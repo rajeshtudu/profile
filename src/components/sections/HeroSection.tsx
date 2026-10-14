@@ -22,7 +22,7 @@ const HeroSection = () => {
               SEO Specialist
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              I work across on-page, off-page, local, technical, and Shopify SEO, using semantic and entity research to connect search intent with the pages a business needs.
+              I connect search intent, topics, and entities to practical SEO work—improving content, local visibility, off-page authority, and technical foundations across different CMS platforms.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>
