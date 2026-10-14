@@ -1,24 +1,21 @@
-import { ArrowDownRight, ArrowUpRight, Compass, MapPinned, Search, Waypoints } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
 import ScrollReveal from '@/components/ScrollReveal';
-
-const disciplines = [
-  { icon: Search, name: 'Semantic & on-page', detail: 'Intent, topic coverage, page purpose' },
-  { icon: Compass, name: 'Off-page & authority', detail: 'Relevant links, trust, discovery' },
-  { icon: MapPinned, name: 'Local search', detail: 'Location signals, profiles, service areas' },
-  { icon: Waypoints, name: 'Technical & platform SEO', detail: 'Crawlability, site architecture, CMS needs' },
-];
+import HomeServicesSection from '@/components/sections/HomeServicesSection';
+import HomeExperienceToolsSection from '@/components/sections/HomeExperienceToolsSection';
 
 const niches = ['E-commerce', 'SaaS', 'Health', 'Insurance', 'Mortgage', 'B2B', 'Professional services', 'Home services', 'Travel & hospitality'];
 
 const HomeSections = ({ children }: { children?: ReactNode }) => <>
   <section id="about" className="home-intro section-padding">
     <div className="container-custom home-intro-grid">
-      <ScrollReveal><div><p className="section-kicker mb-5">How I approach search</p><h2 className="section-heading">Start with the audience, the market, and the site.</h2></div></ScrollReveal>
-      <ScrollReveal delay={0.08}><div className="home-intro-copy"><p>Product catalogs, regulated services, software, and B2B sites each have different search journeys and page needs.</p><p>I use semantic and entity research to understand those relationships, then connect the findings to practical on-page, off-page, local, and technical work.</p><Link className="project-link inline-flex items-center gap-2 mt-5" to="/about">Read about my experience <ArrowUpRight size={15}/></Link></div></ScrollReveal>
+      <ScrollReveal><div><p className="section-kicker mb-5">Professional overview</p><h2 className="section-heading">Research first. Recommendations grounded in the business.</h2></div></ScrollReveal>
+      <ScrollReveal delay={0.08}><div className="home-intro-copy"><p>I began with keyword research, on-page improvements, and reporting. My work has since grown across e-commerce and other industries.</p><p>I use semantic and entity research to understand audience needs and page relationships, then connect the findings to practical SEO priorities.</p><Link className="project-link inline-flex items-center gap-2 mt-5" to="/about">Read about my experience <ArrowUpRight size={15}/></Link></div></ScrollReveal>
     </div>
   </section>
+
+  <HomeServicesSection/>
 
   <section className="home-niches section-padding" aria-labelledby="niches-title">
     <div className="container-custom home-niches-layout">
@@ -40,13 +37,7 @@ const HomeSections = ({ children }: { children?: ReactNode }) => <>
 
   {children}
 
-  <section className="home-disciplines section-padding">
-    <div className="container-custom">
-      <ScrollReveal><div className="home-section-head"><div><p className="section-kicker mb-4">Areas of practice</p><h2 className="section-heading">SEO works as a connected system.</h2></div><p className="home-section-aside">Each discipline answers a different question. The opportunity is in finding where they connect for the site and its audience.</p></div></ScrollReveal>
-      <div className="home-discipline-list">{disciplines.map(({icon: Icon,name,detail},index)=><ScrollReveal key={name} delay={index*.04}><div className="home-discipline-row"><span className="home-discipline-icon"><Icon size={18}/></span><strong>{name}</strong><span>{detail}</span><span className="home-discipline-number">0{index+1}</span></div></ScrollReveal>)}</div>
-      <Link className="project-link inline-flex items-center gap-2 mt-7" to="/services">Explore services <ArrowUpRight size={15}/></Link>
-    </div>
-  </section>
+  <HomeExperienceToolsSection/>
 
   <section className="home-contact section-padding">
     <div className="container-custom"><ScrollReveal><div className="home-contact-panel"><div><p className="section-kicker mb-4">Start with the search problem</p><h2 className="section-heading">What are people looking for, and where does your site meet them?</h2><p>Share the goal or page you’re working on. We can start with the evidence and find a practical next step.</p></div><Link className="button-primary" to="/contact">Let’s talk <ArrowDownRight size={16}/></Link></div></ScrollReveal></div>

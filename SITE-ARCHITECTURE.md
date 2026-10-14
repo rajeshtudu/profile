@@ -10,7 +10,7 @@ Use global references for patterns, not templates to copy. Aleyda Solís's site 
 
 ## Recommended sitemap
 
-Keep the homepage as a concise editorial overview and primary landing page. Its section sequence is: positioning and contact CTAs; brief practice introduction; a concrete list of the niches Rajesh has worked in and how this changes the SEO approach; two evidence-led case-study previews; interactive process model from search research through implementation, authority, and measurement; compact SEO-discipline index; one contact close. Keep full service descriptions, experience, skills, and case-study evidence on their dedicated pages rather than repeating them on the homepage.
+Keep the homepage as the primary landing page. Its section sequence is: positioning and contact CTAs; brief professional overview; a concise preview of all six SEO disciplines; a concrete list of the niches Rajesh has worked in and how this changes the SEO approach; two evidence-led case-study previews; interactive process model from search research through implementation, authority, and measurement; selected career history and a grouped CMS/toolkit summary; one contact close. Keep full service descriptions, experience, skills, and case-study evidence on their dedicated pages, with the homepage providing enough substance to make each destination useful to explore.
 
 Keep the current sitemap:
 
