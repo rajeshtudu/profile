@@ -29,7 +29,7 @@ const Footer = () => {
           <div>
             <h2 className="section-kicker mb-4">Contact</h2>
             <a className="text-sm text-muted-foreground transition-colors hover:text-primary" href="mailto:tudurajesh34@gmail.com">tudurajesh34@gmail.com</a>
-            <SocialLinks className="mt-4" labeled />
+            <SocialLinks className="mt-4" />
             <Link className="button-primary mt-5 inline-flex" to="/contact">Discuss an SEO project <ArrowUpRight size={15}/></Link>
           </div>
         </div>

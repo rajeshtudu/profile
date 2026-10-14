@@ -6,14 +6,11 @@ const profiles = [
   { label: 'X', href: 'https://x.com/rajeshtudu', Icon: X },
 ];
 
-type SocialLinksProps = {
-  className?: string;
-  labeled?: boolean;
-};
+type SocialLinksProps = { className?: string };
 
-export default function SocialLinks({ className = '', labeled = false }: SocialLinksProps) {
+export default function SocialLinks({ className = '' }: SocialLinksProps) {
   return (
-    <nav aria-label="Social profiles" className={`social-links ${labeled ? 'social-links-labeled' : ''} ${className}`}>
+    <nav aria-label="Social profiles" className={`social-links ${className}`}>
       {profiles.map(({ label, href, Icon }) => (
         <a
           key={label}
@@ -21,10 +18,9 @@ export default function SocialLinks({ className = '', labeled = false }: SocialL
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={labeled ? undefined : label}
+          aria-label={label}
         >
           <Icon size={18} aria-hidden="true" />
-          {labeled && <span>{label}</span>}
         </a>
       ))}
     </nav>

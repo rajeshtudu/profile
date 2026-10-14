@@ -41,8 +41,6 @@
 .social-profile-link { display:inline-flex; align-items:center; gap:8px; color:hsl(var(--muted-foreground)); text-decoration:none; transition:color .2s,transform .2s; }
 .social-profile-link:hover { color:var(--orange); transform:translateY(-2px); }
 .social-profile-link:focus-visible { outline:2px solid var(--orange); outline-offset:4px; }
-.social-links-labeled { flex-wrap:wrap; gap:18px; }
-.social-links-labeled .social-profile-link { font-size:13px; }
 .hero-social-links { gap:12px; }
 .page-contact-details .social-links { align-items:flex-start; flex-direction:column; gap:14px; }
 .hero-portrait-wrap { position:relative; max-width:450px; justify-self:center; width:100%; padding:20px 20px 44px; }.portrait-frame { position:relative; padding:14px; border:1px solid var(--line); transform:rotate(2deg); background:var(--paper); }.portrait-frame:before { content:'';position:absolute;inset:7px;border:1px solid var(--line);pointer-events:none;z-index:1; }.hero-portrait { display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.72); }.portrait-note { position:absolute;left:-12px;bottom:58px;display:flex;align-items:center;gap:12px;background:var(--orange);color:#fff8ed;padding:15px 18px;font:12px/1.45 'DM Mono',monospace;box-shadow:5px 5px 0 var(--paper); }.note-mark {font-size:22px}.scroll-cue { position:absolute;bottom:28px;left:50%;display:flex;align-items:center;gap:9px;transform:translateX(-50%);color:hsl(var(--muted-foreground));font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.1em;text-decoration:none; }
