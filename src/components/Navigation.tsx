@@ -1,28 +1,30 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Work', href: '#case-studies' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Tools', href: '#projects' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Work', href: '/work' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
-  const go = (href: string) => { setOpen(false); document.getElementById(href.slice(1))?.scrollIntoView({ behavior: 'smooth' }); };
+  const location = useLocation();
+  const pageHref = (path: string) => path;
+  const close = () => setOpen(false);
   return <header className="site-header">
     <nav className="container-custom nav-inner" aria-label="Main navigation">
-      <a href="#home" onClick={e => { e.preventDefault(); go('#home'); }} className="brand-mark"><span>RT</span><span className="brand-name">Rajesh Tudu <small>SEO Specialist · Semantic SEO &amp; Entity SEO Researcher</small></span></a>
-      <div className="nav-links">{navItems.map(item => <a key={item.href} href={item.href} onClick={e => { e.preventDefault(); go(item.href); }}>{item.name}</a>)}</div>
-      <a className="nav-contact" href="#contact" onClick={e => { e.preventDefault(); go('#contact'); }}>Let’s talk <ArrowUpRight size={15}/></a>
+      <Link to={pageHref('/')} onClick={close} className="brand-mark"><span>RT</span><span className="brand-name">Rajesh Tudu <small>SEO · Semantic &amp; Entity Research</small></span></Link>
+      <div className="nav-links">{navItems.map(item => <Link key={item.href} to={pageHref(item.href)} onClick={close} aria-current={location.pathname === pageHref(item.href) ? 'page' : undefined}>{item.name}</Link>)}</div>
+      <Link className="nav-contact" to={pageHref('/contact')} onClick={close}>Let’s talk <ArrowUpRight size={15}/></Link>
       <div className="desktop-theme"><ThemeToggle /></div>
       <Button variant="ghost" size="icon" className="mobile-menu-button" aria-label={open ? 'Close menu' : 'Open menu'} onClick={() => setOpen(!open)}>{open ? <X/> : <Menu/>}</Button>
     </nav>
-    {open && <div className="mobile-nav">{navItems.map(item => <a key={item.href} href={item.href} onClick={e => { e.preventDefault(); go(item.href); }}>{item.name}</a>)}<a href="#contact" onClick={e => {e.preventDefault();go('#contact')}}>Let’s talk ↗</a></div>}
+    {open && <div className="mobile-nav">{navItems.map(item => <Link key={item.href} to={pageHref(item.href)} onClick={close}>{item.name}</Link>)}<Link to={pageHref('/contact')} onClick={close}>Let’s talk ↗</Link></div>}
   </header>;
 };
 export default Navigation;

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, ScanSearch, Network, ShoppingBag, MapPin, Link2, Braces } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import { Link } from 'react-router-dom';
 
 const services = [
   { icon: Network, number: '01', title: 'Semantic SEO & search strategy', description: 'Search intent, topic and entity research, query mapping, topical maps, and a prioritized plan for the pages your site needs.', output: 'Research → page plan' },
@@ -25,7 +26,7 @@ const ServicesSection = () => <section id="services" className="section-padding"
         <p className="font-mono text-[10px] tracking-wide text-primary mt-5">{service.output}</p>
       </motion.article>)}
     </div>
-    <a href="#contact" className="project-link inline-flex items-center gap-2 mt-8 text-sm font-semibold">Discuss a project <ArrowUpRight size={16}/></a>
+    <Link to="/contact" className="project-link inline-flex items-center gap-2 mt-8 text-sm font-semibold">Discuss a project <ArrowUpRight size={16}/></Link>
   </div>
 </section>;
 

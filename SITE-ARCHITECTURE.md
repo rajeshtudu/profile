@@ -30,12 +30,16 @@ The portfolio is not a service-area directory. Do not create country or city lan
 
 ## Technical approach for GitHub Pages
 
-The current deployment is a Vite React app at the project path `/profile/`. `BrowserRouter` routes can work after the app loads, but a normal GitHub Pages host looks for a physical file at a nested URL on direct visits and refreshes. Before publishing inner routes, choose one of these deliberately:
+The site uses Vite and React Router at the GitHub Pages project path `/profile/`. The production build creates physical `index.html` files for each known route so GitHub Pages can serve direct visits and refreshes. The route documents have unique titles, descriptions, canonicals, social metadata, and WebPage markup. React renders the page content after load, so a later rendering review should confirm how the deployed pages appear to crawlers and in no-JavaScript contexts. Keep the `/profile/` base path in the router, asset URLs, canonical URLs, sitemap, and internal links. Add only published canonical pages to `public/sitemap.xml`.
 
-1. **Preferred:** generate a static HTML file for each route during the Vite build (SSG or prerendering). This gives each page a reliable direct URL and its own title, description, canonical, social metadata, and content in the initial HTML.
-2. **Fallback:** implement and verify a GitHub Pages `404.html` route-recovery file, with the matching redirect handoff in the app. This is simpler but requires careful query/hash handling and is less clean for page-specific metadata and non-JavaScript access.
+Current routes:
 
-Do not add routes before the chosen publishing path is working for direct visits and refreshes. Keep the `/profile/` base path in the router, asset URLs, canonical URLs, sitemap, and internal links. Add only canonical, indexable pages to `public/sitemap.xml`; update `robots.txt` only if crawl rules change. Give every page a unique title, description, H1, canonical URL, and social preview. Use structured data only when it accurately describes visible page content.
+- `/profile/` — homepage overview.
+- `/profile/about/` — experience, training, and developing approach.
+- `/profile/services/` — SEO disciplines and scope.
+- `/profile/work/` — case-study index and evidence notes.
+- `/profile/work/ecommerce-search-performance/` and `/profile/work/local-search-review/` — individual anonymized case studies.
+- `/profile/contact/` — contact details.
 
 ## Content standards
 
@@ -48,13 +52,9 @@ Do not add routes before the chosen publishing path is working for direct visits
 
 ## Build sequence
 
-1. Keep the current single-page portfolio polished as the homepage; use it as the content source of truth.
-2. Select and implement the GitHub Pages publishing method for real nested routes.
-3. Create shared page shell, global navigation, breadcrumbs, footer, metadata helper, and responsive page templates.
-4. Publish About, Services, Work index, and Contact after their unique copy and evidence are ready.
-5. Migrate each substantial case study into its own page and link it from Work and relevant service pages.
-6. Add Insights only when there are original pieces ready to publish; then update sitemap and internal links.
-7. Review direct URLs, page titles, headings, mobile layout, accessibility, reduced motion, and rendered HTML before deployment.
+1. Keep each page specific and grounded in verifiable work. Expand a case study only when its records and screenshots are ready.
+2. Review deployed direct URLs, page titles, headings, mobile layout, accessibility, reduced motion, and rendered HTML.
+3. Add Insights only when original articles or research notes are ready to publish; then update sitemap and internal links.
 
 ## Global reference sites
 

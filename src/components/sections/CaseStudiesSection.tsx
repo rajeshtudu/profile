@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, FileCheck2, TrendingUp, Map, ShoppingBag } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
+import { Link } from 'react-router-dom';
 
 const cases = [
   {
     number: '01',
+    slug: 'ecommerce-search-performance',
     kind: 'E-commerce SEO · anonymized · 2025',
     title: 'Finding the click opportunity behind rising visibility',
     context: 'A Google Search Console comparison for an e-commerce site showed impressions rising faster than clicks. Page-type views revealed stronger product and collection clicks, alongside a decline in blog clicks.',
@@ -16,6 +18,7 @@ const cases = [
   },
   {
     number: '02',
+    slug: 'local-search-review',
     kind: 'Home services · local SEO · anonymized · 2024',
     title: 'Connecting local page work to organic outcomes',
     context: 'A monthly review of an anonymized home-services project tracked sitewide search performance, the pages receiving work, and organic key events.',
@@ -45,6 +48,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
             <div className="min-w-0"><h4 className="font-mono text-[10px] uppercase tracking-widest text-primary mb-4">Work documented</h4><ul className="grid gap-3">{item.work.map(point => <li key={point} className="flex gap-2 text-sm leading-5"><FileCheck2 size={15} className="text-primary shrink-0 mt-0.5"/><span className="min-w-0">{point}</span></li>)}</ul></div>
             <div className="min-w-0"><h4 className="font-mono text-[10px] uppercase tracking-widest leading-4 text-primary mb-4 break-words">{item.resultLabel}</h4><div className="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2">{item.readings.map(([month, value]) => <div key={month} className="min-w-0 border border-border px-2 sm:px-3 py-3"><span className="block font-serif text-lg sm:text-xl tabular-nums tracking-tight">{value}</span><span className="block text-[10px] text-muted-foreground mt-1">{month}</span></div>)}</div><p className="text-[11px] leading-5 text-muted-foreground mt-3 [overflow-wrap:anywhere]">{item.evidenceNote}</p></div>
           </div>
+          <Link to={`/work/${item.slug}`} className="project-link inline-flex items-center gap-2 mt-6 text-sm font-semibold">Read the case study <ArrowUpRight size={15}/></Link>
         </div>
       </motion.article>)}
     </div>
@@ -59,7 +63,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
 
     <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <p className="text-xs leading-5 text-muted-foreground max-w-2xl">Client and website names are withheld. The figures come from archived campaign reports and should be read as reported outcomes, not proof that one SEO action caused the change.</p>
-      <a href="#contact" className="project-link inline-flex items-center gap-2 text-sm font-semibold">Discuss an SEO challenge <ArrowUpRight size={15}/></a>
+      <Link to="/contact" className="project-link inline-flex items-center gap-2 text-sm font-semibold">Discuss an SEO challenge <ArrowUpRight size={15}/></Link>
     </div>
   </div>
 </section>;

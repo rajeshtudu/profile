@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,9 +14,9 @@ const Footer = () => {
           className="flex flex-col md:flex-row items-center justify-between gap-4"
         >
           {/* Logo */}
-          <a href="#home" className="text-xl font-bold text-gradient">
+          <Link to="/" className="text-xl font-bold text-gradient">
             RT
-          </a>
+          </Link>
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">

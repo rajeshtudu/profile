@@ -22,7 +22,7 @@ const HeroSection = () => {
               SEO Specialist
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              Good SEO starts with understanding what people are looking for. I connect that intent to topics, entities, and useful pages, then plan improvements around the CMS a business already uses.
+              What keeps me interested in SEO is the work behind a useful result: understanding the search, deciding which page should answer it, and making that page clearer. I’m building that practice across on-page, off-page, local, technical, and e-commerce SEO, with semantic and entity research at the center.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>
