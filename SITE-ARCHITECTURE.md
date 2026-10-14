@@ -10,7 +10,9 @@ Use global references for patterns, not templates to copy. Aleyda Solís's site 
 
 ## Recommended sitemap
 
-Keep the current homepage as the overview and primary landing page:
+Keep the homepage as a concise editorial overview and primary landing page. Its section sequence is: positioning and contact CTAs; brief practice introduction; interactive search-need-to-page model; two evidence-led case-study previews; compact SEO-discipline index; one contact close. Keep full service descriptions, experience, skills, and case-study evidence on their dedicated pages rather than repeating them on the homepage.
+
+Keep the current sitemap:
 
 - `/profile/` — Positioning, brief bio, service overview, selected proof, process, and a clear contact path.
 - `/profile/about/` — Experience, approach, credentials, tools, and a fuller account of how semantic and entity thinking informs the wider SEO disciplines.
@@ -24,7 +26,7 @@ Potential service detail pages, in priority order, are semantic and entity SEO, 
 
 ## Navigation and page relationships
 
-Use a short global navigation: About, Services, Work, Insights (once useful), Contact. Keep the homepage sections concise and link to the deeper page for detail. Link each service page to relevant case studies; each case study back to the relevant service and to the next useful case; and every page to Contact. Use descriptive link text such as “View the Shopify SEO case study,” rather than “Learn more.” Add breadcrumbs to inner pages and include the active page in the document title and one clear H1.
+Use a short global navigation: About, Services, Work, Contact, with Insights added once useful. Keep the homepage sections concise and link to the deeper page for detail. Give each inner page a relevant continuation: About and Services lead to Work; Work leads to Contact; case studies provide their own links back to all work and toward a conversation; Contact ends without a redundant generic case-study prompt. Link each service page to relevant case studies and every page to Contact. Use descriptive link text such as “View the Shopify SEO case study,” rather than “Learn more.” Add breadcrumbs to inner pages and include the active page in the document title and one clear H1.
 
 The portfolio is not a service-area directory. Do not create country or city landing pages unless Rajesh actually serves those markets in a distinct, supportable way. Keep his real location and role accurate while presenting the work to an international audience.
 

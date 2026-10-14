@@ -6,9 +6,9 @@ import Footer from '@/components/Footer';
 import { MotionConfig } from 'framer-motion';
 import ScrollProgress from '@/components/ScrollProgress';
 
-type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; titleTag?: string };
+type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; titleTag?: string; next?: { title: string; href: string; label: string } | false };
 
-export default function PageFrame({ kicker, title, intro, children, titleTag }: PageFrameProps) {
+export default function PageFrame({ kicker, title, intro, children, titleTag, next }: PageFrameProps) {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,11 +35,11 @@ export default function PageFrame({ kicker, title, intro, children, titleTag }: 
         <div className="page-breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span>{title}</span></div>
       </header>
       {children}
-      <section className="page-next container-custom" aria-label="Continue exploring">
+      {next && <section className="page-next container-custom" aria-label="Continue exploring">
         <p className="section-kicker">Next step</p>
-        <h2>Want to see how the work looks in practice?</h2>
-        <Link to="/work" className="project-link inline-flex items-center gap-2">Explore case studies <ArrowUpRight size={16}/></Link>
-      </section>
+        <h2>{next.title}</h2>
+        <Link to={next.href} className="project-link inline-flex items-center gap-2">{next.label} <ArrowUpRight size={16}/></Link>
+      </section>}
     </main>
     <Footer/>
   </div></MotionConfig>;

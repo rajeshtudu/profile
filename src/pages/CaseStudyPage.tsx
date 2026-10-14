@@ -29,7 +29,7 @@ export default function CaseStudyPage() {
   const { caseSlug } = useParams();
   const study = caseSlug ? studies[caseSlug as keyof typeof studies] : undefined;
   if (!study) return <Navigate to="/work" replace/>;
-  return <PageFrame kicker={study.type} title={study.title} intro={study.intro}>
+  return <PageFrame kicker={study.type} title={study.title} intro={study.intro} next={false}>
     <div className="container-custom case-study-detail">
       <section className="case-study-block"><p className="section-kicker">Context</p><h2>What I reviewed</h2><p>{study.intro}</p><p>{study.source}</p></section>
       <section className="case-study-block"><p className="section-kicker">Comparison</p><h2>Reported performance</h2><div className="grid md:grid-cols-3 gap-3 mt-6">{study.metrics.map(([label, before, after])=><article className="paper-card p-5" key={label}><p className="text-xs text-muted-foreground">{label}</p><div className="flex items-baseline justify-between gap-2 mt-5"><span className="text-sm text-muted-foreground">{before}</span><span aria-hidden="true">→</span><span className="text-lg font-semibold">{after}</span></div><p className="text-[10px] text-muted-foreground mt-3">Earlier period → later period</p></article>)}</div></section>
