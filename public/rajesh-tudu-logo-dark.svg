@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 84" role="img" aria-labelledby="title description">
+  <title id="title">Rajesh Tudu · Semantic &amp; Entity SEO</title>
+  <desc id="description">A custom interlocking RT monogram with the Rajesh Tudu wordmark.</desc>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.2">
+    <path d="M8 72V12h23c14 0 22 7 22 19s-8 19-22 19H8m23 0 25 22" stroke="#f3eee5"/>
+    <path d="M42 12h31M57.5 12v60" stroke="#ee795a"/>
+  </g>
+  <circle cx="57.5" cy="72" r="2.4" fill="#ee795a"/>
+  <text x="99" y="41" fill="#f3eee5" font-family="DM Sans, Arial, sans-serif" font-size="27" font-weight="650" letter-spacing="-1">Rajesh Tudu</text>
+  <text x="100" y="63" fill="#b8afa3" font-family="DM Mono, monospace" font-size="9.5" font-weight="500" letter-spacing="1.1">SEO SPECIALIST · SEMANTIC &amp; ENTITY SEO</text>
+</svg>

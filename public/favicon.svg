@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <title>Rajesh Tudu</title>
-  <rect width="64" height="64" rx="12" fill="#28231f"/>
-  <rect x="4" y="4" width="56" height="56" rx="9" fill="none" stroke="#d85c3e" stroke-width="1.5"/>
-  <text x="32" y="42" text-anchor="middle" fill="#f6f3ec" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-2">R<tspan fill="#ee795a">T</tspan></text>
-  <circle cx="51" cy="14" r="2" fill="#ee795a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Rajesh Tudu</title>
+  <rect width="64" height="64" rx="14" fill="#28231f"/>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="4.2">
+    <path d="M10 53V12h16c10 0 15 5 15 13s-5 13-15 13H10m16 0 17 15" stroke="#f6f3ec"/>
+    <path d="M34 12h19M43.5 12v41" stroke="#ee795a"/>
+  </g>
+  <circle cx="43.5" cy="53" r="2.7" fill="#ee795a"/>
 </svg>

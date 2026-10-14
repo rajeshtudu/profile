@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 76" role="img" aria-labelledby="title description">
-  <title id="title">Rajesh Tudu</title>
-  <desc id="description">Rajesh Tudu, SEO Specialist focused on semantic and entity research.</desc>
-  <g transform="translate(2 2)">
-    <rect width="66" height="66" rx="3" fill="none" stroke="#d85c3e" stroke-width="1.5"/>
-    <text x="33" y="43" text-anchor="middle" fill="#28231f" font-family="Arial, sans-serif" font-size="25" font-weight="600" letter-spacing="-1.8">R<tspan fill="#d85c3e">T</tspan></text>
-    <circle cx="56" cy="10" r="2.5" fill="#d85c3e"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 84" role="img" aria-labelledby="title description">
+  <title id="title">Rajesh Tudu · Semantic &amp; Entity SEO</title>
+  <desc id="description">A custom interlocking RT monogram with the Rajesh Tudu wordmark.</desc>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.2">
+    <path d="M8 72V12h23c14 0 22 7 22 19s-8 19-22 19H8m23 0 25 22" stroke="#28231f"/>
+    <path d="M42 12h31M57.5 12v60" stroke="#d85c3e"/>
   </g>
-  <text x="88" y="32" fill="#28231f" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="-.5">Rajesh Tudu</text>
-  <text x="89" y="52" fill="#70645b" font-family="monospace" font-size="10" letter-spacing="1.1">SEO · SEMANTIC &amp; ENTITY RESEARCH</text>
+  <circle cx="57.5" cy="72" r="2.4" fill="#d85c3e"/>
+  <text x="99" y="41" fill="#28231f" font-family="DM Sans, Arial, sans-serif" font-size="27" font-weight="650" letter-spacing="-1">Rajesh Tudu</text>
+  <text x="100" y="63" fill="#70645b" font-family="DM Mono, monospace" font-size="9.5" font-weight="500" letter-spacing="1.1">SEO SPECIALIST · SEMANTIC &amp; ENTITY SEO</text>
 </svg>
