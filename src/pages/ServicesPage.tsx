@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function ServicesPage() {
-  return <PageFrame kicker="Services" title="SEO support across the parts of a site" intro="My experience includes e-commerce SEO and work across multiple client niches at Enfity. I connect search research to focused optimization and broader SEO plans, adapting recommendations to each business and its CMS." actions={[{ label: 'Discuss an SEO opportunity', href: '/contact', primary: true }, { label: 'Review selected work', href: '/work' }]} next={false}>
+  return <PageFrame kicker="Services" title="SEO support across the parts of a site" intro="I connect search research to focused optimization and broader SEO plans, adapting recommendations to each business, its market, and its CMS." actions={[{ label: 'Discuss an SEO opportunity', href: '/contact', primary: true }, { label: 'Review selected work', href: '/work' }]} next={false}>
     <ServicesSection/>
     <section className="container-custom page-content-grid page-content-grid--bordered">
       <div><p className="section-kicker">Related evidence</p><h2 className="section-heading">See how the work was reviewed</h2></div>
