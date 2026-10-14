@@ -10,20 +10,20 @@ const disciplines = [
   { icon: Waypoints, name: 'Technical & platform SEO', detail: 'Crawlability, site architecture, CMS needs' },
 ];
 
-const niches = ['E-commerce', 'SaaS', 'Insurance', 'Healthcare', 'B2B', 'Home services', 'Travel & hospitality', 'Professional services'];
+const niches = ['E-commerce', 'SaaS', 'Health', 'Insurance', 'Mortgage', 'B2B', 'Professional services', 'Home services', 'Travel & hospitality'];
 
 const HomeSections = ({ children }: { children?: ReactNode }) => <>
   <section id="about" className="home-intro section-padding">
     <div className="container-custom home-intro-grid">
-      <ScrollReveal><div><p className="section-kicker mb-5">A search-first practice</p><h2 className="section-heading">Good SEO starts by understanding what the search is asking for.</h2></div></ScrollReveal>
-      <ScrollReveal delay={0.08}><div className="home-intro-copy"><p>I connect the query to the person behind it, the page that should answer it, and the signals that help that page earn visibility.</p><p>My work spans semantic and entity research and the on-page, off-page, local, and technical work that helps sites serve their audiences.</p><Link className="project-link inline-flex items-center gap-2 mt-5" to="/about">A little more about me <ArrowUpRight size={15}/></Link></div></ScrollReveal>
+      <ScrollReveal><div><p className="section-kicker mb-5">How I approach search</p><h2 className="section-heading">Start with the audience, the market, and the site.</h2></div></ScrollReveal>
+      <ScrollReveal delay={0.08}><div className="home-intro-copy"><p>Product catalogs, regulated services, software, and B2B sites each have different search journeys and page needs.</p><p>I use semantic and entity research to understand those relationships, then connect the findings to practical on-page, off-page, local, and technical work.</p><Link className="project-link inline-flex items-center gap-2 mt-5" to="/about">Read about my experience <ArrowUpRight size={15}/></Link></div></ScrollReveal>
     </div>
   </section>
 
   <section className="home-niches section-padding" aria-labelledby="niches-title">
     <div className="container-custom home-niches-layout">
-      <ScrollReveal><div><p className="section-kicker mb-4">Experience across 5+ niches</p><h2 id="niches-title" className="section-heading">Different markets ask different things of search.</h2></div></ScrollReveal>
-      <ScrollReveal delay={0.08}><div className="home-niches-detail"><p>I’ve applied SEO across e-commerce, SaaS, insurance, healthcare, B2B, home services, travel and hospitality, and professional services. Each brings its own audience, search journey, and site needs, so I adapt the research and priorities to the niche rather than reuse one template.</p><div className="home-niche-tags">{niches.map(niche => <span key={niche}>{niche}</span>)}</div><div className="home-niche-actions"><Link to="/contact" className="button-primary">Discuss your organic search goals <ArrowUpRight size={15}/></Link><Link to="/services" className="button-secondary">Review SEO services <ArrowUpRight size={15}/></Link></div></div></ScrollReveal>
+      <ScrollReveal><div><p className="section-kicker mb-4">Experience across 5+ niches</p><h2 id="niches-title" className="section-heading">E-commerce SEO, alongside work in other markets.</h2></div></ScrollReveal>
+      <ScrollReveal delay={0.08}><div className="home-niches-detail"><p>These markets bring different audiences, buying journeys, and site structures. I use that experience to understand each business before setting search and page priorities.</p><div className="home-niche-tags">{niches.map(niche => <span key={niche}>{niche}</span>)}</div><div className="home-niche-actions"><Link to="/contact" className="button-primary">Discuss your organic search goals <ArrowUpRight size={15}/></Link><Link to="/services" className="button-secondary">Review SEO services <ArrowUpRight size={15}/></Link></div></div></ScrollReveal>
     </div>
   </section>
 

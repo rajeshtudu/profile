@@ -2,9 +2,9 @@
 
 ## Direction
 
-Build a clear, internationally legible professional profile for Rajesh Tudu as an SEO Specialist at Enfity, with semantic SEO and entity SEO as the connecting strategy across on-page, off-page, local, technical, and e-commerce work. The homepage should help a visitor answer three questions quickly: what Rajesh does, what evidence supports that, and how to start a conversation.
+Build a clear, internationally legible professional profile for Rajesh Tudu as an SEO Specialist at Enfity. His experience includes working as an e-commerce SEO specialist and SEO work across SaaS, health, insurance, mortgage, B2B, professional services, and other niches. Semantic SEO and entity SEO connect his work across on-page, off-page, local, technical, and e-commerce disciplines. The homepage should state both the e-commerce specialization and wider industry experience clearly, then show supporting evidence and a direct contact path.
 
-For the hero, keep the H1 to the clear role (“SEO Specialist”), use the eyebrow for Semantic SEO, Entity SEO, and location, and use one short supporting sentence to explain the full range and how the research connects to useful pages. Avoid repeating the job title in that sentence or making “in Semantic & Entity SEO” sound like the only disciplines covered.
+For the hero, use the eyebrow for the current SEO role and semantic/entity focus. Keep the H1 short (“SEO across industries”); the supporting copy should explicitly say that Rajesh has worked as an e-commerce SEO specialist and has also done SEO work in SaaS, health, insurance, mortgage, B2B, professional services, and more. Keep the list easy to scan, then explain the connection to his broader SEO disciplines without repeating the list in the next section.
 
 Use global references for patterns, not templates to copy. Aleyda Solís's site connects a clear specialist identity to consulting, proof, resources, and contact. The ONENINE studio project by Siya Lai demonstrates the value of separate Work, Services, News, and About destinations. Google's guidance supports a logical structure, relevant internal links, and concise anchor text. These patterns fit this portfolio better than adding many near-identical service pages.
 

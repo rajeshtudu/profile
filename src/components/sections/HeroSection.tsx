@@ -20,10 +20,10 @@ const HeroSection = () => {
               <span className="status-dot" /> SEO Specialist at Enfity · Semantic &amp; Entity SEO
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              I follow the search to the page.
+              SEO across industries.
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              Search data shows where something changed. I look at what the searcher needs, which page should meet it, and what might be getting in the way. I bring semantic and entity research together with on-page, off-page, local, technical, and e-commerce SEO across different CMS platforms. My case studies show the work, source data, and what the numbers can and cannot prove.
+              I’ve worked as an e-commerce SEO specialist and also on SEO for SaaS, health, insurance, mortgage, B2B, professional services, and more. I use semantic and entity research alongside on-page, off-page, local, and technical SEO, adapting the work to each market and site.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <Link className="button-primary" to="/work">View case studies <ArrowUpRight size={16} /></Link>
