@@ -1,5 +1,6 @@
 import { ArrowUpRight, ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { BrandIdentity } from '@/components/BrandIdentity';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,10 +10,7 @@ const Footer = () => {
       <div className="container-custom">
         <div className="grid gap-10 py-12 md:grid-cols-[1.3fr_.8fr_1fr] md:gap-12">
           <div>
-            <Link to="/" className="inline-flex items-center gap-3" aria-label="Rajesh Tudu, home">
-              <span className="grid h-11 w-11 place-items-center border border-primary font-mono text-sm text-primary">RT</span>
-              <span className="font-semibold text-foreground">Rajesh Tudu</span>
-            </Link>
+            <Link to="/" aria-label="Rajesh Tudu, home"><BrandIdentity /></Link>
             <p className="mt-4 text-sm font-medium text-foreground">SEO Specialist · Semantic &amp; Entity SEO</p>
             <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">E-commerce SEO experience and client work across a range of industries and business types.</p>
           </div>

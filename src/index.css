@@ -27,7 +27,7 @@
 .nav-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; }
 .desktop-theme { display:flex; align-items:center; }.desktop-theme button { background:transparent;border-color:var(--line); }
 .brand-mark { display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink); }
-.brand-mark>span:first-child { display:grid; place-items:center; width:39px; height:39px; border:1px solid var(--orange); color:var(--orange); font:500 13px 'DM Mono',monospace; letter-spacing:-.06em; }
+.brand-symbol { display:block; flex:none; width:39px; height:39px; }
 .brand-name { font-size:14px; font-weight:700; letter-spacing:-.02em; line-height:1.2; }.brand-name small { display:block; margin-top:4px; font:10px 'DM Mono',monospace; letter-spacing:.06em; color:hsl(var(--muted-foreground)); text-transform:uppercase; }
 .nav-links { display:flex; align-items:center; gap:clamp(16px,3vw,42px); }.nav-links a,.nav-contact { color:hsl(var(--muted-foreground)); font-size:12px; text-decoration:none; transition:color .2s; }.nav-links a:hover,.nav-contact:hover { color:var(--orange); }
 .nav-contact { display:flex; align-items:center; gap:5px; color:var(--ink); }.mobile-menu-button,.mobile-nav { display:none; }

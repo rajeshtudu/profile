@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/ThemeToggle';
+import { BrandIdentity } from '@/components/BrandIdentity';
 
 const navItems = [
   { name: 'About', href: '/about' },
@@ -18,7 +19,7 @@ const Navigation = () => {
   const close = () => setOpen(false);
   return <header className="site-header">
     <nav className="container-custom nav-inner" aria-label="Main navigation">
-      <Link to={pageHref('/')} onClick={close} className="brand-mark"><span>RT</span><span className="brand-name">Rajesh Tudu <small>SEO · Semantic &amp; Entity Research</small></span></Link>
+      <Link to={pageHref('/')} onClick={close} aria-label="Rajesh Tudu, home"><BrandIdentity /></Link>
       <div className="nav-links">{navItems.map(item => <Link key={item.href} to={pageHref(item.href)} onClick={close} aria-current={location.pathname === pageHref(item.href) ? 'page' : undefined}>{item.name}</Link>)}</div>
       <Link className="nav-contact" to={pageHref('/contact')} onClick={close}>Let’s talk <ArrowUpRight size={15}/></Link>
       <div className="desktop-theme"><ThemeToggle /></div>

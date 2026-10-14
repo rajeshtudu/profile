@@ -4,7 +4,7 @@ import path from 'node:path';
 const outDir = path.resolve('dist');
 const site = 'https://rajeshtudu.com.np';
 const pages = [
-  { route: 'about', title: 'About Rajesh Tudu | SEO practice and experience', description: 'Learn about Rajesh Tudu’s SEO work, experience, training, and developing practice across semantic and entity SEO, on-page, off-page, local, technical, and e-commerce SEO.' },
+  { route: 'about', title: 'About Rajesh Tudu | SEO practice and experience', description: 'Learn about Rajesh Tudu’s experience, training, and SEO practice across semantic, entity, on-page, off-page, local, technical, and e-commerce SEO.' },
   { route: 'services', title: 'SEO Services | Rajesh Tudu', description: 'Explore SEO support across semantic research, on-page, off-page, local, technical, and e-commerce SEO, scoped around your website and goals.' },
   { route: 'work', title: 'SEO Case Studies and Work | Rajesh Tudu', description: 'Review anonymized SEO case studies with their data sources, comparison periods, documented work, reported results, and evidence limitations.' },
   { route: 'work/ecommerce-search-performance', title: 'E-commerce Search Performance Case Study | Rajesh Tudu', description: 'A Search Console review comparing e-commerce visibility and clicks across sitewide, product, collection, and blog pages, with evidence caveats.' },
@@ -17,6 +17,7 @@ const escapeHtml = (value) => value.replaceAll('&', '&amp;').replaceAll('"', '&q
 const template = await readFile(path.join(outDir, 'index.html'), 'utf8');
 for (const page of pages) {
   const destination = path.join(outDir, page.route, 'index.html');
+  const relativeRoot = '../'.repeat(page.route.split('/').length);
   await mkdir(path.dirname(destination), { recursive: true });
   const canonical = `${site}/${page.route}/`;
   const pageSchema = JSON.stringify({
@@ -34,7 +35,10 @@ for (const page of pages) {
     .replace(/<meta property="og:title" content="[^"]*"\s*\/>/, `<meta property="og:title" content="${escapeHtml(page.title)}" />`)
     .replace(/<meta property="og:description" content="[^"]*"\s*\/>/, `<meta property="og:description" content="${escapeHtml(page.description)}" />`)
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonical}" />`)
-    .replaceAll('./assets/', '../assets/')
+    .replaceAll('./assets/', `${relativeRoot}assets/`)
+    .replaceAll('href="./favicon.svg"', `href="${relativeRoot}favicon.svg"`)
+    .replaceAll('href="./favicon.ico"', `href="${relativeRoot}favicon.ico"`)
+    .replaceAll('href="./apple-touch-icon.png"', `href="${relativeRoot}apple-touch-icon.png"`)
     .replace(/<!-- ProfilePage Schema -->[\s\S]*?<\/script>/, '')
     .replace('</head>', `  <script type="application/ld+json">${pageSchema}</script>\n  </head>`);
   await writeFile(destination, html);

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Rajesh Tudu</title>
+  <rect width="64" height="64" rx="12" fill="#28231f"/>
+  <rect x="4" y="4" width="56" height="56" rx="9" fill="none" stroke="#d85c3e" stroke-width="1.5"/>
+  <text x="32" y="42" text-anchor="middle" fill="#f6f3ec" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-2">R<tspan fill="#ee795a">T</tspan></text>
+  <circle cx="51" cy="14" r="2" fill="#ee795a"/>
+</svg>
