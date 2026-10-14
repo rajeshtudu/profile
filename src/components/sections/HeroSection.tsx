@@ -1,6 +1,7 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import profileImage from '@/assets/rajesh-profile.jpg';
 
 const HeroSection = () => {
@@ -16,17 +17,17 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-[1.2fr_.8fr] gap-12 lg:gap-20 items-center">
           <div>
             <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }} className="eyebrow mb-7">
-              <span className="status-dot" /> Semantic SEO · Entity SEO · Lalitpur, Nepal
+              <span className="status-dot" /> SEO Specialist at Enfity · Semantic &amp; Entity SEO
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              SEO Specialist
+              I follow the search to the page.
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              What keeps me interested in SEO is the work behind a useful result: understanding the search, deciding which page should answer it, and making that page clearer. I’m building that practice across on-page, off-page, local, technical, and e-commerce SEO, with semantic and entity research at the center.
+              Search data shows where something changed. I look at what the searcher needs, which page should meet it, and what might be getting in the way. I bring semantic and entity research together with on-page, off-page, local, technical, and e-commerce SEO across different CMS platforms. My case studies show the work, source data, and what the numbers can and cannot prove.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
-              <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>
-              <a className="button-secondary" href="#services">Explore services</a>
+              <Link className="button-primary" to="/work">View case studies <ArrowUpRight size={16} /></Link>
+              <Link className="button-secondary" to="/contact">Get in touch</Link>
             </motion.div>
             <div className="grid grid-cols-3 gap-4 max-w-lg mt-10 pt-6 border-t border-border">
               {[['20+', 'SEO projects'], ['5+', 'niches'], ['2+', 'years in SEO']].map(([value, label]) => <div key={label}>
@@ -42,7 +43,7 @@ const HeroSection = () => {
           </div>
           <motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: .2, duration: .7 }} style={{ y: prefersReducedMotion ? 0 : portraitY }} className="hero-portrait-wrap">
             <div className="portrait-frame"><img src={profileImage} alt="Portrait of Rajesh Tudu, SEO Specialist focused on semantic SEO and entity SEO" className="hero-portrait" /></div>
-            <div className="portrait-note"><span className="note-mark">✳</span><span>Understand the search.<br/>Plan the right page.</span></div>
+            <div className="portrait-note"><span className="note-mark">↗</span><span>Search intent<br/>Topic + entity<br/>Page plan</span></div>
           </motion.div>
         </div>
         <a href="#about" className="scroll-cue"><span>Scroll to explore</span><ArrowDown size={16}/></a>
