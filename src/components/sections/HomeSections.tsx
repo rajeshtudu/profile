@@ -18,8 +18,6 @@ const HomeSections = ({ children }: { children?: ReactNode }) => <>
     </div>
   </section>
 
-  {children}
-
   <section className="home-work section-padding">
     <div className="container-custom">
       <ScrollReveal><div className="home-section-head"><div><p className="section-kicker mb-4">Selected evidence</p><h2 className="section-heading">Search performance, in context.</h2></div><Link className="project-link inline-flex items-center gap-2" to="/work">Browse all work <ArrowUpRight size={15}/></Link></div></ScrollReveal>
@@ -30,6 +28,8 @@ const HomeSections = ({ children }: { children?: ReactNode }) => <>
       <p className="home-proof-note">Anonymized results are reported with their source, comparison period, and limitations.</p>
     </div>
   </section>
+
+  {children}
 
   <section className="home-disciplines section-padding">
     <div className="container-custom">
