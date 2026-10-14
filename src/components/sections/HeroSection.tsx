@@ -23,7 +23,7 @@ const HeroSection = () => {
               <span className="sm:hidden">Search intent.<br /><em>Right pages.</em></span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              I’m Rajesh Tudu, an SEO specialist focused on semantic and entity SEO. I study what people mean when they search, map those needs to the right pages, and connect content, on-page, off-page, local, technical and Shopify SEO in one practical plan.
+              I help businesses turn search demand into a clearer site structure, stronger pages, and measurable organic growth. My work is grounded in semantic SEO and entity SEO.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>
@@ -42,7 +42,7 @@ const HeroSection = () => {
             </div>
           </div>
           <motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: .2, duration: .7 }} style={{ y: prefersReducedMotion ? 0 : portraitY }} className="hero-portrait-wrap">
-            <div className="portrait-frame"><img src={profileImage} alt="Rajesh Tudu" className="hero-portrait" /></div>
+            <div className="portrait-frame"><img src={profileImage} alt="Portrait of Rajesh Tudu, SEO Specialist focused on semantic SEO and entity SEO" className="hero-portrait" /></div>
             <div className="portrait-note"><span className="note-mark">✳</span><span>Understand the search.<br/>Plan the right page.</span></div>
           </motion.div>
         </div>

@@ -13,8 +13,8 @@ const AboutSection = () => <section id="about" className="section-padding">
     <ScrollReveal delay={0.1}><div className="pt-2">
       <p className="about-story">I study how people search, then map that demand to the pages a site needs.</p>
       <div className="mt-8 space-y-5 text-muted-foreground leading-7 max-w-2xl">
-        <p>My process begins with the business, its audience and the questions behind search demand. I use that research to build topic and keyword maps, plan useful pages, and connect them through clear site architecture and internal links.</p>
-        <p>Then I help improve the whole search experience: content and on-page relevance, local visibility, off-page authority, technical foundations, and ecommerce discovery on platforms such as Shopify. I also build lightweight Python tools for SEO research and recurring workflows.</p>
+        <p>I work from the relationship between a business, its audience, and the topics it can credibly serve. That means looking beyond isolated keywords to the entities, attributes, questions, and decisions that shape a useful page.</p>
+        <p>My experience spans content and on-page improvements, local visibility, off-page authority, technical foundations, and ecommerce discovery on platforms such as Shopify. I use Python for small SEO research tools and repeatable workflows, and I keep recommendations tied to evidence from search results and performance data.</p>
       </div>
       <a href="#experience" className="project-link inline-flex items-center gap-2 mt-8 text-sm font-semibold">More about my path <ArrowUpRight size={16}/></a>
     </div></ScrollReveal>
