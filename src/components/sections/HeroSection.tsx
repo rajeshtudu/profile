@@ -1,8 +1,9 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import profileImage from '@/assets/rajesh-profile.jpg';
+import SocialLinks from '@/components/SocialLinks';
 
 const HeroSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -36,8 +37,7 @@ const HeroSection = () => {
               </div>)}
             </div>
             <div className="flex gap-4 mt-10 text-muted-foreground">
-              <a className="social-link" href="https://linkedin.com/in/rajeshtudu" aria-label="LinkedIn"><Linkedin size={18}/></a>
-              <a className="social-link" href="https://github.com/rajeshtudu" aria-label="GitHub"><Github size={18}/></a>
+              <SocialLinks className="hero-social-links" />
               <a className="social-link" href="mailto:tudurajesh34@gmail.com" aria-label="Email"><Mail size={18}/></a>
             </div>
           </div>

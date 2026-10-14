@@ -1,6 +1,7 @@
 import { ArrowUpRight, ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { BrandIdentity } from '@/components/BrandIdentity';
+import SocialLinks from '@/components/SocialLinks';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,7 +29,7 @@ const Footer = () => {
           <div>
             <h2 className="section-kicker mb-4">Contact</h2>
             <a className="text-sm text-muted-foreground transition-colors hover:text-primary" href="mailto:tudurajesh34@gmail.com">tudurajesh34@gmail.com</a>
-            <a className="mt-3 flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-primary" href="https://linkedin.com/in/rajeshtudu" target="_blank" rel="noreferrer">Connect on LinkedIn <ArrowUpRight size={14}/></a>
+            <SocialLinks className="mt-4" labeled />
             <Link className="button-primary mt-5 inline-flex" to="/contact">Discuss an SEO project <ArrowUpRight size={15}/></Link>
           </div>
         </div>
