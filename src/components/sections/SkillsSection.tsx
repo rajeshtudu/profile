@@ -14,6 +14,10 @@ const SkillsSection = () => <section id="skills" className="section-padding bg-s
       <div className="flex items-center gap-3 mb-7"><span className="w-9 h-9 grid place-items-center bg-primary/10 text-primary"><group.icon size={17}/></span><h3 className="font-semibold text-base">{group.title}</h3></div>
       <div className="flex flex-wrap gap-2">{group.items.map(item=><span key={item} className="px-2.5 py-1.5 border border-border text-xs text-muted-foreground">{item}</span>)}</div>
     </motion.div>)}</div>
+    <div className="mt-10 border-t border-border pt-6">
+      <p className="section-kicker mb-4">Industry experience</p>
+      <div className="flex flex-wrap gap-2">{['E-commerce','Home services','Healthcare','Travel & hospitality','Professional services'].map(item=><span key={item} className="px-3 py-2 border border-border bg-background/50 text-xs text-muted-foreground">{item}</span>)}</div>
+    </div>
   </div>
 </section>;
 export default SkillsSection;

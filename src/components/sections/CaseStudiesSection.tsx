@@ -8,21 +8,21 @@ const cases = [
     kind: 'E-commerce SEO · anonymized · 2025',
     title: 'Finding the click opportunity behind rising visibility',
     context: 'A Google Search Console comparison for an e-commerce site showed impressions rising faster than clicks. Page-type views revealed stronger product and collection clicks, alongside a decline in blog clicks.',
-    work: ['Compared sitewide Search Console performance across two reporting periods', 'Reviewed product, collection and blog URL groups separately', 'Used the split between impressions and clicks to identify content and CTR opportunities'],
+    work: ['Compared Search Console sitewide totals across two periods', 'Split product, collection and blog performance to find the visibility-to-click gap'],
     readings: [['Impressions', '+31%'], ['Clicks', '−2%'], ['Avg. position', '26.2']],
     resultLabel: 'Google Search Console · Jun 9–Sep 16, 2025 vs Mar 1–Jun 8, 2025',
-    evidenceNote: 'Sitewide impressions rose from 883K to 1.16M; clicks shifted from 5.84K to 5.73K and average position improved from 26.7 to 26.2. Product clicks rose 46% and collection clicks 43%, while blog clicks declined 24%. Page-filtered GSC totals may be partial; use those category figures directionally. Based on the supplied Search Console screenshots.',
+    evidenceNote: 'Sitewide: impressions 883K → 1.16M; clicks 5.84K → 5.73K; average position 26.7 → 26.2. Product clicks rose 46%, collection clicks 43%, and blog clicks fell 24%. Page-filtered GSC totals may be partial, so category figures are directional. Source: supplied Search Console screenshots.',
     icon: TrendingUp,
   },
   {
     number: '02',
-    kind: 'Dental SEO · local visibility · anonymized · 2022',
-    title: 'Establishing a local ranking baseline across 49 points',
-    context: 'A local search campaign tracked one target query across a 49-point grid around its service area. The May 2022 report records the grid setup and a small improvement in average position during the month.',
-    work: ['Set up a 49-point local ranking grid, spaced 5 km apart', 'Reviewed Google Business Profile and local search visibility', 'Documented an average grid position change from 6.2 to 5.9 in May 2022'],
-    readings: [['June', '16'], ['July', '41'], ['August', '51']],
-    resultLabel: 'Google Analytics · organic traffic · 2022',
-    evidenceNote: 'The August 2022 monthly report identifies Google Analytics as the source. These are campaign-level observations, not proof that one task caused the change.',
+    kind: 'Home services · local SEO · anonymized · 2024',
+    title: 'Connecting local page work to organic outcomes',
+    context: 'A monthly review of an anonymized home-services project tracked sitewide search performance, the pages receiving work, and organic key events.',
+    work: ['Compared Search Console clicks and impressions month over month', 'Separated performance for the pages receiving work from sitewide totals', 'Reviewed GA4 organic key events alongside search visibility'],
+    readings: [['Impressions', '+20.9%'], ['GSC clicks', '+2.3%'], ['GA4 key events', '+8.1%']],
+    resultLabel: 'Google Search Console + GA4 · Aug–Sep 2024',
+    evidenceNote: 'Pages worked: +24.26% impressions. Sitewide GSC: +20.90% impressions and +2.33% clicks; GA4 organic key events: +8.11%. Month-to-month comparison; the report does not isolate SEO as the cause.',
     icon: Map,
   },
 ];
@@ -35,13 +35,13 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
       <p className="text-muted-foreground leading-7 mt-5">Anonymized project snapshots pair documented work with the source and period for each metric. The Shopify example is a planning sample, not a client case study.</p>
     </div></ScrollReveal>
 
-    <div className="grid lg:grid-cols-2 gap-5">
+    <div className="grid xl:grid-cols-2 gap-5">
       {cases.map((item, index) => <motion.article key={item.number} initial={{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:index*.08}} className="paper-card overflow-hidden flex flex-col">
         <div className="p-6 sm:p-7 lg:p-8 min-w-0">
           <div className="flex items-start justify-between gap-4 min-w-0"><p className="section-kicker min-w-0 break-words">{item.number} / {item.kind}</p><item.icon size={19} className="text-primary shrink-0"/></div>
           <h3 className="font-serif text-2xl md:text-3xl leading-tight mt-6 max-w-xl">{item.title}</h3>
           <p className="text-sm text-muted-foreground leading-6 mt-4">{item.context}</p>
-          <div className="grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)] gap-8 mt-8 min-w-0">
+          <div className="grid xl:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] gap-8 mt-8 min-w-0">
             <div className="min-w-0"><h4 className="font-mono text-[10px] uppercase tracking-widest text-primary mb-4">Work documented</h4><ul className="grid gap-3">{item.work.map(point => <li key={point} className="flex gap-2 text-sm leading-5"><FileCheck2 size={15} className="text-primary shrink-0 mt-0.5"/><span className="min-w-0">{point}</span></li>)}</ul></div>
             <div className="min-w-0"><h4 className="font-mono text-[10px] uppercase tracking-widest leading-4 text-primary mb-4 break-words">{item.resultLabel}</h4><div className="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2">{item.readings.map(([month, value]) => <div key={month} className="min-w-0 border border-border px-2 sm:px-3 py-3"><span className="block font-serif text-lg sm:text-xl tabular-nums tracking-tight">{value}</span><span className="block text-[10px] text-muted-foreground mt-1">{month}</span></div>)}</div><p className="text-[11px] leading-5 text-muted-foreground mt-3 [overflow-wrap:anywhere]">{item.evidenceNote}</p></div>
           </div>

@@ -14,7 +14,7 @@ const services = [
 const ServicesSection = () => <section id="services" className="section-padding">
   <div className="container-custom">
     <ScrollReveal><div className="grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-20 mb-12 items-end">
-      <div><p className="section-kicker mb-5">03 — Services</p><h2 className="section-heading">One search strategy.<br/><em>Every SEO discipline.</em></h2></div>
+      <div><p className="section-kicker mb-5">03 — Services</p><h2 className="section-heading">All of SEO.<br/><em>One clear plan.</em></h2></div>
       <p className="text-muted-foreground leading-7 max-w-xl">Choose the work you need now or connect the pieces into one plan. Every engagement starts with research, prioritizes work by impact and effort, and ends with clear recommendations or implementation.</p>
     </div></ScrollReveal>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 border-l border-t border-border">

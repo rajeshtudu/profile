@@ -16,14 +16,14 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-[1.2fr_.8fr] gap-12 lg:gap-20 items-center">
           <div>
             <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }} className="eyebrow mb-7">
-              <span className="status-dot" /> SEO specialist · Semantic SEO &amp; Entity SEO researcher · Lalitpur, Nepal
+              <span className="status-dot" /> Semantic SEO · Entity SEO · Lalitpur, Nepal
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              <span className="hidden sm:inline">Search intent, mapped<br />to the right <em>pages.</em></span>
-              <span className="sm:hidden">Search intent.<br /><em>Right pages.</em></span>
+              <span className="hidden sm:inline">SEO Specialist<br />in <em>Nepal.</em></span>
+              <span className="sm:hidden">SEO Specialist<br />in <em>Nepal.</em></span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              I help businesses turn search demand into a clearer site structure, stronger pages, and measurable organic growth. My work is grounded in semantic SEO and entity SEO.
+              I’m Rajesh Tudu, an SEO Specialist at Enfity. I work across semantic SEO, entity SEO, on-page, off-page, local, technical, and Shopify optimization, connecting search intent to useful pages.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <a className="button-primary" href="#case-studies">See selected work <ArrowUpRight size={16} /></a>
