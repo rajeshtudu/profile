@@ -1,46 +1,44 @@
-import { motion } from 'framer-motion';
+import { ArrowUpRight, ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 border-t border-border bg-card/50">
+    <footer className="border-t border-border bg-card/40">
       <div className="container-custom">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="flex flex-col md:flex-row items-center justify-between gap-4"
-        >
-          {/* Logo */}
-          <Link to="/" className="text-xl font-bold text-gradient">
-            RT
-          </Link>
+        <div className="grid gap-10 py-12 md:grid-cols-[1.3fr_.8fr_1fr] md:gap-12">
+          <div>
+            <Link to="/" className="inline-flex items-center gap-3" aria-label="Rajesh Tudu, home">
+              <span className="grid h-11 w-11 place-items-center border border-primary font-mono text-sm text-primary">RT</span>
+              <span className="font-semibold text-foreground">Rajesh Tudu</span>
+            </Link>
+            <p className="mt-4 text-sm font-medium text-foreground">SEO Specialist · Semantic &amp; Entity SEO</p>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">E-commerce SEO experience and client work across a range of industries and business types.</p>
+          </div>
 
-          {/* Copyright */}
-          <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Rajesh Tudu · SEO Specialist · Semantic SEO &amp; Entity SEO Researcher
-          </p>
-
-          <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
-            <Link className="hover:text-primary transition-colors" to="/about">About</Link>
-            <Link className="hover:text-primary transition-colors" to="/services">Services</Link>
-            <Link className="hover:text-primary transition-colors" to="/work">Work</Link>
-            <Link className="hover:text-primary transition-colors" to="/contact">Contact</Link>
+          <nav aria-label="Footer navigation">
+            <h2 className="section-kicker mb-4">Explore</h2>
+            <ul className="space-y-3 text-sm">
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/about">About</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/services">SEO services</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/work">Case studies</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/#projects">SEO tools and projects</Link></li>
+            </ul>
           </nav>
 
-          {/* Back to Top */}
-          <motion.button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            type="button"
-          >
-            Back to Top ↑
-          </motion.button>
-        </motion.div>
+          <div>
+            <h2 className="section-kicker mb-4">Contact</h2>
+            <a className="text-sm text-muted-foreground transition-colors hover:text-primary" href="mailto:tudurajesh34@gmail.com">tudurajesh34@gmail.com</a>
+            <a className="mt-3 flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-primary" href="https://linkedin.com/in/rajeshtudu" target="_blank" rel="noreferrer">Connect on LinkedIn <ArrowUpRight size={14}/></a>
+            <Link className="button-primary mt-5 inline-flex" to="/contact">Discuss an SEO project <ArrowUpRight size={15}/></Link>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-3 border-t border-border py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+          <p>© {currentYear} Rajesh Tudu. All rights reserved.</p>
+          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="inline-flex items-center gap-2 self-start transition-colors hover:text-primary sm:self-auto" type="button">Back to top <ArrowUp size={13}/></button>
+        </div>
       </div>
     </footer>
   );
