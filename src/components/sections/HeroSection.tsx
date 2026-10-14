@@ -17,13 +17,13 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-[1.2fr_.8fr] gap-12 lg:gap-20 items-center">
           <div>
             <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }} className="eyebrow mb-7">
-              <span className="status-dot" /> SEO Specialist at Enfity · Semantic &amp; Entity SEO
+              <span className="status-dot" /> SEO Specialist · Semantic &amp; Entity SEO
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
               SEO across industries.
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              At Enfity, my work spans multiple client niches, alongside my e-commerce SEO experience. I adapt my SEO focus to the market, business, and site.
+              My experience spans e-commerce SEO and other niches. I use semantic and entity research to understand each market, then shape on-page, off-page, local, and technical priorities around its audience and site.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <Link className="button-primary" to="/work">View case studies <ArrowUpRight size={16} /></Link>
