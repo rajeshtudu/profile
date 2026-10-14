@@ -30,7 +30,7 @@ const HeroSection = () => {
               <Link className="button-secondary" to="/contact">Get in touch</Link>
             </motion.div>
             <div className="grid grid-cols-3 gap-4 max-w-lg mt-10 pt-6 border-t border-border">
-              {[['20+', 'SEO projects'], ['5+', 'niches'], ['2+', 'years in SEO']].map(([value, label]) => <div key={label}>
+              {[['20+', 'SEO projects'], ['5+', 'niches worked in'], ['2+', 'years in SEO']].map(([value, label]) => <div key={label}>
               <strong className="font-sans font-semibold text-2xl md:text-3xl">{value}</strong>
                 <span className="block text-[10px] md:text-xs text-muted-foreground mt-1">{label}</span>
               </div>)}
