@@ -10,9 +10,9 @@ const roles = [
 
 const capabilities = [
   { label: 'CMS & e-commerce', items: ['WordPress', 'Shopify', 'Odoo'] },
-  { label: 'Search & analytics', items: ['Google Search Console', 'Google Analytics 4'] },
+  { label: 'Performance & reporting', items: ['Google Search Console', 'Google Analytics 4', 'SE Ranking'] },
   { label: 'SEO research & crawling', items: ['Semrush', 'Ahrefs', 'Screaming Frog'] },
-  { label: 'Data & automation', items: ['Google Sheets', 'Excel', 'Python', 'Streamlit'] },
+  { label: 'Automation & custom tools', items: ['Python', 'Streamlit', 'Google Search API', 'Web scraping', 'Google Sheets', 'Excel'] },
 ];
 
 export default function HomeExperienceToolsSection() {
@@ -30,13 +30,15 @@ export default function HomeExperienceToolsSection() {
       </div></ScrollReveal>
       <ScrollReveal delay={.08}><div>
         <p className="section-kicker mb-4">Platforms & tools</p><h2 className="section-heading">A practical working toolkit.</h2>
-        <p className="text-sm text-muted-foreground leading-6 mt-4 max-w-lg">I work across CMS platforms and use search, analytics, crawling, and data tools to investigate opportunities and track changes.</p>
+        <p className="text-sm text-muted-foreground leading-6 mt-4 max-w-lg">I use performance data to compare queries, pages, and outcomes, then build small tools to make selected research tasks easier to repeat.</p>
         <div className="mt-7 border-t border-border">
           {capabilities.map((group) => <div className="py-4 border-b border-border" key={group.label}>
             <h3 className="font-mono text-[10px] uppercase tracking-widest text-primary">{group.label}</h3>
             <ul className="flex flex-wrap gap-x-4 gap-y-2 mt-3" aria-label={group.label}>{group.items.map((item) => <li className="text-sm text-foreground" key={item}>{item}</li>)}</ul>
           </div>)}
         </div>
+        <p className="text-sm text-muted-foreground leading-6 mt-5">Examples include a SERP tracking and analysis dashboard and a structured data generator.</p>
+        <Link to="/#projects" className="project-link inline-flex items-center gap-2 mt-3 text-sm font-semibold">Explore SEO tools and experiments <ArrowUpRight size={15}/></Link>
       </div></ScrollReveal>
     </div>
   </section>;
