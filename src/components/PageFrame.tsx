@@ -6,9 +6,9 @@ import Footer from '@/components/Footer';
 import { MotionConfig } from 'framer-motion';
 import ScrollProgress from '@/components/ScrollProgress';
 
-type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; titleTag?: string; next?: { title: string; href: string; label: string } | false };
+type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; titleTag?: string; actions?: Array<{ label: string; href: string; primary?: boolean; external?: boolean }>; next?: { title: string; href: string; label: string } | false };
 
-export default function PageFrame({ kicker, title, intro, children, titleTag, next }: PageFrameProps) {
+export default function PageFrame({ kicker, title, intro, children, titleTag, actions = [], next }: PageFrameProps) {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,6 +32,13 @@ export default function PageFrame({ kicker, title, intro, children, titleTag, ne
         <p className="section-kicker">{kicker}</p>
         <h1 className="page-title">{title}</h1>
         <p className="page-lede">{intro}</p>
+        {actions.length > 0 && <div className="page-intro-actions">{actions.map(action => {
+          const className = action.primary ? 'button-primary' : 'button-secondary';
+          const content = <>{action.label}<ArrowUpRight size={16}/></>;
+          return action.external || action.href.startsWith('mailto:')
+            ? <a key={action.label} className={className} href={action.href} target={action.external ? '_blank' : undefined} rel={action.external ? 'noreferrer' : undefined}>{content}</a>
+            : <Link key={action.label} className={className} to={action.href}>{content}</Link>;
+        })}</div>}
         <div className="page-breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span>{title}</span></div>
       </header>
       {children}
