@@ -59,6 +59,7 @@ Current routes:
 - `/profile/services/` — SEO disciplines and scope.
 - `/profile/work/` — case-study index and evidence notes.
 - `/profile/work/ecommerce-search-performance/` and `/profile/work/local-search-review/` — individual anonymized case studies.
+- `/profile/work/ecommerce-visibility-sales/` — anonymized performance snapshot with a report visual, source period, and attribution limits.
 - `/profile/contact/` — contact details.
 
 ## Content standards

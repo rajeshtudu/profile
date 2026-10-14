@@ -39,7 +39,13 @@ export default function PageFrame({ kicker, title, intro, children, titleTag, ac
             ? <a key={action.label} className={className} href={action.href} target={action.external ? '_blank' : undefined} rel={action.external ? 'noreferrer' : undefined}>{content}</a>
             : <Link key={action.label} className={className} to={action.href}>{content}</Link>;
         })}</div>}
-        <div className="page-breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span>{title}</span></div>
+        <nav className="page-breadcrumb" aria-label="Breadcrumb">
+          <ol className="flex items-center gap-2">
+            <li><Link to="/">Home</Link></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">{title}</li>
+          </ol>
+        </nav>
       </header>
       {children}
       {next && <section className="page-next container-custom" aria-label="Continue exploring">

@@ -9,6 +9,7 @@ const pages = [
   { route: 'work', title: 'SEO Case Studies and Work | Rajesh Tudu', description: 'Review anonymized SEO case studies with their data sources, comparison periods, documented work, reported results, and evidence limitations.' },
   { route: 'work/ecommerce-search-performance', title: 'E-commerce Search Performance Case Study | Rajesh Tudu', description: 'A Search Console review comparing e-commerce visibility and clicks across sitewide, product, collection, and blog pages, with evidence caveats.' },
   { route: 'work/local-search-review', title: 'Local SEO Search Review Case Study | Rajesh Tudu', description: 'An anonymized home-services SEO review comparing Search Console performance, worked pages, and organic key events in GA4.' },
+  { route: 'work/ecommerce-visibility-sales', title: 'E-commerce SEO Visibility and Sales Snapshot | Rajesh Tudu', description: 'An anonymized report snapshot connecting Search Console clicks and impressions with organic sales totals, including source and comparison limits.' },
   { route: 'contact', title: 'Contact Rajesh Tudu | SEO', description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, project collaborations, or a search challenge.' },
 ];
 
