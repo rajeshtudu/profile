@@ -4,9 +4,11 @@ import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
-  { name: 'About', href: '#about' }, { name: 'Approach', href: '#approach' },
-  { name: 'Services', href: '#services' }, { name: 'Selected work', href: '#case-studies' },
-  { name: 'Experience', href: '#experience' }, { name: 'Tools', href: '#projects' },
+  { name: 'About', href: '#about' },
+  { name: 'Services', href: '#services' },
+  { name: 'Work', href: '#case-studies' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Tools', href: '#projects' },
 ];
 
 const Navigation = () => {

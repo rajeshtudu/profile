@@ -19,8 +19,7 @@ const HeroSection = () => {
               <span className="status-dot" /> Semantic SEO · Entity SEO · Lalitpur, Nepal
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              <span className="hidden sm:inline">SEO Specialist<br />in <em>Nepal.</em></span>
-              <span className="sm:hidden">SEO Specialist<br />in <em>Nepal.</em></span>
+              <span>SEO Specialist<br />in <em>Semantic &amp; Entity SEO.</em></span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
               I’m Rajesh Tudu, an SEO Specialist at Enfity. I work across semantic SEO, entity SEO, on-page, off-page, local, technical, and Shopify optimization, connecting search intent to useful pages.
