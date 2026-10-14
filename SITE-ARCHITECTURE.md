@@ -2,15 +2,33 @@
 
 ## Direction
 
-Build a clear, internationally legible professional profile for Rajesh Tudu as an SEO Specialist at Enfity. His experience includes working as an e-commerce SEO specialist and SEO work across SaaS, health, insurance, mortgage, B2B, professional services, and other niches. Semantic SEO and entity SEO connect his work across on-page, off-page, local, technical, and e-commerce disciplines. The homepage should state both the e-commerce specialization and wider industry experience clearly, then show supporting evidence and a direct contact path.
+Build a clear, internationally legible professional profile for Rajesh Tudu as an SEO Specialist at Enfity. His experience includes e-commerce SEO and multi-niche client work at Enfity across SaaS, health, insurance, mortgage, B2B, professional services, and other markets. Semantic SEO and entity SEO inform work across on-page, off-page, local, technical, and e-commerce disciplines. The homepage should state this breadth clearly, then show supporting evidence and a direct contact path.
 
-For the hero, use the eyebrow for the current SEO role and semantic/entity focus. Keep the H1 short (“SEO across industries”); the supporting copy should explicitly say that Rajesh has worked as an e-commerce SEO specialist and has also done SEO work in SaaS, health, insurance, mortgage, B2B, professional services, and more. Keep the list easy to scan, then explain the connection to his broader SEO disciplines without repeating the list in the next section.
+For the hero, use the eyebrow for the current SEO role, multi-niche scope, and semantic/entity focus. Keep the H1 short (“SEO across industries”). The supporting copy should say that he works across multiple client niches at Enfity and has e-commerce SEO experience. Let the next section name the markets, then explain the differing search journeys without repeating that list in the hero.
 
 Use global references for patterns, not templates to copy. Aleyda Solís's site connects a clear specialist identity to consulting, proof, resources, and contact. The ONENINE studio project by Siya Lai demonstrates the value of separate Work, Services, News, and About destinations. Google's guidance supports a logical structure, relevant internal links, and concise anchor text. These patterns fit this portfolio better than adding many near-identical service pages.
 
 ## Recommended sitemap
 
-Keep the homepage as the primary landing page. Its section sequence is: positioning and contact CTAs; brief professional overview; a concise preview of all six SEO disciplines; a concrete list of the niches Rajesh has worked in and how this changes the SEO approach; two evidence-led case-study previews; interactive process model from search research through implementation, authority, and measurement; selected career history and a grouped CMS/toolkit summary; one contact close. Keep full service descriptions, experience, skills, and case-study evidence on their dedicated pages, with the homepage providing enough substance to make each destination useful to explore.
+Keep the homepage as the primary landing page. Its section sequence is: positioning and contact CTAs; brief professional overview; multi-niche experience; a service overview that visually distinguishes semantic/entity research from the SEO disciplines it informs; two evidence-led case-study previews; an interactive process model from search research through implementation, authority, and measurement; selected career history and a grouped CMS/toolkit summary; one contact close. Keep full service descriptions, experience, skills, and case-study evidence on their dedicated pages, with the homepage providing enough substance to make each destination useful to explore.
+
+## Visual semantics and evidence review
+
+Use visible grouping, whitespace, labels, and heading levels to make content relationships legible. Semantic and entity research is presented as a research foundation, with on-page, technical, off-page, local, and e-commerce work grouped as ways that research may be applied. This is a portfolio information architecture choice, not a claim that every project needs every discipline.
+
+The homepage hierarchy is one H1 for Rajesh's position, H2 for each main section, H3 for primary groups, and lower-level headings only for content nested within those groups. Keep the visual prominence in step with that hierarchy. The niche list should show breadth; the case studies should show evidence; process interactions should explain decision stages, not hide essential claims or results. CTAs use destination-specific wording and remain available without animation.
+
+The current proof previews are text-led. Where publication-ready, anonymized reporting visuals are cleared for use, add a chart or report excerpt to the relevant case study with source, period, and caveat visible. Do not use a decorative metric graphic in place of the source evidence.
+
+Research used to guide this review:
+
+- Google's patent [US7913163B1, Determining semantically distinct regions of a document](https://patents.google.com/patent/US7913163B1/en) discusses visually distinct page regions and a hierarchical “chunk tree.” It is a patent describing an invention, not Google Search documentation or a ranking recipe.
+- Google's patent [US9367523B2, Using design features to search for page layout designs](https://patents.google.com/patent/US9367523B2/en) describes combining DOM structure with visual cues such as boundaries, fonts, images, colors, and whitespace to identify layout segments. It informs the audit lens, not a required design template.
+- Yu et al., [Improving Pseudo-Relevance Feedback in Web Information Retrieval Using Web Page Segmentation](https://www.microsoft.com/en-us/research/publication/improving-pseudo-relevance-feedback-in-web-information-retrieval-using-web-page-segmentation/) presents VIPS as an approach that uses visual cues to segment pages by semantic content structure. The research concerns retrieval/page segmentation, so its practical use here is to keep visual groupings aligned with content relationships.
+- Blackmon, [Information scent determines attention allocation and link selection among multiple information patches on a webpage](https://doi.org/10.1080/0144929X.2011.599041), reports that task-to-content semantic similarity shaped attention and link selection in the tested settings. This supports explicit labels and link text that match the destination.
+- Google Search Central's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) recommends logical organization, helpful headings, readable content, and descriptive link text. W3C WAI's [Page Structure Tutorial](https://www.w3.org/WAI/tutorials/page-structure/) covers semantic regions and logically nested headings for accessible navigation.
+
+These sources support clear regions, semantic grouping, heading order, and recognizable link destinations. They do not identify one universal “best” visual layout. Final judgments about attention and interaction quality require viewport review and, ideally, observation with real visitors.
 
 Keep the current sitemap:
 

@@ -10,19 +10,19 @@ const niches = ['E-commerce', 'SaaS', 'Health', 'Insurance', 'Mortgage', 'B2B', 
 const HomeSections = ({ children }: { children?: ReactNode }) => <>
   <section id="about" className="home-intro section-padding">
     <div className="container-custom home-intro-grid">
-      <ScrollReveal><div><p className="section-kicker mb-5">Professional overview</p><h2 className="section-heading">Research first. Recommendations grounded in the business.</h2></div></ScrollReveal>
-      <ScrollReveal delay={0.08}><div className="home-intro-copy"><p>I began with keyword research, on-page improvements, and reporting. My work has since grown across e-commerce and other industries.</p><p>I use semantic and entity research to understand audience needs and page relationships, then connect the findings to practical SEO priorities.</p><Link className="project-link inline-flex items-center gap-2 mt-5" to="/about">Read about my experience <ArrowUpRight size={15}/></Link></div></ScrollReveal>
+      <ScrollReveal><div><p className="section-kicker mb-5">How I think about SEO</p><h2 className="section-heading">Understand the business before planning the pages.</h2></div></ScrollReveal>
+      <ScrollReveal delay={0.08}><div className="home-intro-copy"><p>Search opportunities make sense in context. The audience, business model, offers, and current site all shape what a useful page should do.</p><p>I use that context to decide what to investigate, which pages or relationships to improve, and how to measure the change.</p><Link className="project-link inline-flex items-center gap-2 mt-5" to="/about">Read about my experience <ArrowUpRight size={15}/></Link></div></ScrollReveal>
+    </div>
+  </section>
+
+  <section className="home-niches section-padding" aria-labelledby="niches-title">
+    <div className="container-custom home-niches-layout">
+      <ScrollReveal><div><p className="section-kicker mb-4">Experience across 5+ niches</p><h2 id="niches-title" className="section-heading">Different markets. Different search journeys.</h2></div></ScrollReveal>
+      <ScrollReveal delay={0.08}><div className="home-niches-detail"><p>At Enfity, I work across a varied client portfolio. These markets have different audiences, decision journeys, and site structures, so I adapt the research and priorities to the business.</p><div className="home-niche-tags" aria-label="Industries and niches I have worked in">{niches.map(niche => <span key={niche}>{niche}</span>)}</div><div className="home-niche-actions"><Link to="/contact" className="button-primary">Discuss your organic search goals <ArrowUpRight size={15}/></Link><Link to="/services" className="button-secondary">Review SEO services <ArrowUpRight size={15}/></Link></div></div></ScrollReveal>
     </div>
   </section>
 
   <HomeServicesSection/>
-
-  <section className="home-niches section-padding" aria-labelledby="niches-title">
-    <div className="container-custom home-niches-layout">
-      <ScrollReveal><div><p className="section-kicker mb-4">Experience across 5+ niches</p><h2 id="niches-title" className="section-heading">E-commerce SEO, alongside work in other markets.</h2></div></ScrollReveal>
-      <ScrollReveal delay={0.08}><div className="home-niches-detail"><p>These markets bring different audiences, buying journeys, and site structures. I use that experience to understand each business before setting search and page priorities.</p><div className="home-niche-tags">{niches.map(niche => <span key={niche}>{niche}</span>)}</div><div className="home-niche-actions"><Link to="/contact" className="button-primary">Discuss your organic search goals <ArrowUpRight size={15}/></Link><Link to="/services" className="button-secondary">Review SEO services <ArrowUpRight size={15}/></Link></div></div></ScrollReveal>
-    </div>
-  </section>
 
   <section className="home-work section-padding">
     <div className="container-custom">

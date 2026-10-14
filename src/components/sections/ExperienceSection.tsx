@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const roles = [
-  { date:'JAN 2026 — NOW', title:'SEO Specialist', org:'Enfity', place:'Lalitpur, Nepal', note:'Work as an e-commerce SEO specialist, with additional SEO work across industries. Contribute to research, on-page and technical optimization, and performance reporting.' },
+  { date:'JAN 2026 — NOW', title:'SEO Specialist', org:'Enfity', place:'Lalitpur, Nepal', note:'Work across multiple client niches on search research, page recommendations, on-page improvements, technical checks, and performance reporting.' },
   { date:'DEC 2025 — JAN 2026', title:'Jr. SEO Specialist', org:'NEPA Works', place:'Kathmandu, Nepal', note:'Supported client SEO through content and on-page improvements, research and technical site checks.' },
   { date:'JUL 2024 — JUN 2025', title:'SEO Executive', org:'RankMeTop', place:'Kathmandu, Nepal', note:'Worked across keyword research, on-page improvements and link acquisition; supported optimization of 50+ pages and documented organic search performance.' },
   { date:'JAN 2024 — JUN 2024', title:'SEO Intern', org:'RankMeTop', place:'Kathmandu, Nepal', note:'Supported keyword research, campaign execution and foundational technical and on-page SEO.' },

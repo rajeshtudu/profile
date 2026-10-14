@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const roles = [
-  { date: '2026–present', title: 'SEO Specialist', company: 'Enfity', focus: 'E-commerce SEO, research, on-page and technical optimization, and reporting.' },
+  { date: '2026–present', title: 'SEO Specialist', company: 'Enfity', focus: 'SEO planning and delivery across multiple client niches. Work includes search research, page recommendations, on-page improvements, technical checks, and performance reporting.' },
   { date: '2025–2026', title: 'Jr. SEO Specialist', company: 'NEPA Works', focus: 'Client SEO support through content and on-page improvements, research, and technical checks.' },
   { date: '2024–2025', title: 'SEO Executive', company: 'RankMeTop', focus: 'Keyword research, on-page improvements, link acquisition, and organic performance reporting.' },
 ];

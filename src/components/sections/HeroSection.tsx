@@ -23,7 +23,7 @@ const HeroSection = () => {
               SEO across industries.
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              I’ve worked as an e-commerce SEO specialist and also on SEO for SaaS, health, insurance, mortgage, B2B, professional services, and more. I use semantic and entity research alongside on-page, off-page, local, and technical SEO, adapting the work to each market and site.
+              At Enfity, my work spans multiple client niches, alongside my e-commerce SEO experience. I adapt my SEO focus to the market, business, and site.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <Link className="button-primary" to="/work">View case studies <ArrowUpRight size={16} /></Link>
