@@ -19,7 +19,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Rajesh Tudu · SEO & organic growth
+            © {currentYear} Rajesh Tudu · SEO Specialist · Semantic SEO &amp; Entity SEO Researcher
           </p>
 
           {/* Back to Top */}

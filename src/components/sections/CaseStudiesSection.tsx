@@ -5,13 +5,13 @@ import ScrollReveal from '@/components/ScrollReveal';
 const cases = [
   {
     number: '01',
-    kind: 'B2B technology · anonymized · 2022',
-    title: 'Connecting mixed search demand to page targets',
-    context: 'A B2B technology site had both service-led and informational search demand. Project materials document keyword-to-page mapping, optimization of 50+ pages, on-page work and link-acquisition support.',
-    work: ['Mapped service and informational searches to pages', 'Optimized 50+ pages, as recorded in project materials', 'Supported on-page improvements and link acquisition'],
-    readings: [['June', '544'], ['July', '1,028'], ['August', '4,895']],
-    resultLabel: 'Google Analytics · organic traffic · 2022',
-    evidenceNote: 'Monthly report also records Google Search Console clicks rising from 213 to 564, and impressions from 108K to 204K (May–June 2022).',
+    kind: 'E-commerce SEO · anonymized · 2025',
+    title: 'Finding the click opportunity behind rising visibility',
+    context: 'A Google Search Console comparison for an e-commerce site showed impressions rising faster than clicks. Page-type views revealed stronger product and collection clicks, alongside a decline in blog clicks.',
+    work: ['Compared sitewide Search Console performance across two reporting periods', 'Reviewed product, collection and blog URL groups separately', 'Used the split between impressions and clicks to identify content and CTR opportunities'],
+    readings: [['Impressions', '+31%'], ['Clicks', '−2%'], ['Avg. position', '26.2']],
+    resultLabel: 'Google Search Console · Jun 9–Sep 16, 2025 vs Mar 1–Jun 8, 2025',
+    evidenceNote: 'Sitewide impressions rose from 883K to 1.16M; clicks shifted from 5.84K to 5.73K and average position improved from 26.7 to 26.2. Product clicks rose 46% and collection clicks 43%, while blog clicks declined 24%. Page-filtered GSC totals may be partial; use those category figures directionally. Based on the supplied Search Console screenshots.',
     icon: TrendingUp,
   },
   {
