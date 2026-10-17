@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Rajesh Tudu</title>
+  <rect width="64" height="64" rx="14" fill="#28231f"/>
+  <g transform="translate(1 1) scale(.62)">
+    <path fill="#f6f3ec" fill-rule="evenodd" d="M9 10h31c15 0 23 8 23 21S55 52 40 52H9V10Zm13 12h17c7 0 11 3 11 9s-4 9-11 9H22V22Z"/>
+    <path fill="#f6f3ec" d="M9 48h14v42H9zM18 48h14l33 42H48zM64 29h13v61H64z"/>
+    <path fill="#ee795a" d="M59 10h32L76 28H59z"/>
+  </g>
+</svg>

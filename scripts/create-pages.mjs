@@ -36,7 +36,7 @@ for (const page of pages) {
     .replace(/<meta property="og:description" content="[^"]*"\s*\/>/, `<meta property="og:description" content="${escapeHtml(page.description)}" />`)
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonical}" />`)
     .replaceAll('./assets/', `${relativeRoot}assets/`)
-    .replaceAll('href="./favicon-rt.svg"', `href="${relativeRoot}favicon-rt.svg"`)
+    .replaceAll('href="./favicon-rt-v2.svg"', `href="${relativeRoot}favicon-rt-v2.svg"`)
     .replaceAll('href="./favicon.ico"', `href="${relativeRoot}favicon.ico"`)
     .replaceAll('href="./apple-touch-icon.png"', `href="${relativeRoot}apple-touch-icon.png"`)
     .replace(/<!-- ProfilePage Schema -->[\s\S]*?<\/script>/, '')
