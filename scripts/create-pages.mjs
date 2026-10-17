@@ -5,7 +5,7 @@ const outDir = path.resolve('dist');
 const site = 'https://rajeshtudu.com.np';
 const pages = [
   { route: 'about', title: 'About Rajesh Tudu | SEO practice and experience', description: 'Learn about Rajesh Tudu’s experience, training, and SEO practice across semantic, entity, on-page, off-page, local, technical, and e-commerce SEO.' },
-  { route: 'services', title: 'SEO Services | Rajesh Tudu', description: 'Explore SEO support across semantic research, on-page, off-page, local, technical, and e-commerce SEO, scoped around your website and goals.' },
+  { route: 'services', title: 'SEO Services | Semantic, Technical & Local SEO', description: 'Semantic and entity SEO, on-page, technical, off-page, local, e-commerce, reporting, and automation services. Scope is based on your site, goals, and evidence.' },
   { route: 'work', title: 'SEO Case Studies and Work | Rajesh Tudu', description: 'Review anonymized SEO case studies with their data sources, comparison periods, documented work, reported results, and evidence limitations.' },
   { route: 'work/ecommerce-search-performance', title: 'E-commerce Search Performance Case Study | Rajesh Tudu', description: 'A Search Console review comparing e-commerce visibility and clicks across sitewide, product, collection, and blog pages, with evidence caveats.' },
   { route: 'work/local-search-review', title: 'Local SEO Search Review Case Study | Rajesh Tudu', description: 'An anonymized home-services SEO review comparing Search Console performance, worked pages, and organic key events in GA4.' },

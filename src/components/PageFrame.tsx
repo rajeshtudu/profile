@@ -6,16 +6,16 @@ import Footer from '@/components/Footer';
 import { MotionConfig } from 'framer-motion';
 import ScrollProgress from '@/components/ScrollProgress';
 
-type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; titleTag?: string; actions?: Array<{ label: string; href: string; primary?: boolean; external?: boolean }>; next?: { title: string; href: string; label: string } | false };
+type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; titleTag?: string; metaDescription?: string; actions?: Array<{ label: string; href: string; primary?: boolean; external?: boolean }>; next?: { title: string; href: string; label: string } | false };
 
-export default function PageFrame({ kicker, title, intro, children, titleTag, actions = [], next }: PageFrameProps) {
+export default function PageFrame({ kicker, title, intro, children, titleTag, metaDescription, actions = [], next }: PageFrameProps) {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
     const pageTitle = titleTag ?? `${title} | Rajesh Tudu`;
     document.title = pageTitle;
     const description = document.querySelector('meta[name="description"]');
-    description?.setAttribute('content', intro);
+    description?.setAttribute('content', metaDescription ?? intro);
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
@@ -23,7 +23,7 @@ export default function PageFrame({ kicker, title, intro, children, titleTag, ac
       document.head.appendChild(canonical);
     }
     canonical.href = `${window.location.origin}${window.location.pathname}`;
-  }, [intro, location.pathname, title, titleTag]);
+  }, [intro, location.pathname, metaDescription, title, titleTag]);
 
   return <MotionConfig reducedMotion="user"><div className="min-h-screen bg-background text-foreground">
     <ScrollProgress/><Navigation/>
