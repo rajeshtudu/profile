@@ -3,11 +3,10 @@ type BrandIdentityProps = {
 };
 
 export const BrandSymbol = () => (
-  <svg className="brand-symbol" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
-    <g fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3.7">
-      <path d="M11 67V13h20c14 0 22 7 22 19s-8 19-22 19H11m20 0 25 17" stroke="currentColor" />
-      <path d="M45 13h25M57.5 13v54" stroke="var(--orange)" />
-    </g>
+  <svg className="brand-symbol" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+    <path fill="currentColor" fillRule="evenodd" d="M9 10h31c15 0 23 8 23 21S55 52 40 52H9V10Zm13 12h17c7 0 11 3 11 9s-4 9-11 9H22V22Z" />
+    <path fill="currentColor" d="M9 48h14v42H9zM18 48h14l33 42H48zM64 29h13v61H64z" />
+    <path fill="var(--orange)" d="M59 10h32L76 28H59z" />
   </svg>
 );
 
