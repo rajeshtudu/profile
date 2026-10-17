@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function ServicesPage() {
-  return <PageFrame kicker="SEO services" title="SEO services shaped by search intent and site needs" intro="I help businesses plan and improve organic search across semantic and entity research, on-page, technical, off-page, local, and e-commerce SEO. Scope starts with your audience, search data, site, and CMS, then focuses on work the team can act on." titleTag="SEO Services | Semantic, Technical & Local SEO" metaDescription="Semantic and entity SEO, on-page, technical, off-page, local, e-commerce, reporting, and automation services. Scope is based on your site, goals, and evidence." actions={[{ label: 'Discuss your SEO needs', href: '/contact', primary: true }, { label: 'See documented case studies', href: '/work' }]} next={false}>
+  return <PageFrame kicker="SEO services" title="SEO services from research to implementation" intro="I work across semantic and entity research, on-page content, technical SEO, off-page authority, local search, and e-commerce. Each engagement starts with your market, site, and available data, then defines page-level recommendations, priorities, deliverables, and measures around the work your team can take forward." actions={[{ label: 'Discuss your SEO needs', href: '/contact', primary: true }, { label: 'See documented case studies', href: '/work' }]} next={false}>
     <ServicesSection/>
     <section className="container-custom page-content-grid page-content-grid--bordered">
       <div><p className="section-kicker">Project evidence</p><h2 className="section-heading">Review the work and its data</h2></div>

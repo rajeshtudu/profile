@@ -21,10 +21,10 @@ const HeroSection = () => {
               <span className="status-dot" /> SEO Specialist · Semantic &amp; Entity SEO
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              SEO across industries.
+              Semantic and entity SEO across industries.
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              My experience spans e-commerce SEO and other niches. I use semantic and entity research to understand each market, then shape on-page, off-page, local, and technical priorities around its audience and site.
+              My experience spans e-commerce SEO and projects in SaaS, health, insurance, mortgage, B2B, professional services, and other markets. I start with how people search and how each site is organized, then apply on-page, off-page, local, and technical SEO to the needs of that business.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <Link className="button-primary" to="/work">View case studies <ArrowUpRight size={16} /></Link>

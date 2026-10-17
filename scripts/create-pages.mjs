@@ -4,13 +4,13 @@ import path from 'node:path';
 const outDir = path.resolve('dist');
 const site = 'https://rajeshtudu.com.np';
 const pages = [
-  { route: 'about', title: 'About Rajesh Tudu | SEO practice and experience', description: 'Learn about Rajesh Tudu’s experience, training, and SEO practice across semantic, entity, on-page, off-page, local, technical, and e-commerce SEO.' },
-  { route: 'services', title: 'SEO Services | Semantic, Technical & Local SEO', description: 'Semantic and entity SEO, on-page, technical, off-page, local, e-commerce, reporting, and automation services. Scope is based on your site, goals, and evidence.' },
-  { route: 'work', title: 'SEO Case Studies and Work | Rajesh Tudu', description: 'Review anonymized SEO case studies with their data sources, comparison periods, documented work, reported results, and evidence limitations.' },
-  { route: 'work/ecommerce-search-performance', title: 'E-commerce Search Performance Case Study | Rajesh Tudu', description: 'A Search Console review comparing e-commerce visibility and clicks across sitewide, product, collection, and blog pages, with evidence caveats.' },
-  { route: 'work/local-search-review', title: 'Local SEO Search Review Case Study | Rajesh Tudu', description: 'An anonymized home-services SEO review comparing Search Console performance, worked pages, and organic key events in GA4.' },
-  { route: 'work/ecommerce-visibility-sales', title: 'E-commerce SEO Visibility and Sales Snapshot | Rajesh Tudu', description: 'An anonymized report snapshot connecting Search Console clicks and impressions with organic sales totals, including source and comparison limits.' },
-  { route: 'contact', title: 'Contact Rajesh Tudu | SEO', description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, project collaborations, or a search challenge.' },
+  { route: 'about', title: 'About Rajesh Tudu | SEO Specialist Experience', description: 'Explore Rajesh Tudu’s SEO experience across e-commerce and varied niches, plus training and work in semantic, on-page, technical, local, and off-page SEO.' },
+  { route: 'services', title: 'SEO Services | Semantic, Entity & Local SEO', description: 'Semantic and entity research, on-page, technical, off-page, local and e-commerce SEO, reporting, and automation. Scope reflects your site, goals, and evidence.' },
+  { route: 'work', title: 'SEO Case Studies and Work | Rajesh Tudu', description: 'Explore anonymized SEO case studies with data sources, comparison periods, documented work, reported outcomes, evidence limitations, and reporting context.' },
+  { route: 'work/ecommerce-search-performance', title: 'E-commerce SEO Case Study | Search Visibility & Clicks', description: 'See an anonymized Search Console comparison of e-commerce visibility, clicks, and page types, with reported changes, source periods, and evidence limitations.' },
+  { route: 'work/local-search-review', title: 'Local SEO Case Study | Search & Analytics Review', description: 'Review an anonymized local SEO report comparing Search Console visibility, pages receiving work, and GA4 organic key events month over month.' },
+  { route: 'work/ecommerce-visibility-sales', title: 'E-commerce SEO Case Study | Visibility & Sales', description: 'Review an anonymized e-commerce report of Search Console clicks and impressions alongside organic sales, with source dates and comparison limits.' },
+  { route: 'contact', title: 'Contact Rajesh Tudu | SEO Projects and Roles', description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, project collaborations, or a search challenge. Email or connect through professional social profiles.' },
 ];
 
 const escapeHtml = (value) => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
@@ -35,12 +35,14 @@ for (const page of pages) {
     .replace(/<meta property="og:title" content="[^"]*"\s*\/>/, `<meta property="og:title" content="${escapeHtml(page.title)}" />`)
     .replace(/<meta property="og:description" content="[^"]*"\s*\/>/, `<meta property="og:description" content="${escapeHtml(page.description)}" />`)
     .replace(/<meta property="og:url" content="[^"]*"\s*\/>/, `<meta property="og:url" content="${canonical}" />`)
+    .replace(/<meta name="twitter:title" content="[^"]*"\s*\/>/, `<meta name="twitter:title" content="${escapeHtml(page.title)}" />`)
+    .replace(/<meta name="twitter:description" content="[^"]*"\s*\/>/, `<meta name="twitter:description" content="${escapeHtml(page.description)}" />`)
+    .replace(/<!-- ProfilePage Schema -->[\s\S]*?<\/script>/, '')
     .replaceAll('./assets/', `${relativeRoot}assets/`)
     .replaceAll('href="./favicon-rt-v2.svg?v=3"', `href="${relativeRoot}favicon-rt-v2.svg?v=3"`)
     .replaceAll('href="./favicon.ico"', `href="${relativeRoot}favicon.ico"`)
     .replaceAll('href="./apple-touch-icon.png"', `href="${relativeRoot}apple-touch-icon.png"`)
-    .replace(/<!-- ProfilePage Schema -->[\s\S]*?<\/script>/, '')
-    .replace('</head>', `  <script type="application/ld+json">${pageSchema}</script>\n  </head>`);
+    .replace('</head>', `  <script type="application/ld+json" data-page-schema="true">${pageSchema}</script>\n  </head>`);
   await writeFile(destination, html);
 }
 

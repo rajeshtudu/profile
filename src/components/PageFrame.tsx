@@ -6,24 +6,11 @@ import Footer from '@/components/Footer';
 import { MotionConfig } from 'framer-motion';
 import ScrollProgress from '@/components/ScrollProgress';
 
-type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; titleTag?: string; metaDescription?: string; actions?: Array<{ label: string; href: string; primary?: boolean; external?: boolean }>; next?: { title: string; href: string; label: string } | false };
+type PageFrameProps = { kicker: string; title: string; intro: string; children: ReactNode; actions?: Array<{ label: string; href: string; primary?: boolean; external?: boolean }>; next?: { title: string; href: string; label: string } | false };
 
 export default function PageFrame({ kicker, title, intro, children, titleTag, metaDescription, actions = [], next }: PageFrameProps) {
   const location = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const pageTitle = titleTag ?? `${title} | Rajesh Tudu`;
-    document.title = pageTitle;
-    const description = document.querySelector('meta[name="description"]');
-    description?.setAttribute('content', metaDescription ?? intro);
-    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `${window.location.origin}${window.location.pathname}`;
-  }, [intro, location.pathname, metaDescription, title, titleTag]);
+  useEffect(() => { window.scrollTo(0, 0); }, [location.pathname]);
 
   return <MotionConfig reducedMotion="user"><div className="min-h-screen bg-background text-foreground">
     <ScrollProgress/><Navigation/>
@@ -40,10 +27,10 @@ export default function PageFrame({ kicker, title, intro, children, titleTag, me
             : <Link key={action.label} className={className} to={action.href}>{content}</Link>;
         })}</div>}
         <nav className="page-breadcrumb" aria-label="Breadcrumb">
-          <ol className="flex items-center gap-2">
+          <ol className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
             <li><Link to="/">Home</Link></li>
             <li aria-hidden="true">/</li>
-            <li aria-current="page">{title}</li>
+            <li className="min-w-0 break-words" aria-current="page">{title}</li>
           </ol>
         </nav>
       </header>

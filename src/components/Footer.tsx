@@ -22,7 +22,7 @@ const Footer = () => {
               <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/about">About</Link></li>
               <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/services">SEO services</Link></li>
               <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/work">Case studies</Link></li>
-              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/#projects">SEO tools and projects</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/#projects">SEO tools and experiments</Link></li>
             </ul>
           </nav>
 
