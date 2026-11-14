@@ -5,7 +5,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 import HomeServicesSection from '@/components/sections/HomeServicesSection';
 import HomeExperienceToolsSection from '@/components/sections/HomeExperienceToolsSection';
 
-const niches = ['E-commerce', 'SaaS', 'Health', 'Insurance', 'Mortgage', 'B2B', 'Professional services', 'Home services', 'Travel & hospitality'];
+const niches = ['SaaS', 'E-commerce', 'Finance', 'Law', 'HVAC', 'Health', 'Insurance', 'Mortgage', 'B2B', 'Professional services', 'Home services', 'Travel & hospitality'];
 
 const HomeSections = ({ children }: { children?: ReactNode }) => <>
   <section id="about" className="home-intro section-padding">
@@ -17,7 +17,7 @@ const HomeSections = ({ children }: { children?: ReactNode }) => <>
 
   <section className="home-niches section-padding" aria-labelledby="niches-title">
     <div className="container-custom home-niches-layout">
-      <ScrollReveal className="home-niches-heading"><div><p className="section-kicker mb-4">Experience across 5+ niches</p><h2 id="niches-title" className="section-heading">Different markets. Different search journeys.</h2></div></ScrollReveal>
+      <ScrollReveal className="home-niches-heading"><div><p className="section-kicker mb-4">Experience across 10+ niches</p><h2 id="niches-title" className="section-heading">Different markets. Different search journeys.</h2></div></ScrollReveal>
       <ScrollReveal className="home-niches-detail-wrap" delay={0.08}><div className="home-niches-detail"><p>My work spans a varied client portfolio. These markets have different audiences, decision journeys, and site structures, so I adapt the research and priorities to the business.</p><div className="home-niche-tags" aria-label="Industries and niches I have worked in">{niches.map(niche => <span key={niche}>{niche}</span>)}</div><div className="home-niche-actions"><Link to="/contact" className="button-primary">Discuss your organic search goals <ArrowUpRight size={15}/></Link><Link to="/services" className="button-secondary">Review SEO services <ArrowUpRight size={15}/></Link></div></div></ScrollReveal>
     </div>
   </section>

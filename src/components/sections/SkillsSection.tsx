@@ -18,9 +18,9 @@ const SkillsSection = () => <section id="skills" className="section-padding bg-s
       <div className="flex flex-wrap gap-2">{group.items.map(item=><span key={item} className="px-2.5 py-1.5 border border-border text-xs text-muted-foreground">{item}</span>)}</div>
     </motion.div>)}</div>
     <div className="mt-10 border-t border-border pt-6">
-      <p className="section-kicker mb-4">SEO experience across 5+ niches</p>
+      <p className="section-kicker mb-4">SEO experience across 10+ niches</p>
       <p className="text-sm text-muted-foreground leading-6 max-w-3xl mb-5">My experience includes different business models and search contexts. I adapt the research, page priorities, and measurement to the market rather than applying the same playbook everywhere.</p>
-      <div className="flex flex-wrap gap-2">{['E-commerce','SaaS','Health','Insurance','Mortgage','B2B','Professional services','Home services','Travel & hospitality'].map(item=><span key={item} className="px-3 py-2 border border-border bg-background/50 text-xs text-muted-foreground">{item}</span>)}</div>
+      <div className="flex flex-wrap gap-2">{['SaaS','E-commerce','Finance','Law','HVAC','Health','Insurance','Mortgage','B2B','Professional services','Home services','Travel & hospitality'].map(item=><span key={item} className="px-3 py-2 border border-border bg-background/50 text-xs text-muted-foreground">{item}</span>)}</div>
       <Link to="/contact" className="button-primary inline-flex mt-6">Discuss SEO for your market <ArrowUpRight size={15}/></Link>
     </div>
   </div>

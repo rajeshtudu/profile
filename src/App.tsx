@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import SeoHead from "./components/SeoHead";
+import Analytics from "./components/Analytics";
 
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -26,6 +27,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename={projectPagesBase}>
         <SeoHead />
+        <Analytics />
         <Suspense fallback={<div className="min-h-screen grid place-items-center bg-background text-muted-foreground" role="status">Loading portfolio page…</div>}>
           <Routes>
             <Route path="/" element={<Index />} />

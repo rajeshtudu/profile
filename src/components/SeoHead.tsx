@@ -4,16 +4,16 @@ import { useLocation } from 'react-router-dom';
 const site = 'https://rajeshtudu.com.np';
 const home = {
   title: 'Rajesh Tudu | Semantic & Entity SEO Specialist',
-  description: 'Semantic and entity SEO across e-commerce and varied industries. Explore on-page, off-page, local, and technical SEO, plus services and documented work.',
+  description: 'I apply semantic and entity SEO across 10+ niches — SaaS, finance, law, HVAC, health, e-commerce and more — with on-page, technical, local, and off-page work.',
 };
 const pageMetadata: Record<string, { title: string; description: string }> = {
   '/about': {
     title: 'About Rajesh Tudu | SEO Specialist Experience',
-    description: 'Explore Rajesh Tudu’s SEO experience across e-commerce and varied niches, plus training and work in semantic, on-page, technical, local, and off-page SEO.',
+    description: 'My SEO path: a specialist role at Enfity, client work across 10+ niches from SaaS to law and HVAC, training in data and Python, and two shipped SEO tools.',
   },
   '/services': {
     title: 'SEO Services | Semantic, Entity & Local SEO',
-    description: 'Semantic and entity research, on-page, technical, off-page, local and e-commerce SEO, reporting, and automation. Scope reflects your site, goals, and evidence.',
+    description: 'Nine SEO services from one research foundation: semantic and entity research, audits, on-page, technical, off-page, local, measurement, and automation.',
   },
   '/work': {
     title: 'SEO Case Studies and Work | Rajesh Tudu',

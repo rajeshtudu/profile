@@ -21,17 +21,17 @@ const HeroSection = () => {
               <span className="status-dot" /> SEO Specialist · Semantic &amp; Entity SEO
             </motion.p>
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .18 }} className="hero-title">
-              Semantic and entity SEO across industries.
+              I apply semantic and entity SEO to how your business is searched.
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .3 }} className="hero-copy mt-7 max-w-xl">
-              My experience spans e-commerce SEO and projects in SaaS, health, insurance, mortgage, B2B, professional services, and other markets. I start with how people search and how each site is organized, then apply on-page, off-page, local, and technical SEO to the needs of that business.
+              I research search intent and entities, plan the pages a site needs, and apply on-page, technical, local, and off-page SEO across more than ten niches — from SaaS and finance to law, HVAC, and e-commerce. Every outcome I report states its data source and period.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
               <Link className="button-primary" to="/work">View case studies <ArrowUpRight size={16} /></Link>
               <Link className="button-secondary" to="/contact">Get in touch</Link>
             </motion.div>
             <div className="grid grid-cols-3 gap-4 max-w-lg mt-10 pt-6 border-t border-border">
-              {[['20+', 'SEO projects'], ['5+', 'niches worked in'], ['2+', 'years in SEO']].map(([value, label]) => <div key={label}>
+              {[['20+', 'SEO projects'], ['10+', 'niches worked in'], ['2', 'SEO tools shipped']].map(([value, label]) => <div key={label}>
               <strong className="font-sans font-semibold text-2xl md:text-3xl">{value}</strong>
                 <span className="block text-[10px] md:text-xs text-muted-foreground mt-1">{label}</span>
               </div>)}

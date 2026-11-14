@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function ServicesPage() {
-  return <PageFrame kicker="SEO services" title="SEO services from research to implementation" intro="I work across semantic and entity research, on-page content, technical SEO, off-page authority, local search, and e-commerce. Each engagement starts with your market, site, and available data, then defines page-level recommendations, priorities, deliverables, and measures around the work your team can take forward." actions={[{ label: 'Discuss your SEO needs', href: '/contact', primary: true }, { label: 'See documented case studies', href: '/work' }]} next={false}>
+  return <PageFrame kicker="SEO services" title="SEO services from research to implementation" intro="I work across semantic and entity research, on-page content, technical SEO, off-page authority, local search, and e-commerce structure. Each engagement starts with your market, site, and available data, then defines page-level recommendations, priorities, deliverables, and measures around the work your team can take forward." actions={[{ label: 'Discuss your SEO needs', href: '/contact', primary: true }, { label: 'See documented case studies', href: '/work' }]} next={false}>
     <ServicesSection/>
     <section className="container-custom page-content-grid page-content-grid--bordered">
       <div><p className="section-kicker">Project evidence</p><h2 className="section-heading">Review the work and its data</h2></div>
@@ -21,7 +21,7 @@ export default function ServicesPage() {
     </section>
     <section className="container-custom page-content-grid page-content-grid--bordered">
       <div><p className="section-kicker">Industry experience</p><h2 className="section-heading">Different markets need different SEO decisions</h2></div>
-      <div className="page-prose"><p>My project experience includes e-commerce, SaaS, health, insurance, mortgage, B2B, professional services, home services, and travel and hospitality. The search journey, trust requirements, page types, and conversion path vary by market, so the research and priorities should reflect the specific business.</p></div>
+      <div className="page-prose"><p>My project experience includes SaaS, e-commerce, finance, law, HVAC, health, insurance, mortgage, B2B, professional services, home services, and travel and hospitality. The search journey, trust requirements, page types, and conversion path vary by market, so I let the specific business set the research and priorities.</p></div>
     </section>
   </PageFrame>;
 }
