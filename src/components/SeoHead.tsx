@@ -21,15 +21,15 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
   },
   '/work/ecommerce-search-performance': {
     title: 'E-commerce SEO Case Study | Search Visibility & Clicks',
-    description: 'See an anonymized Search Console comparison of e-commerce visibility, clicks, and page types, with reported changes, source periods, and evidence limitations.',
+    description: 'An anonymized Search Console case study compares e-commerce impressions, clicks, and product, collection, and blog pages across two 2025 periods.',
   },
   '/work/local-search-review': {
     title: 'Local SEO Case Study | Search & Analytics Review',
-    description: 'Review an anonymized local SEO report comparing Search Console visibility, pages receiving work, and GA4 organic key events month over month.',
+    description: 'An anonymized local SEO review compares pages receiving work with sitewide Search Console metrics and GA4 organic key events in Aug–Sep 2024.',
   },
   '/work/ecommerce-visibility-sales': {
     title: 'E-commerce SEO Case Study | Visibility & Sales',
-    description: 'Review an anonymized e-commerce report of Search Console clicks and impressions alongside organic sales, with source dates and comparison limits.',
+    description: 'An anonymized report pairs e-commerce Search Console clicks and impressions with organic sales for Jun 2024–Jan 2025, noting unknown comparison dates.',
   },
   '/contact': {
     title: 'Contact Rajesh Tudu | SEO Projects and Roles',

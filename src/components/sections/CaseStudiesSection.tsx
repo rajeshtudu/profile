@@ -10,7 +10,7 @@ const cases = [
     number: '01',
     slug: 'ecommerce-search-performance',
     kind: 'E-commerce SEO · anonymized · 2025',
-    title: 'Finding the click opportunity behind rising visibility',
+    title: 'Search Visibility Rose, but Clicks Stayed Nearly Flat',
     context: 'A Google Search Console comparison for an e-commerce site showed impressions rising faster than clicks. Page-type views revealed stronger product and collection clicks, alongside a decline in blog clicks.',
     work: ['Compared Search Console sitewide totals across two periods', 'Split product, collection and blog performance to find the visibility-to-click gap'],
     readings: [['Impressions', '+31%'], ['Clicks', '−2%'], ['Avg. position', '26.2']],
@@ -53,8 +53,8 @@ const cases = [
 const CaseStudiesSection = () => <section id="case-studies" className="section-padding bg-secondary/40">
   <div className="container-custom">
     <ScrollReveal><div className="max-w-3xl mb-12">
-      <p className="section-kicker mb-5">04 — Selected work</p>
-      <h2 className="section-heading">SEO case studies and work samples</h2>
+      <p className="section-kicker mb-5">04 — Selected Case Studies</p>
+      <h2 className="section-heading">SEO Case Studies and Work Samples</h2>
       <p className="text-muted-foreground leading-7 mt-5">Anonymized project snapshots pair documented work with the source and period for each metric. The Shopify example is a planning sample, not a client case study.</p>
     </div></ScrollReveal>
 

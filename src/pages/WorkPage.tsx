@@ -3,8 +3,8 @@ import CaseStudiesSection from '@/components/sections/CaseStudiesSection';
 
 export default function WorkPage() {
   return <PageFrame
-    kicker="Selected SEO Work"
-    title="SEO Case Studies With Results In Context"
+    kicker="Selected Case Studies"
+    title="SEO Case Studies With Results in Context"
     intro="Explore anonymized SEO case studies drawn from project records, Search Console, GA4, and sales reporting. Each separates documented work from measured outcomes and identifies the source, comparison period, and limits of the available evidence."
     actions={[{ label: 'Discuss an SEO Project', href: '/contact/', primary: true }, { label: 'Explore SEO Services', href: '/services/' }]}
     next={false}

@@ -8,7 +8,7 @@ import { BrandIdentity } from '@/components/BrandIdentity';
 const navItems = [
   { name: 'About', href: '/about/' },
   { name: 'Services', href: '/services/' },
-  { name: 'Work', href: '/work/' },
+  { name: 'Case Studies', href: '/work/' },
   { name: 'Contact', href: '/contact/' },
 ];
 
