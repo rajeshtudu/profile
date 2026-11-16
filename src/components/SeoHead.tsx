@@ -8,8 +8,8 @@ const home = {
 };
 const pageMetadata: Record<string, { title: string; description: string }> = {
   '/about': {
-    title: 'About Rajesh Tudu | SEO Specialist Experience',
-    description: 'My SEO path: a specialist role at Enfity, client work across 10+ niches from SaaS to law and HVAC, training in data and Python, and two shipped SEO tools.',
+    title: 'About Rajesh Tudu | SEO Specialist',
+    description: 'Learn about Rajesh Tudu’s SEO experience across e-commerce, SaaS, health, insurance, mortgage, B2B, and professional services.',
   },
   '/services': {
     title: 'SEO Services | Semantic, Entity & Local SEO',
