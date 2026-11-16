@@ -71,7 +71,7 @@ footer { background:transparent !important; }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after {scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important} }
 .page-main { padding-top:78px; }
 .page-intro { padding-top:clamp(64px,9vw,118px); padding-bottom:54px; border-bottom:1px solid var(--line); }
-.page-title { max-width:960px; margin-top:18px; font:700 clamp(2.25rem,4.8vw,4rem)/1.08 'DM Sans',sans-serif; letter-spacing:-.05em; }
+.page-title { max-width:960px; margin-top:18px; font:700 clamp(2.25rem,4.2vw,3.5rem)/1.08 'DM Sans',sans-serif; letter-spacing:-.05em; }
 .page-lede { max-width:760px; margin-top:24px; color:hsl(var(--muted-foreground)); font-size:clamp(17px,1.7vw,20px); line-height:1.7; }
 .page-intro-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
 .page-breadcrumb { display:flex; align-items:center; gap:10px; margin-top:32px; color:hsl(var(--muted-foreground)); font:11px 'DM Mono',monospace; }

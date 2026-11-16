@@ -13,7 +13,7 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
   },
   '/services': {
     title: 'SEO Services | Semantic, Entity & Local SEO',
-    description: 'Nine SEO services from one research foundation: semantic and entity research, audits, on-page, technical, off-page, local, measurement, and automation.',
+    description: 'SEO services for e-commerce and varied industries: semantic and entity research, on-page, technical, local and off-page SEO, audits, reporting and automation.',
   },
   '/work': {
     title: 'SEO Case Studies and Work | Rajesh Tudu',
