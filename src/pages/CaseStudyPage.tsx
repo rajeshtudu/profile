@@ -45,15 +45,15 @@ const studies = {
 export default function CaseStudyPage() {
   const { caseSlug } = useParams();
   const study = caseSlug ? studies[caseSlug as keyof typeof studies] : undefined;
-  if (!study) return <Navigate to="/work" replace/>;
-  return <PageFrame kicker={study.type} title={study.title} intro={study.intro} actions={[{ label: 'Discuss a similar challenge', href: '/contact', primary: true }, { label: 'View all work', href: '/work' }]} next={false}>
+  if (!study) return <Navigate to="/work/" replace/>;
+  return <PageFrame kicker={study.type} title={study.title} intro={study.intro} actions={[{ label: 'Discuss a similar challenge', href: '/contact/', primary: true }, { label: 'View all work', href: '/work/' }]} next={false}>
     <div className="container-custom case-study-detail">
       <section className="case-study-block"><p className="section-kicker">Context</p><h2>Scope of review</h2><p>{study.context}</p><p>{study.source}</p></section>
       <section className="case-study-block"><p className="section-kicker">Comparison</p><h2>Reported performance</h2><div className="grid md:grid-cols-3 gap-3 mt-6">{study.metrics.map(metric=><article className="paper-card p-5" key={metric.label}><p className="text-xs text-muted-foreground">{metric.label}</p><p className="text-2xl font-semibold tabular-nums mt-5">{metric.value}</p><p className="text-xs text-muted-foreground mt-3">{metric.comparison}</p></article>)}</div></section>
       {'image' in study && study.image && <figure className="case-study-block"><img src={study.image} alt="An anonymized e-commerce report showing 42 thousand clicks, 1.22 million impressions, and 64.1 thousand pounds in organic sales" width={1200} height={900} loading="lazy" className="block w-full h-auto border border-border bg-[#f3efe7]"/><figcaption className="text-sm text-muted-foreground mt-3">An anonymized report visual. The period and comparison limitations are described above.</figcaption></figure>}
       <section className="case-study-block"><p className="section-kicker">Work documented</p><h2>{'workHeading' in study ? study.workHeading : 'What I did'}</h2><ul>{study.work.map(point=><li key={point}>{point}</li>)}</ul></section>
       <section className="case-study-block"><p className="section-kicker">Observed result</p><h2>What changed in the data</h2><p>{study.finding}</p><aside className="case-study-caveat"><strong>How to read this:</strong> {study.caveat}</aside></section>
-      <div className="case-study-actions"><Link to="/work" className="project-link inline-flex items-center gap-2"><ArrowLeft size={15}/> All work</Link><Link to="/services" className="project-link inline-flex items-center gap-2">Review SEO services <ArrowUpRight size={15}/></Link><Link to="/contact" className="project-link inline-flex items-center gap-2">Discuss a similar question <ArrowUpRight size={15}/></Link></div>
+      <div className="case-study-actions"><Link to="/work/" className="project-link inline-flex items-center gap-2"><ArrowLeft size={15}/> All work</Link><Link to="/services/" className="project-link inline-flex items-center gap-2">Review SEO services <ArrowUpRight size={15}/></Link><Link to="/contact/" className="project-link inline-flex items-center gap-2">Discuss a similar question <ArrowUpRight size={15}/></Link></div>
     </div>
   </PageFrame>;
 }

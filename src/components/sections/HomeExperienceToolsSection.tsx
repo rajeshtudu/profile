@@ -32,7 +32,7 @@ export default function HomeExperienceToolsSection() {
               <div><h3>{role.title} <span>· {role.company}</span></h3><p>{role.focus}</p></div>
             </article>)}
           </div>
-          <Link to="/about" className="project-link inline-flex items-center gap-2 mt-6 text-sm font-semibold">View Full SEO Experience and Training <ArrowUpRight size={15}/></Link>
+          <Link to="/about/" className="project-link inline-flex items-center gap-2 mt-6 text-sm font-semibold">View Full SEO Experience and Training <ArrowUpRight size={15}/></Link>
         </div>
       </ScrollReveal>
 

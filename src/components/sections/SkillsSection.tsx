@@ -18,8 +18,8 @@ const SkillsSection = () => <section id="skills" className="section-padding bg-s
       <div className="flex flex-wrap gap-2">{group.items.map(item=><span key={item} className="px-2.5 py-1.5 border border-border text-xs text-muted-foreground">{item}</span>)}</div>
     </motion.div>)}</div>
     <div className="mt-10 border-t border-border pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
-      <p className="text-sm text-muted-foreground leading-6 max-w-2xl">See how these skills connect to my <Link to="/services" className="project-link font-medium">SEO services and typical deliverables</Link>.</p>
-      <Link to="/contact" className="button-primary inline-flex self-start">Discuss an SEO Project <ArrowUpRight size={15}/></Link>
+      <p className="text-sm text-muted-foreground leading-6 max-w-2xl">See how these skills connect to my <Link to="/services/" className="project-link font-medium">SEO services and typical deliverables</Link>.</p>
+      <Link to="/contact/" className="button-primary inline-flex self-start">Discuss an SEO Project <ArrowUpRight size={15}/></Link>
     </div>
   </div>
 </section>;

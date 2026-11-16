@@ -16,7 +16,7 @@ export default function HomeServicesSection() {
       <ScrollReveal>
         <div className="home-section-head home-services-head">
           <div><p className="section-kicker mb-4">How Semantic &amp; Entity SEO Fits</p><h2 id="home-services-title" className="section-heading">Research Connects Search Demand to SEO Delivery</h2></div>
-          <div className="home-section-aside"><p>Semantic and entity research helps clarify the topics a business should cover, how they relate, and which pages should serve each search need. That research informs the SEO work a site requires.</p><Link to="/services" className="project-link inline-flex items-center gap-2 mt-5">Explore SEO services and deliverables <ArrowUpRight size={15}/></Link></div>
+          <div className="home-section-aside"><p>Semantic and entity research helps clarify the topics a business should cover, how they relate, and which pages should serve each search need. That research informs the SEO work a site requires.</p><Link to="/services/" className="project-link inline-flex items-center gap-2 mt-5">Explore SEO services and deliverables <ArrowUpRight size={15}/></Link></div>
         </div>
       </ScrollReveal>
 

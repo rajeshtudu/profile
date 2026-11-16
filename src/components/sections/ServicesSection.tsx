@@ -45,7 +45,7 @@ const ServicesSection = () => <section id="services" className="section-padding"
         </div>
       </section>)}
     </div>
-    <div className="service-contact-band mt-9"><div><p className="section-kicker">Start With The Search Challenge</p><h3>What should your SEO work solve?</h3><p>Share your site, market, goal, and what you have already tried. I’ll review the context and suggest a practical first step.</p></div><Link to="/contact" className="button-primary">Discuss Your SEO Needs <ArrowUpRight size={16}/></Link></div>
+    <div className="service-contact-band mt-9"><div><p className="section-kicker">Start With The Search Challenge</p><h3>What should your SEO work solve?</h3><p>Share your site, market, goal, and what you have already tried. I’ll review the context and suggest a practical first step.</p></div><Link to="/contact/" className="button-primary">Discuss Your SEO Needs <ArrowUpRight size={16}/></Link></div>
   </div>
 </section>;
 

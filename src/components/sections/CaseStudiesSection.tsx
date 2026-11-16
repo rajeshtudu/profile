@@ -69,7 +69,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
             <div className="min-w-0"><h4 className="font-mono text-[10px] uppercase tracking-widest text-primary mb-4">Work documented</h4><ul className="grid gap-3">{item.work.map(point => <li key={point} className="flex gap-2 text-sm leading-5"><FileCheck2 size={15} className="text-primary shrink-0 mt-0.5"/><span className="min-w-0">{point}</span></li>)}</ul></div>
             <div className="min-w-0"><h4 className="font-mono text-[10px] uppercase tracking-widest leading-4 text-primary mb-4 break-words">{item.resultLabel}</h4><div className="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2">{item.readings.map(([month, value]) => <div key={month} className="min-w-0 border border-border px-2 sm:px-3 py-3"><span className="block font-serif text-base sm:text-xl tabular-nums tracking-tight">{value}</span><span className="block text-[10px] text-muted-foreground mt-1">{month}</span></div>)}</div><p className="text-[11px] leading-5 text-muted-foreground mt-3 [overflow-wrap:anywhere]">{item.evidenceNote}</p></div>
           </div>
-          <Link to={`/work/${item.slug}`} className="project-link inline-flex items-center gap-2 mt-6 text-sm font-semibold">{item.linkLabel} <ArrowUpRight size={15}/></Link>
+          <Link to={`/work/${item.slug}/`} className="project-link inline-flex items-center gap-2 mt-6 text-sm font-semibold">{item.linkLabel} <ArrowUpRight size={15}/></Link>
         </div>
       </motion.article>)}
     </div>
@@ -84,7 +84,7 @@ const CaseStudiesSection = () => <section id="case-studies" className="section-p
 
     <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <p className="text-xs leading-5 text-muted-foreground max-w-2xl">Client and website names are withheld. The figures come from archived campaign reports and should be read as reported outcomes, not proof that one SEO action caused the change.</p>
-      <Link to="/contact" className="project-link inline-flex items-center gap-2 text-sm font-semibold">Discuss an SEO challenge <ArrowUpRight size={15}/></Link>
+      <Link to="/contact/" className="project-link inline-flex items-center gap-2 text-sm font-semibold">Discuss an SEO challenge <ArrowUpRight size={15}/></Link>
     </div>
   </div>
 </section>;

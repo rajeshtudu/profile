@@ -19,9 +19,9 @@ const Footer = () => {
           <nav aria-label="Footer navigation">
             <h2 className="section-kicker mb-4">Explore</h2>
             <ul className="space-y-3 text-sm">
-              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/about">About</Link></li>
-              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/services">SEO services</Link></li>
-              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/work">Case studies</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/about/">About</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/services/">SEO services</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/work/">Case studies</Link></li>
               <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/#projects">SEO tools and experiments</Link></li>
             </ul>
           </nav>
@@ -30,7 +30,7 @@ const Footer = () => {
             <h2 className="section-kicker mb-4">Contact</h2>
             <a className="text-sm text-muted-foreground transition-colors hover:text-primary" href="mailto:tudurajesh34@gmail.com">tudurajesh34@gmail.com</a>
             <SocialLinks className="mt-4" />
-            <Link className="button-primary mt-5 inline-flex" to="/contact">Discuss an SEO project <ArrowUpRight size={15}/></Link>
+            <Link className="button-primary mt-5 inline-flex" to="/contact/">Discuss an SEO project <ArrowUpRight size={15}/></Link>
           </div>
         </div>
 
