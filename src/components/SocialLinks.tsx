@@ -3,7 +3,7 @@ import { Github, Linkedin, X } from 'lucide-react';
 const profiles = [
   { label: 'LinkedIn', href: 'https://linkedin.com/in/rajeshtudu', Icon: Linkedin },
   { label: 'GitHub', href: 'https://github.com/rajeshtudu', Icon: Github },
-  { label: 'X', href: 'https://x.com/rajeshtudu', Icon: X },
+  { label: 'X', href: 'https://x.com/tudurajesh0', Icon: X },
 ];
 
 type SocialLinksProps = { className?: string };
