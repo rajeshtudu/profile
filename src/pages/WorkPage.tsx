@@ -2,11 +2,20 @@ import PageFrame from '@/components/PageFrame';
 import CaseStudiesSection from '@/components/sections/CaseStudiesSection';
 
 export default function WorkPage() {
-  return <PageFrame kicker="Selected work" title="SEO case studies, with results in context" intro="These anonymized examples draw on project records and Search Console or Analytics reports. Each explains the review period, the work documented, and what the available data can and cannot establish." actions={[{ label: 'Review SEO services', href: '/services/', primary: true }]} next={false}>
-    <CaseStudiesSection/>
+  return <PageFrame
+    kicker="Selected SEO Work"
+    title="SEO Case Studies With Results In Context"
+    intro="Explore anonymized SEO case studies drawn from project records, Search Console, GA4, and sales reporting. Each separates documented work from measured outcomes and identifies the source, comparison period, and limits of the available evidence."
+    actions={[{ label: 'Discuss an SEO Project', href: '/contact/', primary: true }, { label: 'Explore SEO Services', href: '/services/' }]}
+    next={false}
+  >
+    <CaseStudiesSection />
     <section className="container-custom page-content-grid page-content-grid--bordered">
-      <div><p className="section-kicker">Reading the results</p><h2 className="section-heading">Movement is evidence, not automatic proof of cause</h2></div>
-      <div className="page-prose"><p>Search performance changes for many reasons, including seasonality, competition, site releases, and measurement differences. I present the comparison that is available and state when the source does not isolate the effect of SEO work.</p><p>More case studies will be added as I prepare the supporting records and screenshots for publication.</p></div>
+      <div><p className="section-kicker">Evidence And Interpretation</p><h2 className="section-heading">What The Reports Can And Cannot Show</h2></div>
+      <div className="page-prose">
+        <p>Search, analytics, and sales metrics describe observed change across the periods shown. They do not, by themselves, prove that a specific SEO task caused the change.</p>
+        <p>Search Console page filters can show partial totals. Month-to-month comparisons can also reflect seasonality, competition, site releases, or tracking changes. Each case study states the sources and limitations available in its project records so you can judge the evidence in context.</p>
+      </div>
     </section>
   </PageFrame>;
 }

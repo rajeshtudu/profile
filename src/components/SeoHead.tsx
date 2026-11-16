@@ -16,8 +16,8 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
     description: 'SEO services for e-commerce and varied industries: semantic and entity research, on-page, technical, local and off-page SEO, audits, reporting and automation.',
   },
   '/work': {
-    title: 'SEO Case Studies and Work | Rajesh Tudu',
-    description: 'Explore anonymized SEO case studies with data sources, comparison periods, documented work, reported outcomes, evidence limitations, and reporting context.',
+    title: 'SEO Case Studies | Rajesh Tudu',
+    description: 'Anonymized SEO case studies using Search Console, GA4, and sales data. Review the work, comparison periods, outcomes, and evidence limits behind each result.',
   },
   '/work/ecommerce-search-performance': {
     title: 'E-commerce SEO Case Study | Search Visibility & Clicks',
@@ -33,7 +33,7 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
   },
   '/contact': {
     title: 'Contact Rajesh Tudu | SEO Projects and Roles',
-    description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, project collaborations, or a search challenge. Email or connect through professional social profiles.',
+    description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, projects, or organic search challenges. Email directly or connect through professional social profiles.',
   },
 };
 

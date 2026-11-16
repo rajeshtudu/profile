@@ -6,11 +6,11 @@ const site = 'https://rajeshtudu.com.np';
 const pages = [
   { route: 'about', title: 'About Rajesh Tudu | SEO Specialist', description: 'Learn about Rajesh Tudu’s SEO experience across e-commerce, SaaS, health, insurance, mortgage, B2B, and professional services.' },
   { route: 'services', title: 'SEO Services | Semantic, Entity & Local SEO', description: 'SEO services for e-commerce and varied industries: semantic and entity research, on-page, technical, local and off-page SEO, audits, reporting and automation.' },
-  { route: 'work', title: 'SEO Case Studies and Work | Rajesh Tudu', description: 'Explore anonymized SEO case studies with data sources, comparison periods, documented work, reported outcomes, evidence limitations, and reporting context.' },
+  { route: 'work', title: 'SEO Case Studies | Rajesh Tudu', description: 'Anonymized SEO case studies using Search Console, GA4, and sales data. Review the work, comparison periods, outcomes, and evidence limits behind each result.' },
   { route: 'work/ecommerce-search-performance', title: 'E-commerce SEO Case Study | Search Visibility & Clicks', description: 'See an anonymized Search Console comparison of e-commerce visibility, clicks, and page types, with reported changes, source periods, and evidence limitations.' },
   { route: 'work/local-search-review', title: 'Local SEO Case Study | Search & Analytics Review', description: 'Review an anonymized local SEO report comparing Search Console visibility, pages receiving work, and GA4 organic key events month over month.' },
   { route: 'work/ecommerce-visibility-sales', title: 'E-commerce SEO Case Study | Visibility & Sales', description: 'Review an anonymized e-commerce report of Search Console clicks and impressions alongside organic sales, with source dates and comparison limits.' },
-  { route: 'contact', title: 'Contact Rajesh Tudu | SEO Projects and Roles', description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, project collaborations, or a search challenge. Email or connect through professional social profiles.' },
+  { route: 'contact', title: 'Contact Rajesh Tudu | SEO Projects and Roles', description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, projects, or organic search challenges. Email directly or connect through professional social profiles.' },
 ];
 
 const escapeHtml = (value) => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
