@@ -1,9 +1,10 @@
-import { Github, Linkedin, X } from 'lucide-react';
+import { Github, Linkedin, X, Youtube } from 'lucide-react';
 
 const profiles = [
   { label: 'LinkedIn', href: 'https://linkedin.com/in/rajeshtudu', Icon: Linkedin },
   { label: 'GitHub', href: 'https://github.com/rajeshtudu', Icon: Github },
   { label: 'X', href: 'https://x.com/tudurajesh0', Icon: X },
+  { label: 'YouTube', href: 'https://www.youtube.com/@rajeshtuduseo', Icon: Youtube },
 ];
 
 type SocialLinksProps = { className?: string };
