@@ -1,7 +1,5 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/sections/HeroSection';
-import ApproachSection from '@/components/sections/ApproachSection';
-import ProjectsSection from '@/components/sections/ProjectsSection';
 import HomeSections from '@/components/sections/HomeSections';
 import Footer from '@/components/Footer';
 import { MotionConfig } from 'framer-motion';
@@ -15,10 +13,7 @@ const Index = () => {
         <Navigation />
         <main>
           <HeroSection />
-          <HomeSections>
-            <ApproachSection />
-            <ProjectsSection />
-          </HomeSections>
+          <HomeSections />
         </main>
         <Footer />
       </div>

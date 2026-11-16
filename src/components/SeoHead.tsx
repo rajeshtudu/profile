@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const site = 'https://rajeshtudu.com.np';
 const home = {
   title: 'Rajesh Tudu | Semantic & Entity SEO Specialist',
-  description: 'SEO specialist with experience across e-commerce, SaaS, health, insurance, mortgage, B2B, and professional services. Semantic and entity research shape my work.',
+  description: 'SEO specialist with e-commerce and multi-industry client experience. Semantic and entity research informs on-page, technical, local, and off-page SEO.',
 };
 const pageMetadata: Record<string, { title: string; description: string }> = {
   '/about': {

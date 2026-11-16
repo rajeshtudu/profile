@@ -3,54 +3,44 @@ import { Link } from 'react-router-dom';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const disciplines = [
-  { number: '02', icon: ScanSearch, title: 'On-page SEO & content', detail: 'Page purpose, content briefs, internal linking, and improvements that make each page more useful for its audience.' },
-  { number: '03', icon: Braces, title: 'Technical SEO', detail: 'Crawlability, indexation, architecture, structured data, migrations, and prioritized technical fixes.' },
-  { number: '04', icon: Link2, title: 'Off-page SEO', detail: 'Backlink and competitor-gap reviews, relevant prospect research, and practical authority-building plans.' },
-  { number: '05', icon: MapPin, title: 'Local SEO', detail: 'Local intent, Google Business Profile, citations, reviews, and service-area page recommendations.' },
-  { number: '06', icon: ShoppingBag, title: 'E-commerce SEO', detail: 'Product and category architecture, taxonomy, filters, collection content, internal links, and CMS checks across platforms such as Shopify and WordPress.' },
+  { icon: ScanSearch, title: 'On-Page SEO & Content', detail: 'Page intent, content quality, internal links, and opportunities to improve existing pages.' },
+  { icon: Braces, title: 'Technical SEO', detail: 'Crawling, indexation, site structure, structured data, and technical priorities.' },
+  { icon: MapPin, title: 'Local SEO', detail: 'Local search intent, Business Profile, location signals, and service-area pages.' },
+  { icon: Link2, title: 'Off-Page SEO', detail: 'Backlink profiles, relevant opportunities, and plans to strengthen authority.' },
+  { icon: ShoppingBag, title: 'E-Commerce SEO', detail: 'Product and category architecture, collections, filters, and internal links across Shopify, WordPress, and other CMS platforms.' },
 ];
 
 export default function HomeServicesSection() {
-  return <section id="home-services" className="section-padding bg-secondary/40" aria-labelledby="home-services-title">
+  return <section id="seo-practice" className="home-services section-padding" aria-labelledby="home-services-title">
     <div className="container-custom">
-      <ScrollReveal><div className="home-section-head mb-10">
-        <div><p className="section-kicker mb-4">How the work fits together</p><h2 id="home-services-title" className="section-heading">One research foundation. The SEO work each site needs.</h2></div>
-        <div className="max-w-xl"><p className="text-muted-foreground leading-7">Semantic and entity research clarifies search intent, topic relationships, and where information belongs. Those findings can guide on-page, technical, off-page, local, and e-commerce SEO in the proportions a site needs.</p><Link to="/services" className="project-link inline-flex items-center gap-2 mt-5">Explore SEO services and typical outputs <ArrowUpRight size={15}/></Link></div>
-      </div></ScrollReveal>
-
-      <ScrollReveal delay={0.05}>
-        <article className="paper-card grid lg:grid-cols-[.9fr_1.1fr] gap-8 lg:gap-12 p-6 sm:p-8 lg:p-10">
-          <div className="flex flex-col items-start">
-            <span className="font-mono text-[10px] uppercase tracking-[.14em] text-primary">01 · Research foundation</span>
-            <div className="flex items-center gap-3 mt-6"><Network size={20} className="text-primary"/><h3 className="font-sans font-semibold text-xl sm:text-2xl">Semantic & entity SEO</h3></div>
-            <p className="text-sm text-muted-foreground leading-6 mt-4 max-w-xl">Understand search intent, related topics, entities, and how information should connect across the site before setting page priorities.</p>
-          </div>
-          <div className="flex items-center">
-            <ol className="grid sm:grid-cols-3 w-full border-y border-border" aria-label="How semantic and entity research informs page planning">
-              {[
-                ['Search intent', 'What people need'],
-                ['Topics & entities', 'What belongs together'],
-                ['Page relationships', 'Where it should live'],
-              ].map(([title, description], index) => <li className="relative py-5 px-4 first:pl-0 border-b last:border-0 sm:border-b-0 sm:border-r sm:last:border-0 border-border" key={title}>
-                <span className="block font-mono text-[10px] text-primary mb-2">0{index + 1}</span>
-                <strong className="block text-sm font-semibold">{title}</strong>
-                <span className="block mt-1 text-xs leading-5 text-muted-foreground">{description}</span>
-              </li>)}
-            </ol>
-          </div>
-        </article>
+      <ScrollReveal>
+        <div className="home-section-head home-services-head">
+          <div><p className="section-kicker mb-4">How Semantic &amp; Entity SEO Fits</p><h2 id="home-services-title" className="section-heading">Research Connects Search Demand to SEO Delivery</h2></div>
+          <div className="home-section-aside"><p>Semantic and entity research helps clarify the topics a business should cover, how they relate, and which pages should serve each search need. That research informs the SEO work a site requires.</p><Link to="/services" className="project-link inline-flex items-center gap-2 mt-5">Explore SEO services and deliverables <ArrowUpRight size={15}/></Link></div>
+        </div>
       </ScrollReveal>
 
-      <div className="mt-10">
-        <div className="flex items-baseline justify-between gap-4 mb-4"><h3 className="font-sans font-semibold text-base">Applied across the SEO disciplines</h3><span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">02–06</span></div>
-        <div className="grid md:grid-cols-2 gap-x-5 border-t border-border">
-          {disciplines.map(({ number, icon: Icon, title, detail }, index) => <ScrollReveal key={number} delay={index * .035}>
-            <article className="grid grid-cols-[32px_1fr_20px] gap-x-3 gap-y-2 items-start py-5 border-b border-border h-full">
-              <span className="font-mono text-[10px] text-muted-foreground pt-1">{number}</span>
-              <div><h4 className="font-sans font-semibold text-base">{title}</h4><p className="text-sm text-muted-foreground leading-6 mt-2">{detail}</p></div>
-              <Icon size={17} className="text-primary mt-1" aria-hidden="true"/>
-            </article>
-          </ScrollReveal>)}
+      <div className="home-services-model">
+        <ScrollReveal>
+          <article className="home-research-foundation">
+            <span className="home-model-label">Research Foundation</span>
+            <div className="home-research-title"><Network size={21} aria-hidden="true"/><h3>Semantic &amp; Entity SEO</h3></div>
+            <p>Connect what people search for with the business, topics, entities, attributes, and pages that belong in the site.</p>
+            <ol className="home-research-sequence">
+              <li><span>01</span><strong>Search Intent</strong></li>
+              <li><span>02</span><strong>Topics &amp; Entities</strong></li>
+              <li><span>03</span><strong>Page Roles &amp; Relationships</strong></li>
+            </ol>
+          </article>
+        </ScrollReveal>
+
+        <div className="home-applied-work">
+          <div className="home-applied-heading"><span className="home-model-label">Applied Through</span><h3>SEO Disciplines</h3></div>
+          <div className="home-discipline-grid">
+            {disciplines.map(({ icon: Icon, title, detail }, index) => <ScrollReveal key={title} delay={index * .035}>
+              <article className="home-discipline-card"><span>0{index + 1}</span><Icon size={18} aria-hidden="true"/><h4>{title}</h4><p>{detail}</p></article>
+            </ScrollReveal>)}
+          </div>
         </div>
       </div>
     </div>
