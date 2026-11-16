@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <Link to="/" aria-label="Rajesh Tudu, home"><BrandIdentity /></Link>
             <p className="mt-4 text-sm font-medium text-foreground">SEO Specialist · Semantic &amp; Entity SEO</p>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">E-commerce SEO experience and client work across a range of industries and business types.</p>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">From e-commerce and SaaS to health, insurance, mortgage, B2B, and professional services, I adapt SEO priorities to each business and audience.</p>
           </div>
 
           <nav aria-label="Footer navigation">
