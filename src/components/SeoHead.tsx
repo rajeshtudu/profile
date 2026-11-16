@@ -15,19 +15,19 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
     title: 'SEO Services | Semantic, Entity & Local SEO',
     description: 'SEO services for e-commerce and varied industries: semantic and entity research, on-page, technical, local and off-page SEO, audits, reporting and automation.',
   },
-  '/work': {
+  '/case-studies': {
     title: 'SEO Case Studies | Rajesh Tudu',
     description: 'Anonymized SEO case studies using Search Console, GA4, and sales data. Review the work, comparison periods, outcomes, and evidence limits behind each result.',
   },
-  '/work/ecommerce-search-performance': {
+  '/case-studies/ecommerce-search-performance': {
     title: 'E-commerce SEO Case Study | Search Visibility & Clicks',
     description: 'An anonymized Search Console case study compares e-commerce impressions, clicks, and product, collection, and blog pages across two 2025 periods.',
   },
-  '/work/local-search-review': {
+  '/case-studies/local-search-review': {
     title: 'Local SEO Case Study | Search & Analytics Review',
     description: 'An anonymized local SEO review compares pages receiving work with sitewide Search Console metrics and GA4 organic key events in Aug–Sep 2024.',
   },
-  '/work/ecommerce-visibility-sales': {
+  '/case-studies/ecommerce-visibility-sales': {
     title: 'E-commerce SEO Case Study | Visibility & Sales',
     description: 'An anonymized report pairs e-commerce Search Console clicks and impressions with organic sales for Jun 2024–Jan 2025, noting unknown comparison dates.',
   },

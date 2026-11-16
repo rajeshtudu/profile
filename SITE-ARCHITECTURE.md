@@ -35,8 +35,8 @@ Keep the current sitemap:
 - `/profile/` — Positioning, brief bio, service overview, selected proof, process, and a clear contact path.
 - `/profile/about/` — Experience, approach, credentials, tools, and a fuller account of how semantic and entity thinking informs the wider SEO disciplines.
 - `/profile/services/` — Service overview and scoping guide. Add dedicated pages only when there is enough distinct expertise, examples, and useful guidance to support them.
-- `/profile/work/` — Case-study index, with filters only if the number of substantial studies justifies them.
-- `/profile/work/{case-study}/` — One page per evidence-backed project. State the scope, timeframe, source, what was done, observed changes, limitations, and the role of other factors. Keep client and site names anonymized where requested.
+- `/profile/case-studies/` — Case-study index, with filters only if the number of substantial studies justifies them.
+- `/profile/case-studies/{case-study}/` — One page per evidence-backed project. State the scope, timeframe, source, what was done, observed changes, limitations, and the role of other factors. Keep client and site names anonymized where requested.
 - `/profile/contact/` — Contact options and a short inquiry form or direct email route.
 - `/profile/insights/` — Optional later section for original articles, frameworks, or research notes. Launch only when there is a realistic publishing plan.
 
@@ -57,9 +57,10 @@ Current routes:
 - `/profile/` — homepage overview.
 - `/profile/about/` — experience, training, and developing approach.
 - `/profile/services/` — SEO disciplines and scope.
-- `/profile/work/` — case-study index and evidence notes.
-- `/profile/work/ecommerce-search-performance/` and `/profile/work/local-search-review/` — individual anonymized case studies.
-- `/profile/work/ecommerce-visibility-sales/` — anonymized performance snapshot with a report visual, source period, and attribution limits.
+- `/profile/case-studies/` — case-study index and evidence notes.
+- `/profile/case-studies/ecommerce-search-performance/` and `/profile/case-studies/local-search-review/` — individual anonymized case studies.
+- `/profile/case-studies/ecommerce-visibility-sales/` — anonymized performance snapshot with a report visual, source period, and attribution limits.
+- Legacy `/profile/work/` URLs forward to their matching `/profile/case-studies/` routes.
 - `/profile/contact/` — contact details.
 
 ## Content standards

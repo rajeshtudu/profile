@@ -1,7 +1,7 @@
 import PageFrame from '@/components/PageFrame';
 import CaseStudiesSection from '@/components/sections/CaseStudiesSection';
 
-export default function WorkPage() {
+export default function CaseStudiesPage() {
   return <PageFrame
     kicker="Selected Case Studies"
     title="SEO Case Studies With Results in Context"

@@ -8,7 +8,7 @@ export default function ServicesPage() {
     kicker="SEO Services"
     title="SEO Services Built Around Your Search Priorities"
     intro="I provide SEO across semantic and entity research, on-page, technical, off-page, local, and e-commerce search. The work starts with your business, audience, site, and available data. From there, we agree a focused scope, useful deliverables, implementation roles, and measures. A project can address one issue or connect several disciplines."
-    actions={[{ label: 'Discuss Your SEO Needs', href: '/contact/', primary: true }, { label: 'Review Documented Case Studies', href: '/work/' }]}
+    actions={[{ label: 'Discuss Your SEO Needs', href: '/contact/', primary: true }, { label: 'Review Documented Case Studies', href: '/case-studies/' }]}
     next={false}
   >
     <ServicesSection />
@@ -16,9 +16,9 @@ export default function ServicesPage() {
       <div><p className="section-kicker">Project Evidence</p><h2 className="section-heading">See The Work In Its Reporting Context</h2></div>
       <div className="page-prose grid gap-4">
         <p>The anonymized case studies identify the source, comparison period, documented work, and limitations of the available data. They show how I review search outcomes without claiming that one SEO activity caused every change.</p>
-        <Link className="project-link inline-flex items-center gap-2" to="/work/ecommerce-search-performance/">Review e-commerce clicks and impressions by page type <ArrowUpRight size={15}/></Link>
-        <Link className="project-link inline-flex items-center gap-2" to="/work/local-search-review/">Review local SEO work alongside organic outcomes <ArrowUpRight size={15}/></Link>
-        <Link className="project-link inline-flex items-center gap-2" to="/work/ecommerce-visibility-sales/">Compare search visibility with reported organic sales <ArrowUpRight size={15}/></Link>
+        <Link className="project-link inline-flex items-center gap-2" to="/case-studies/ecommerce-search-performance/">Review e-commerce clicks and impressions by page type <ArrowUpRight size={15}/></Link>
+        <Link className="project-link inline-flex items-center gap-2" to="/case-studies/local-search-review/">Review local SEO work alongside organic outcomes <ArrowUpRight size={15}/></Link>
+        <Link className="project-link inline-flex items-center gap-2" to="/case-studies/ecommerce-visibility-sales/">Compare search visibility with reported organic sales <ArrowUpRight size={15}/></Link>
       </div>
     </section>
     <section className="container-custom page-content-grid page-content-grid--bordered">

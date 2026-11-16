@@ -67,7 +67,7 @@ export default function CaseStudyPage() {
   const { caseSlug } = useParams();
   const study = caseSlug ? studies[caseSlug as keyof typeof studies] : undefined;
 
-  if (!study) return <Navigate to="/work/" replace />;
+  if (!study) return <Navigate to="/case-studies/" replace />;
 
   const metricGrid = study.metrics.length === 4 ? 'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 mt-6' : 'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 mt-6';
 
@@ -75,7 +75,7 @@ export default function CaseStudyPage() {
     kicker={study.type}
     title={study.title}
     intro={study.intro}
-    actions={[{ label: 'Discuss A Similar SEO Challenge', href: '/contact/', primary: true }, { label: 'All Case Studies', href: '/work/' }]}
+    actions={[{ label: 'Discuss A Similar SEO Challenge', href: '/contact/', primary: true }, { label: 'All Case Studies', href: '/case-studies/' }]}
     next={false}
   >
     <div className="container-custom case-study-detail">
@@ -119,7 +119,7 @@ export default function CaseStudyPage() {
       </section>
 
       <div className="case-study-actions">
-        <Link to="/work/" className="project-link inline-flex items-center gap-2"><ArrowLeft size={15} /> All Case Studies</Link>
+        <Link to="/case-studies/" className="project-link inline-flex items-center gap-2"><ArrowLeft size={15} /> All Case Studies</Link>
         <Link to="/services/" className="project-link inline-flex items-center gap-2">Review SEO Services <ArrowUpRight size={15} /></Link>
         <Link to="/contact/" className="project-link inline-flex items-center gap-2">Discuss A Similar Challenge <ArrowUpRight size={15} /></Link>
       </div>

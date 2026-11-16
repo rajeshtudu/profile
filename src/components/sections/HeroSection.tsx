@@ -27,7 +27,7 @@ const HeroSection = () => {
               My experience spans e-commerce SEO and client work across varied markets. I use semantic and entity research to connect audience needs with page strategy, then apply on-page, technical, local, and off-page SEO to each site’s priorities.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .4 }} className="flex flex-wrap gap-3 mt-9">
-              <Link className="button-primary" to="/work/">View Case Studies <ArrowUpRight size={16} /></Link>
+              <Link className="button-primary" to="/case-studies/">View Case Studies <ArrowUpRight size={16} /></Link>
               <Link className="button-secondary" to="/contact/">Discuss an SEO Project</Link>
             </motion.div>
             <div className="hero-credentials mt-10" aria-label="Professional experience highlights">

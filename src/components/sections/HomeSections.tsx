@@ -65,7 +65,7 @@ const HomeSections = () => <>
               <div><dt>Average Position</dt><dd>26.2 <small>from 26.7</small></dd></div>
             </dl>
             <p className="home-proof-reading">The page-type view showed different movement across product, collection, and blog pages. Filtered Search Console totals may be partial.</p>
-            <Link to="/work/ecommerce-search-performance/" className="project-link">Read the e-commerce performance review <ArrowUpRight size={15}/></Link>
+            <Link to="/case-studies/ecommerce-search-performance/" className="project-link">Read the e-commerce performance review <ArrowUpRight size={15}/></Link>
           </article>
         </ScrollReveal>
 
@@ -80,7 +80,7 @@ const HomeSections = () => <>
               <div><dt>Organic Key Events</dt><dd>+8.11%</dd></div>
             </dl>
             <p className="home-proof-reading">The report compares worked-on pages with sitewide Search Console data and GA4 key events. A month-to-month comparison does not isolate SEO as the cause.</p>
-            <Link to="/work/local-search-review/" className="project-link">Read the home services reporting review <ArrowUpRight size={15}/></Link>
+            <Link to="/case-studies/local-search-review/" className="project-link">Read the home services reporting review <ArrowUpRight size={15}/></Link>
           </article>
         </ScrollReveal>
       </div>
