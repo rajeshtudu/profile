@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const site = 'https://rajeshtudu.com.np';
 const home = {
   title: 'Rajesh Tudu | Semantic & Entity SEO Specialist',
-  description: 'I apply semantic and entity SEO across 10+ niches — SaaS, finance, law, HVAC, health, e-commerce and more — with on-page, technical, local, and off-page work.',
+  description: 'SEO specialist with experience across e-commerce, SaaS, health, insurance, mortgage, B2B, and professional services. Semantic and entity research shape my work.',
 };
 const pageMetadata: Record<string, { title: string; description: string }> = {
   '/about': {
@@ -86,7 +86,7 @@ export default function SeoHead() {
         '@context': 'https://schema.org',
         '@type': 'ProfilePage',
         mainEntity: { '@type': 'Person', name: 'Rajesh Tudu', jobTitle: 'SEO Specialist', url: `${site}/` },
-        dateModified: '2026-10-17',
+        dateModified: '2026-11-16',
       });
       document.head.append(script);
     } else if (route !== '/') {

@@ -7,15 +7,15 @@ const disciplines = [
   { number: '03', icon: Braces, title: 'Technical SEO', detail: 'Crawlability, indexation, architecture, structured data, migrations, and prioritized technical fixes.' },
   { number: '04', icon: Link2, title: 'Off-page SEO', detail: 'Backlink and competitor-gap reviews, relevant prospect research, and practical authority-building plans.' },
   { number: '05', icon: MapPin, title: 'Local SEO', detail: 'Local intent, Google Business Profile, citations, reviews, and service-area page recommendations.' },
-  { number: '06', icon: ShoppingBag, title: 'E-commerce SEO', detail: 'Product and category architecture, taxonomy, filters, collection content, internal links, and CMS-specific checks.' },
+  { number: '06', icon: ShoppingBag, title: 'E-commerce SEO', detail: 'Product and category architecture, taxonomy, filters, collection content, internal links, and CMS checks across platforms such as Shopify and WordPress.' },
 ];
 
 export default function HomeServicesSection() {
   return <section id="home-services" className="section-padding bg-secondary/40" aria-labelledby="home-services-title">
     <div className="container-custom">
       <ScrollReveal><div className="home-section-head mb-10">
-        <div><p className="section-kicker mb-4">How the work fits together</p><h2 id="home-services-title" className="section-heading">Research that informs SEO across the site.</h2></div>
-        <div className="max-w-xl"><p className="text-muted-foreground leading-7">Semantic and entity research help define the search context and page relationships. I apply those findings through the SEO disciplines each site needs.</p><Link to="/services" className="project-link inline-flex items-center gap-2 mt-5">Explore SEO services and typical outputs <ArrowUpRight size={15}/></Link></div>
+        <div><p className="section-kicker mb-4">How the work fits together</p><h2 id="home-services-title" className="section-heading">One research foundation. The SEO work each site needs.</h2></div>
+        <div className="max-w-xl"><p className="text-muted-foreground leading-7">Semantic and entity research clarifies search intent, topic relationships, and where information belongs. Those findings can guide on-page, technical, off-page, local, and e-commerce SEO in the proportions a site needs.</p><Link to="/services" className="project-link inline-flex items-center gap-2 mt-5">Explore SEO services and typical outputs <ArrowUpRight size={15}/></Link></div>
       </div></ScrollReveal>
 
       <ScrollReveal delay={0.05}>
