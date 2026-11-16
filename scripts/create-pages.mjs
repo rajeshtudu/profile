@@ -4,7 +4,7 @@ import path from 'node:path';
 const outDir = path.resolve('dist');
 const site = 'https://rajeshtudu.com.np';
 const pages = [
-  { route: 'about', title: 'About Rajesh Tudu | SEO Specialist Experience', description: 'My SEO path: a specialist role at Enfity, client work across 10+ niches from SaaS to law and HVAC, training in data and Python, and two shipped SEO tools.' },
+  { route: 'about', title: 'About Rajesh Tudu | SEO Specialist', description: 'Learn about Rajesh Tudu’s SEO experience across e-commerce, SaaS, health, insurance, mortgage, B2B, and professional services.' },
   { route: 'services', title: 'SEO Services | Semantic, Entity, Technical & Local SEO', description: 'Nine SEO services from one research foundation: semantic and entity research, audits, on-page, technical, off-page, local, measurement, and automation.' },
   { route: 'work', title: 'SEO Case Studies and Work | Rajesh Tudu', description: 'Explore anonymized SEO case studies with data sources, comparison periods, documented work, reported outcomes, evidence limitations, and reporting context.' },
   { route: 'work/ecommerce-search-performance', title: 'E-commerce SEO Case Study | Search Visibility & Clicks', description: 'See an anonymized Search Console comparison of e-commerce visibility, clicks, and page types, with reported changes, source periods, and evidence limitations.' },
