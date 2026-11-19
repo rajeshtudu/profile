@@ -1,58 +1,75 @@
-import { ArrowUpRight, BriefcaseBusiness, Github, Wrench } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ScrollReveal from '@/components/ScrollReveal';
+import { skillGroups } from '@/data/skills';
 
 const roles = [
-  { date: '2026–Present', title: 'SEO Specialist', company: 'Enfity', focus: 'SEO planning and delivery across multiple client industries, including search research, page recommendations, on-page improvements, technical reviews, and performance reporting.' },
-  { date: '2025–2026', title: 'Jr. SEO Specialist', company: 'NEPA Works', focus: 'Client SEO support through content and on-page improvements, search research, and technical checks.' },
-  { date: '2024–2025', title: 'SEO Executive', company: 'RankMeTop', focus: 'Keyword research, on-page improvements, link acquisition, and organic performance reporting.' },
+  { date: 'Jan 2026 – Present', title: 'SEO Specialist', company: 'Enfity', focus: 'Search and entity research, page recommendations, on-page improvements, technical reviews and performance reporting for clients in multiple industries.', current: true },
+  { date: 'Dec 2025 – Jan 2026', title: 'Jr. SEO Specialist', company: 'NEPA Works', focus: 'Client SEO through content and on-page improvements, search research and technical checks.' },
+  { date: 'Jul 2024 – Jun 2025', title: 'SEO Executive', company: 'RankMeTop', focus: 'Keyword research, on-page improvements, link acquisition and organic performance reporting, including optimization of 50+ pages.' },
+  { date: 'Jan 2024 – Jun 2024', title: 'SEO Intern', company: 'RankMeTop', focus: 'Keyword research, campaign execution and foundational technical and on-page SEO.' },
 ];
 
-const capabilities = [
-  { label: 'CMS & E-Commerce', items: ['WordPress', 'Shopify', 'Odoo'] },
-  { label: 'Search Performance', items: ['Google Search Console', 'Google Analytics 4', 'SE Ranking'] },
-  { label: 'SEO Research & Crawling', items: ['Semrush', 'Ahrefs', 'Screaming Frog'] },
-  { label: 'Automation & Data', items: ['Python', 'Streamlit', 'Google Search API', 'Web Scraping', 'Google Sheets', 'Excel'] },
-];
+const toolGroups = skillGroups.filter(g => g.kind === 'tool');
 
 const projects = [
-  { title: 'SERP Live Tracker & Analyzer', detail: 'A dashboard for tracking search results and reviewing ranking movement.', source: 'https://github.com/rajeshtudu/SERP-Live-Analyzer', demo: 'https://serp-live-analyzer.streamlit.app/' },
-  { title: 'Schema Generator', detail: 'A small tool for building JSON-LD for common page types.', source: 'https://github.com/rajeshtudu/Schema-Generator', demo: 'https://schema-markup-generator.streamlit.app/' },
+  { title: 'SERP Live Tracker & Analyzer', detail: 'A dashboard for tracking search results and reviewing ranking movement.', stack: 'Python · Streamlit · Google Search API', source: 'https://github.com/rajeshtudu/SERP-Live-Analyzer', demo: 'https://serp-live-analyzer.streamlit.app/' },
+  { title: 'Schema Generator', detail: 'A tool for building JSON-LD structured data for common page types.', stack: 'Python · Streamlit · Schema.org', source: 'https://github.com/rajeshtudu/Schema-Generator', demo: 'https://schema-markup-generator.streamlit.app/' },
 ];
 
 export default function HomeExperienceToolsSection() {
-  return <section id="experience-toolkit" className="home-experience section-padding" aria-label="Career experience and SEO toolkit">
-    <div className="container-custom grid lg:grid-cols-[1.05fr_.95fr] gap-12 lg:gap-20">
-      <ScrollReveal>
-        <div>
-          <div className="flex items-start gap-4 mb-8"><BriefcaseBusiness size={19} className="text-primary mt-1" aria-hidden="true"/><div><p className="section-kicker mb-4">Career Experience</p><h2 className="section-heading">SEO Work in Practice</h2></div></div>
-          <div className="home-career-list">
-            {roles.map((role) => <article className="home-career-item" key={role.company}>
-              <span className="home-career-date">{role.date}</span>
-              <div><h3>{role.title} <span>· {role.company}</span></h3><p>{role.focus}</p></div>
-            </article>)}
-          </div>
-          <Link to="/about/" className="project-link inline-flex items-center gap-2 mt-6 text-sm font-semibold">View Full SEO Experience and Training <ArrowUpRight size={15}/></Link>
-        </div>
-      </ScrollReveal>
+  return <>
+    <section id="career" className="section-padding" aria-labelledby="career-title">
+      <div className="container-custom xp-career-layout">
+        <ScrollReveal><div><p className="section-kicker mb-4">Career Experience</p><h2 id="career-title" className="section-heading">SEO Career in Four Roles Since 2024</h2><p className="mt-5 text-muted-foreground leading-7">My SEO career covers four roles since 2024, moving from keyword research and link building to research and page planning.</p></div></ScrollReveal>
+        <ScrollReveal delay={.06}>
+          <ol className="xp-timeline">
+            {roles.map(r => <li key={r.title} className={r.current ? 'is-current' : ''}>
+              <span className="xp-date">{r.date}</span>
+              <h3>{r.title} <span>· {r.company}</span>{r.current && <em>Current</em>}</h3>
+              <p>{r.focus}</p>
+            </li>)}
+          </ol>
+        </ScrollReveal>
+      </div>
+    </section>
 
-      <ScrollReveal delay={.08}>
-        <div>
-          <div className="flex items-start gap-4"><Wrench size={19} className="text-primary mt-1" aria-hidden="true"/><div><p className="section-kicker mb-4">Research, Reporting &amp; Automation</p><h2 className="section-heading">Tools for Practical SEO Work</h2></div></div>
-          <p className="home-toolkit-intro">I use analytics and SEO platforms to investigate performance, crawling tools to review site structure, and code or spreadsheets to make selected research tasks easier to repeat.</p>
-          <div className="home-capability-list">
-            {capabilities.map((group) => <div className="home-capability-row" key={group.label}>
-              <h3>{group.label}</h3><ul aria-label={group.label}>{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
-            </div>)}
-          </div>
-          <div className="home-tool-projects" aria-label="SEO tools I have built">
-            {projects.map((project) => <article className="home-tool-project" key={project.title}>
-              <div><h3>{project.title}</h3><p>{project.detail}</p></div>
-              <div className="home-tool-project-links"><a href={project.demo} target="_blank" rel="noreferrer">Live Demo <ArrowUpRight size={13}/></a><a href={project.source} target="_blank" rel="noreferrer" aria-label={`${project.title} source code`}><Github size={15}/></a></div>
-            </article>)}
-          </div>
+    <section id="toolkit" className="section-padding" aria-labelledby="toolkit-title">
+      <div className="container-custom">
+        <ScrollReveal><div className="home-section-head"><div><p className="section-kicker mb-4">Toolkit</p><h2 id="toolkit-title" className="section-heading">SEO Toolkit for Research, Reporting and Automation</h2></div><p className="home-section-aside">The SEO toolkit covers research and crawling, reporting, CMS platforms and automation, plus two tools I built in Python.</p></div></ScrollReveal>
+        <div className="xp-tools-grid">
+          {toolGroups.map(g => <div key={g.title} className="xp-tool-row">
+            <span className="xp-tool-label"><g.icon size={15} aria-hidden="true"/>{g.title}</span>
+            <ul aria-label={g.title}>{g.items.map(i => <li key={i}>{i}</li>)}</ul>
+          </div>)}
         </div>
-      </ScrollReveal>
+        <h3 className="xp-subhead mt-14">SEO Tools I Built</h3>
+        <ToolsList external={false} />
+      </div>
+    </section>
+  </>;
+}
+
+function ToolsList({ external }: { external: boolean }) {
+  return <ul className="xp-projects" aria-label="SEO tools I have built">
+    {projects.map(p => <li key={p.title} className="xp-project">
+      <span className="xp-stack">{p.stack}</span>
+      <h4>{p.title}</h4>
+      <p>{p.detail}</p>
+      {external && <div className="xp-project-links">
+        <a className="button-primary" href={p.demo} target="_blank" rel="noreferrer">Live Demo <ArrowUpRight size={14}/></a>
+        <a className="button-secondary" href={p.source} target="_blank" rel="noreferrer"><Github size={15} aria-hidden="true"/> Source Code</a>
+      </div>}
+    </li>)}
+  </ul>;
+}
+
+// Full version with demo and source links, used on the About page (not a money page).
+export function ToolsBuilt() {
+  return <section id="tools-built" className="section-padding" aria-labelledby="tools-built-title">
+    <div className="container-custom">
+      <div className="home-section-head"><div><p className="section-kicker mb-4">Tools I Built</p><h2 id="tools-built-title" className="section-heading">Two SEO Tools Built With Python</h2></div><p className="home-section-aside">Small tools that make repeat research faster: one tracks search results, the other writes JSON-LD structured data.</p></div>
+      <ToolsList external />
     </div>
   </section>;
 }

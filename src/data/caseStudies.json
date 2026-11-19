@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "ecommerce-search-performance",
+    "date": "2025-09-16",
+    "category": "E-Commerce SEO",
+    "industry": "E-commerce",
+    "type": "E-Commerce SEO · 2025",
+    "title": "Search Visibility Rose, but E-Commerce Clicks Barely Moved",
+    "summary": "Search impressions grew 31% while clicks stayed level, with product and collection pages gaining and blog pages falling.",
+    "headline": {
+      "value": "+31%",
+      "label": "Search impressions"
+    },
+    "readings": [
+      [
+        "Impressions",
+        "+31%"
+      ],
+      [
+        "Clicks",
+        "−2%"
+      ],
+      [
+        "Avg. position",
+        "26.2"
+      ]
+    ],
+    "sourceLabel": "Google Search Console · Jun 9–Sep 16, 2025 vs Mar 1–Jun 8, 2025",
+    "seoTitle": "E-commerce SEO Case Study | Search Visibility & Clicks",
+    "seoDescription": "An anonymized Search Console case study compares e-commerce impressions, clicks, and product, collection, and blog pages across two 2025 periods.",
+    "intro": "An e-commerce site gained 31% more search impressions over two comparable periods, but clicks stayed nearly level. Splitting the data by page type showed where the visits went: product and collection pages gained clicks, while blog pages lost them.",
+    "question": "Find out whether higher search visibility was turning into visits, and which page types were winning or losing.",
+    "period": "June 9 to September 16, 2025, compared with March 1 to June 8, 2025",
+    "source": "Google Search Console, with product, collection and blog pages filtered separately.",
+    "reviewed": [
+      "Compared clicks, impressions and average position across both periods.",
+      "Split the results into product, collection and blog pages.",
+      "Pinpointed the gap between growing visibility and flat clicks for the next round of work."
+    ],
+    "metrics": [
+      {
+        "label": "Search impressions",
+        "value": "1.16M",
+        "comparison": "883K previously · +31%"
+      },
+      {
+        "label": "Search clicks",
+        "value": "5.73K",
+        "comparison": "5.84K previously · −2%"
+      },
+      {
+        "label": "Average position",
+        "value": "26.2",
+        "comparison": "26.7 previously"
+      },
+      {
+        "label": "Page-type clicks",
+        "value": "Mixed",
+        "comparison": "Products +46% · collections +43% · blogs −24%"
+      }
+    ],
+    "interpretation": "The site became more visible in search and its average position improved slightly, but those extra impressions did not bring more clicks overall. Product and collection pages gained visits while blog pages lost them. The next step is to check which queries drove the new impressions, how click-through rates changed, and how each landing page performs.",
+    "limitations": "Search Console page filters can show partial totals, so the page-type figures show direction rather than exact numbers. The comparison shows what changed, not what caused it.",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "slug": "local-search-review",
+    "date": "2024-09-30",
+    "category": "Local SEO",
+    "industry": "Home services",
+    "type": "Local SEO · Home Services · 2024",
+    "title": "Local SEO Pages and Organic Search Outcomes",
+    "summary": "Pages that received SEO work grew impressions by 24%, ahead of the site overall, while organic key events rose 8%.",
+    "headline": {
+      "value": "+24.26%",
+      "label": "Impressions on pages worked"
+    },
+    "readings": [
+      [
+        "Impressions",
+        "+20.9%"
+      ],
+      [
+        "GSC clicks",
+        "+2.3%"
+      ],
+      [
+        "GA4 key events",
+        "+8.1%"
+      ]
+    ],
+    "sourceLabel": "Google Search Console + GA4 · Aug–Sep 2024",
+    "seoTitle": "Local SEO Case Study | Search & Analytics Review",
+    "seoDescription": "An anonymized local SEO review compares pages receiving work with sitewide Search Console metrics and GA4 organic key events in Aug–Sep 2024.",
+    "intro": "A home-services business tracked the pages that received SEO work against the rest of the site. Over one month, those pages grew search impressions by 24%, faster than the site overall, and organic key events in GA4 rose 8%.",
+    "question": "Measure how the pages that received work performed against the whole site, and whether organic leads moved with them.",
+    "period": "August to September 2024, month over month",
+    "source": "Google Search Console and Google Analytics 4 for a home-services business.",
+    "reviewed": [
+      "Compared search clicks and impressions month over month.",
+      "Separated the pages that received work from sitewide totals.",
+      "Checked GA4 organic key events alongside search performance."
+    ],
+    "metrics": [
+      {
+        "label": "Pages receiving work · impressions",
+        "value": "+24.26%",
+        "comparison": "Month over month"
+      },
+      {
+        "label": "Sitewide impressions",
+        "value": "+20.90%",
+        "comparison": "Month over month"
+      },
+      {
+        "label": "Sitewide Search Console clicks",
+        "value": "+2.33%",
+        "comparison": "Month over month"
+      },
+      {
+        "label": "GA4 organic key events",
+        "value": "+8.11%",
+        "comparison": "Month over month"
+      }
+    ],
+    "interpretation": "The pages that received work grew impressions slightly faster than the site as a whole. Clicks grew more slowly, while organic key events in GA4 also rose. Together, the measures show the site moving in the right direction, though they cannot link one SEO task to a specific lead.",
+    "limitations": "The review covers a single month-to-month comparison. Seasonality, demand, site updates and tracking changes can all affect the numbers.",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "slug": "ecommerce-visibility-sales",
+    "date": "2025-01-31",
+    "category": "E-Commerce SEO",
+    "industry": "E-commerce",
+    "type": "E-Commerce SEO · 2024–2025",
+    "title": "E-Commerce Search Visibility and Organic Sales",
+    "summary": "Search clicks rose 32%, impressions more than doubled and organic sales grew 45% over the reporting period.",
+    "headline": {
+      "value": "+45%",
+      "label": "Reported organic sales"
+    },
+    "readings": [
+      [
+        "Clicks",
+        "+31.84%"
+      ],
+      [
+        "Impressions",
+        "+113.06%"
+      ],
+      [
+        "Organic sales",
+        "+45%"
+      ]
+    ],
+    "sourceLabel": "Google Search Console + sales report · Jun 2024–Jan 2025",
+    "seoTitle": "E-commerce SEO Case Study | Visibility & Sales",
+    "seoDescription": "An anonymized report pairs e-commerce Search Console clicks and impressions with organic sales for Jun 2024–Jan 2025, noting unknown comparison dates.",
+    "intro": "Over June 2024 to January 2025, an e-commerce store recorded 42K search clicks, 1.22M impressions and £64.1K in organic sales. Against the previous period, clicks rose 32%, impressions more than doubled and organic sales grew 45%.",
+    "question": "Show how search visibility, search visits and organic sales moved together over the reporting period.",
+    "period": "June 2024 to January 2025; the exact dates of the comparison period were not provided",
+    "source": "Google Search Console and the store’s sales reporting.",
+    "reviewed": [
+      "Reviewed Search Console clicks and impressions alongside organic sales.",
+      "Recorded each change against the previous period.",
+      "Noted where the report leaves gaps, such as the comparison dates."
+    ],
+    "metrics": [
+      {
+        "label": "Search Console clicks",
+        "value": "42K",
+        "comparison": "+31.84% vs. prior period"
+      },
+      {
+        "label": "Search Console impressions",
+        "value": "1.22M",
+        "comparison": "+113.06% vs. prior period"
+      },
+      {
+        "label": "Organic sales",
+        "value": "£64.1K",
+        "comparison": "+45% vs. prior period"
+      }
+    ],
+    "interpretation": "Search clicks, impressions and organic sales all grew over the same period, which shows search visibility turning into revenue. The totals do not show which pages or activities drove the growth.",
+    "limitations": "The report does not give exact dates for the comparison period, and it does not isolate the effect of a single SEO change.",
+    "image": "case-studies/ecommerce-visibility-sales.png",
+    "imageAlt": "An anonymized report showing 42 thousand Search Console clicks, 1.22 million impressions, and 64.1 thousand pounds in organic sales"
+  }
+]

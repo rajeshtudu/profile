@@ -14,7 +14,8 @@ export default function PageFrame({ kicker, title, intro, children, titleTag, me
 
   return <MotionConfig reducedMotion="user"><div className="min-h-screen bg-background text-foreground">
     <ScrollProgress/><Navigation/>
-    <main className="page-main">
+    <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-background focus:px-4 focus:py-2 focus:ring-2 focus:ring-primary">Skip to content</a>
+    <main id="main" className="page-main">
       <header className="page-intro container-custom">
         <p className="section-kicker">{kicker}</p>
         <h1 className="page-title">{title}</h1>
@@ -22,7 +23,7 @@ export default function PageFrame({ kicker, title, intro, children, titleTag, me
         {actions.length > 0 && <div className="page-intro-actions">{actions.map(action => {
           const className = action.primary ? 'button-primary' : 'button-secondary';
           const content = <>{action.label}<ArrowUpRight size={16}/></>;
-          return action.external || action.href.startsWith('mailto:')
+          return action.external || action.href.startsWith('mailto:') || action.href.startsWith('#')
             ? <a key={action.label} className={className} href={action.href} target={action.external ? '_blank' : undefined} rel={action.external ? 'noreferrer' : undefined}>{content}</a>
             : <Link key={action.label} className={className} to={action.href}>{content}</Link>;
         })}</div>}

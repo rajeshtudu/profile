@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="grid gap-10 py-12 md:grid-cols-[1.3fr_.8fr_1fr] md:gap-12">
           <div>
             <Link to="/" aria-label="Rajesh Tudu, home"><BrandIdentity /></Link>
-            <p className="mt-4 text-sm font-medium text-foreground">SEO Specialist · Semantic &amp; Entity SEO</p>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">From e-commerce and SaaS to health, insurance, mortgage, B2B, and professional services, I adapt SEO priorities to each business and audience.</p>
+            <p className="mt-4 text-sm font-medium text-foreground">SEO Specialist · Lalitpur, Nepal</p>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-muted-foreground">I help brands become the clearest answer on their topic by making entities, topics and pages easy for search engines and AI to understand.</p>
           </div>
 
           <nav aria-label="Footer navigation">
@@ -23,12 +23,15 @@ const Footer = () => {
               <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/services/">SEO services</Link></li>
               <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/case-studies/">Case Studies</Link></li>
               <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/#projects">SEO tools and experiments</Link></li>
+              <li><Link className="text-muted-foreground transition-colors hover:text-primary" to="/privacy/">Privacy policy</Link></li>
             </ul>
           </nav>
 
           <div>
             <h2 className="section-kicker mb-4">Contact</h2>
             <a className="text-sm text-muted-foreground transition-colors hover:text-primary" href="mailto:tudurajesh34@gmail.com">tudurajesh34@gmail.com</a>
+            <a className="block mt-1 text-sm text-muted-foreground transition-colors hover:text-primary" href="tel:+9779825672407">+977 982-5672407</a>
+            <a className="block mt-1 text-sm text-muted-foreground transition-colors hover:text-primary" href="tel:+9779746228029">+977 974-6228029</a>
             <SocialLinks className="mt-4" />
             <Link className="button-primary mt-5 inline-flex" to="/contact/">Discuss an SEO project <ArrowUpRight size={15}/></Link>
           </div>

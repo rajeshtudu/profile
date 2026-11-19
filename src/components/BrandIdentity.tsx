@@ -13,6 +13,6 @@ export const BrandSymbol = () => (
 export const BrandIdentity = ({ className = '' }: BrandIdentityProps) => (
   <span className={`brand-mark ${className}`.trim()}>
     <BrandSymbol />
-    <span className="brand-name">Rajesh Tudu <small>SEO Specialist · Semantic &amp; Entity SEO</small></span>
+    <span className="brand-name">Rajesh Tudu <small>SEO Specialist</small></span>
   </span>
 );

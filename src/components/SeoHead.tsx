@@ -1,39 +1,33 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { caseStudies } from '@/data/caseStudies';
 
 const site = 'https://rajeshtudu.com.np';
 const home = {
-  title: 'Rajesh Tudu | Semantic & Entity SEO Specialist',
-  description: 'SEO specialist with e-commerce and multi-industry client experience. Semantic and entity research informs on-page, technical, local, and off-page SEO.',
+  title: 'Rajesh Tudu | Semantic SEO Specialist',
+  description: 'Rajesh Tudu is an SEO specialist who plans websites around entities and topical maps, with schema, internal links and content.',
 };
 const pageMetadata: Record<string, { title: string; description: string }> = {
+  ...Object.fromEntries(caseStudies.map(c => [`/case-studies/${c.slug}`, { title: c.seoTitle, description: c.seoDescription }])),
   '/about': {
-    title: 'About Rajesh Tudu | SEO Specialist',
-    description: 'Learn about Rajesh Tudu’s SEO experience across e-commerce, SaaS, health, insurance, mortgage, B2B, and professional services.',
+    title: 'About Rajesh Tudu | SEO Specialist in Lalitpur',
+    description: 'Rajesh Tudu plans client websites around entities and topical maps, with work across e-commerce, SaaS, health, insurance, B2B and more.',
   },
   '/services': {
-    title: 'SEO Services | Semantic, Entity & Local SEO',
-    description: 'SEO services for e-commerce and varied industries: semantic and entity research, on-page, technical, local and off-page SEO, audits, reporting and automation.',
+    title: 'Semantic SEO Services | Rajesh Tudu',
+    description: 'SEO services built on entity research and topical maps: audits, internal linking, schema, content and technical SEO.',
   },
   '/case-studies': {
     title: 'SEO Case Studies | Rajesh Tudu',
-    description: 'Anonymized SEO case studies using Search Console, GA4, and sales data. Review the work, comparison periods, outcomes, and evidence limits behind each result.',
+    description: 'SEO case studies from real client work, showing changes in organic traffic, search visibility, leads and sales, with the data source behind every figure.',
   },
-  '/case-studies/ecommerce-search-performance': {
-    title: 'E-commerce SEO Case Study | Search Visibility & Clicks',
-    description: 'An anonymized Search Console case study compares e-commerce impressions, clicks, and product, collection, and blog pages across two 2025 periods.',
-  },
-  '/case-studies/local-search-review': {
-    title: 'Local SEO Case Study | Search & Analytics Review',
-    description: 'An anonymized local SEO review compares pages receiving work with sitewide Search Console metrics and GA4 organic key events in Aug–Sep 2024.',
-  },
-  '/case-studies/ecommerce-visibility-sales': {
-    title: 'E-commerce SEO Case Study | Visibility & Sales',
-    description: 'An anonymized report pairs e-commerce Search Console clicks and impressions with organic sales for Jun 2024–Jan 2025, noting unknown comparison dates.',
+  '/privacy': {
+    title: 'Privacy Policy | Rajesh Tudu',
+    description: 'How rajeshtudu.com.np uses Google Analytics data and email you send, and how to opt out or ask for your email correspondence to be deleted.',
   },
   '/contact': {
-    title: 'Contact Rajesh Tudu | SEO Projects and Roles',
-    description: 'Contact Rajesh Tudu in Lalitpur, Nepal about SEO roles, projects, or organic search challenges. Email directly or connect through professional social profiles.',
+    title: 'Contact Rajesh Tudu | SEO Projects',
+    description: 'Contact Rajesh Tudu about an SEO project, an audit, ongoing support or freelance work. Use the form, send an email or call.',
   },
 };
 
@@ -86,7 +80,7 @@ export default function SeoHead() {
         '@context': 'https://schema.org',
         '@type': 'ProfilePage',
         mainEntity: { '@type': 'Person', name: 'Rajesh Tudu', jobTitle: 'SEO Specialist', url: `${site}/` },
-        dateModified: '2026-11-16',
+        dateModified: '2026-11-19',
       });
       document.head.append(script);
     } else if (route !== '/') {

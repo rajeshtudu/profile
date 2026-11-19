@@ -3,17 +3,18 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate, useParams } from "react-router-dom";
-import { lazy, Suspense, useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import SeoHead from "./components/SeoHead";
 import Analytics from "./components/Analytics";
 
-const Index = lazy(() => import("./pages/Index"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const AboutPage = lazy(() => import("./pages/AboutPage"));
-const ServicesPage = lazy(() => import("./pages/ServicesPage"));
-const CaseStudiesPage = lazy(() => import("./pages/CaseStudiesPage"));
-const CaseStudyPage = lazy(() => import("./pages/CaseStudyPage"));
-const ContactPage = lazy(() => import("./pages/ContactPage"));
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import CaseStudiesPage from "./pages/CaseStudiesPage";
+import CaseStudyPage from "./pages/CaseStudyPage";
+import ContactPage from "./pages/ContactPage";
+import PrivacyPage from "./pages/PrivacyPage";
 
 const queryClient = new QueryClient();
 const projectPagesBase = window.location.pathname === '/profile' || window.location.pathname.startsWith('/profile/')
@@ -57,6 +58,7 @@ const App = () => (
             <Route path="/work/" element={<LegacyWorkRedirect />} />
             <Route path="/work/:caseSlug/" element={<LegacyWorkRedirect />} />
             <Route path="/contact/" element={<ContactPage />} />
+            <Route path="/privacy/" element={<PrivacyPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
